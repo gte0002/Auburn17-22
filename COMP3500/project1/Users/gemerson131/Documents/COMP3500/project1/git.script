@@ -1,0 +1,265 @@
+Script started on 2021-01-22 13:33:29-06:00
+]777;notify;Command completed;exit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# yum install git
+Last metadata expiration check: 2:27:05 ago on Fri 22 Jan 2021 11:06:36 AM CST.
+Package git-2.27.0-1.el8.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+]777;notify;Command completed;yum install git]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git init
+Initialized empty Git repository in /home/gemerson/COMP3500/project1/.git/
+]777;notify;Command completed;git init]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  git.script      lspci.txt    [0m[38;5;40msimple[0m
+cpuinfo.txt      interrupts.txt  meminfo.txt  simple.c
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# touch cpu.c
+]777;notify;Command completed;touch cpu.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# touch driver.c
+]777;notify;Command completed;touch driver.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# touch file.c
+]777;notify;Command completed;touch file.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gdbinit[m
+	[31mcommands.script[m
+	[31mcpu.c[m
+	[31mcpuinfo.txt[m
+	[31mdriver.c[m
+	[31mfile.c[m
+	[31mgit.script[m
+	[31minterrupts.txt[m
+	[31mlspci.txt[m
+	[31mmeminfo.txt[m
+	[31msimple[m
+	[31msimple.c[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git add *.c
+]777;notify;Command completed;git add *.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   cpu.c[m
+	[32mnew file:   driver.c[m
+	[32mnew file:   file.c[m
+	[32mnew file:   simple.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gdbinit[m
+	[31mcommands.script[m
+	[31mcpuinfo.txt[m
+	[31mgit.script[m
+	[31minterrupts.txt[m
+	[31mlspci.txt[m
+	[31mmeminfo.txt[m
+	[31msimple[m
+
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# co[K[Kgit commit -m 'Initial project 1'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@gemerson-lynux.(none)')
+]777;notify;Command completed;git commit -m 'Initial project 1']0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git conif[K[Kfig --global gte0002@auburn.edu
+error: invalid key: gte0002@auburn.edu
+]777;notify;Command completed;git config --global gte0002@auburn.edu]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git config --global gte0002
+error: key does not contain a section: gte0002
+]777;notify;Command completed;git config --global gte0002]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git config --global Gabe EMerson[K[K[K[K[K[Kmerson
+error: key does not contain a section: Gabe
+]777;notify;Command completed;git config --global Gabe Emerson]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git config --global --edit
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"~/.gitconfig" 5L, 153C[1;1H# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#[7Cname = root
+#[7Cemail = root@gemerson-lynux.(none)
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h
+
+
+
+[7C[m email = root@gemerson-lynu[?25l[24;1H[1m-- INSERT --[m[24;13H[K[5;35H[?25hx.(none)[24;1H[K[5;42H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"~/.gitconfig" 5L, 153C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t[K]777;notify;Command completed;git config --global --edit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ~/.gitconfig
+bash: /root/.gitconfig: Permission denied
+]777;notify;Command completed;~/.gitconfig]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ~/.gitconfiggit config --global --edit
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"~/.gitconfig" 5L, 153C[1;1H# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#[7Cname = root
+#[7Cemail = root@gemerson-lynux.(none)
+[94m~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h
+
+
+[7C[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[4;2H[?25h[?25l [?25h[8C[5;9H#[?25l [?25h[8Cemail = root@g[4;20H[?25l[4;19H[K[4;19H[?25h[?25l[4;18H[K[4;18H[?25h[?25l[4;17H[K[4;17H[?25h[?25l[4;16H[K[4;16H[?25h[?25lG[?25h[?25lA[?25h[?25lb[?25h[?25le[?25h[?25l[4;19H[K[4;19H[?25h[?25l[4;18H[K[4;18H[?25h[?25l[4;17H[K[4;17H[?25h[?25la[?25h[?25lb[?25h[?25lr[?25h[?25li[?25h[?25le[?25h[?25ll[?25h[?25l [?25h[?25lE[?25h[?25lm[?25h[?25le[?25h[?25lr[?25h[?25ls[?25h[?25lo[?25h[?25ln[?25h[5;31Hlynux.(none)[?25l[5;42H[K[5;42H[?25h[?25l[5;41H[K[5;41H[?25h[?25l[5;40H[K[5;40H[?25h[?25l[5;39H[K[5;39H[?25h[?25l[5;38H[K[5;38H[?25h[?25l[5;37H[K[5;37H[?25h[?25l[5;36H[K[5;36H[?25h[?25l[5;35H[K[5;35H[?25h[?25l[5;34H[K[5;34H[?25h[?25l[5;33H[K[5;33H[?25h[?25l[5;32H[K[5;32H[?25h[?25l[5;31H[K[5;31H[?25h[?25l[5;30H[K[5;30H[?25h[?25l[5;29H[K[5;29H[?25h[?25l[5;28H[K[5;28H[?25h[?25l[5;27H[K[5;27H[?25h[?25l[5;26H[K[5;26H[?25h[?25l[5;25H[K[5;25H[?25h[?25l[5;23H[K[5;23H[?25h[?25l[5;22H[K[5;22H[?25h[?25l[5;21H[K[5;21H[?25h[?25l[5;20H[K[5;20H[?25h[?25l[5;19H[K[5;19H[?25h[?25l[5;18H[K[5;18H[?25h[?25l[5;17H[K[5;17H[?25h[?25lg[?25h[?25lt[?25h[?25le[?25h[?25l0[?25h[?25l0[?25h[?25l0[?25h[?25l2[?25h[?25l@[?25h[?25la[?25h[?25lu[?25h[?25lb[?25h[?25lu[?25h[?25lr[?25h[?25ln[?25h[?25l.[?25h[?25le[?25h[?25ld[?25h[?25lu[?25h[?25l[6;1H[K[6;1H[?25h[24;1H[K[6;1H[?25l[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"~/.gitconfig" 6L, 155C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t[K]777;notify;Command completed;git config --global --edit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git config --global --edit[14P~/.gitconfiggit config --global --editGabe Emerson[5Pgte0002@auburn.edu[5Pmmit -m 'Initial project 1'
+[master (root-commit) 32d4cc6] Initial project 1
+ 4 files changed, 21 insertions(+)
+ create mode 100644 cpu.c
+ create mode 100644 driver.c
+ create mode 100644 file.c
+ create mode 100644 simple.c
+]777;notify;Command completed;git commit -m 'Initial project 1']0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gdbinit[m
+	[31mcommands.script[m
+	[31mcpuinfo.txt[m
+	[31mgit.script[m
+	[31minterrupts.txt[m
+	[31mlspci.txt[m
+	[31mmeminfo.txt[m
+	[31msimple[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# rm cpu.c
+rm: remove regular empty file 'cpu.c'? yes
+]777;notify;Command completed;rm cpu.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  driver.c  git.script      lspci.txt    [0m[38;5;40msimple[0m
+cpuinfo.txt      file.c    interrupts.txt  meminfo.txt  simple.c
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git checkout cpu.c
+Updated 1 path from the index
+]777;notify;Command completed;git checkout cpu.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git checkout -b master2
+Switched to a new branch 'master2'
+]777;notify;Command completed;git checkout -b master2]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# touch cpu2.c
+]777;notify;Command completed;touch cpu2.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git add cpu2.c
+]777;notify;Command completed;git add cpu2.c]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git commit -m 'cpu2 is added into master 2'
+[master2 1ea3df0] cpu2 is added into master 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 cpu2.c
+]777;notify;Command completed;git commit -m 'cpu2 is added into master 2']0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git branch
+[?1h=  master[m[m
+* [32mmaster2[m[m
+[K[?1l>]777;notify;Command completed;git branch]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  cpu.c        driver.c  git.script      lspci.txt    [0m[38;5;40msimple[0m
+cpu2.c           cpuinfo.txt  file.c    interrupts.txt  meminfo.txt  simple.c
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git checkout mastrer[K[K[Ker
+Switched to branch 'master'
+]777;notify;Command completed;git checkout master]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  cpuinfo.txt  file.c      interrupts.txt  meminfo.txt  simple.c
+cpu.c            driver.c     git.script  lspci.txt       [0m[38;5;40msimple[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# git clone -b master . ../new [K_project1
+Cloning into '../new_project1'...
+done.
+]777;notify;Command completed;git clone -b master . ../new_project1]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# cd ..
+]777;notify;Command completed;cd ..]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mnew_project1[0m  [38;5;33mproject1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# cd new_project1
+]777;notify;Command completed;cd new_project1]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git clone https://github.com/lig[Kbgit2/libgit2 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K2
+Cloning into 'libgit2'...
+remote: Enumerating objects: 107280, done.[K
+remote: Counting objects:   0% (1/107280)[Kremote: Counting objects:   1% (1073/107280)[Kremote: Counting objects:   2% (2146/107280)[Kremote: Counting objects:   3% (3219/107280)[Kremote: Counting objects:   4% (4292/107280)[Kremote: Counting objects:   5% (5364/107280)[Kremote: Counting objects:   6% (6437/107280)[Kremote: Counting objects:   7% (7510/107280)[Kremote: Counting objects:   8% (8583/107280)[Kremote: Counting objects:   9% (9656/107280)[Kremote: Counting objects:  10% (10728/107280)[Kremote: Counting objects:  11% (11801/107280)[Kremote: Counting objects:  12% (12874/107280)[Kremote: Counting objects:  13% (13947/107280)[Kremote: Counting objects:  14% (15020/107280)[Kremote: Counting objects:  15% (16092/107280)[Kremote: Counting objects:  16% (17165/107280)[Kremote: Counting objects:  17% (18238/107280)[Kremote: Counting objects:  18% (19311/107280)[Kremote: Counting objects:  19% (20384/107280)[Kremote: Counting objects:  20% (21456/107280)[Kremote: Counting objects:  21% (22529/107280)[Kremote: Counting objects:  22% (23602/107280)[Kremote: Counting objects:  23% (24675/107280)[Kremote: Counting objects:  24% (25748/107280)[Kremote: Counting objects:  25% (26820/107280)[Kremote: Counting objects:  26% (27893/107280)[Kremote: Counting objects:  27% (28966/107280)[Kremote: Counting objects:  28% (30039/107280)[Kremote: Counting objects:  29% (31112/107280)[Kremote: Counting objects:  30% (32184/107280)[Kremote: Counting objects:  31% (33257/107280)[Kremote: Counting objects:  32% (34330/107280)[Kremote: Counting objects:  33% (35403/107280)[Kremote: Counting objects:  34% (36476/107280)[Kremote: Counting objects:  35% (37548/107280)[Kremote: Counting objects:  36% (38621/107280)[Kremote: Counting objects:  37% (39694/107280)[Kremote: Counting objects:  38% (40767/107280)[Kremote: Counting objects:  39% (41840/107280)[Kremote: Counting objects:  40% (42912/107280)[Kremote: Counting objects:  41% (43985/107280)[Kremote: Counting objects:  42% (45058/107280)[Kremote: Counting objects:  43% (46131/107280)[Kremote: Counting objects:  44% (47204/107280)[Kremote: Counting objects:  45% (48276/107280)[Kremote: Counting objects:  46% (49349/107280)[Kremote: Counting objects:  47% (50422/107280)[Kremote: Counting objects:  48% (51495/107280)[Kremote: Counting objects:  49% (52568/107280)[Kremote: Counting objects:  50% (53640/107280)[Kremote: Counting objects:  51% (54713/107280)[Kremote: Counting objects:  52% (55786/107280)[Kremote: Counting objects:  53% (56859/107280)[Kremote: Counting objects:  54% (57932/107280)[Kremote: Counting objects:  55% (59004/107280)[Kremote: Counting objects:  56% (60077/107280)[Kremote: Counting objects:  57% (61150/107280)[Kremote: Counting objects:  58% (62223/107280)[Kremote: Counting objects:  59% (63296/107280)[Kremote: Counting objects:  60% (64368/107280)[Kremote: Counting objects:  61% (65441/107280)[Kremote: Counting objects:  62% (66514/107280)[Kremote: Counting objects:  63% (67587/107280)[Kremote: Counting objects:  64% (68660/107280)[Kremote: Counting objects:  65% (69732/107280)[Kremote: Counting objects:  66% (70805/107280)[Kremote: Counting objects:  67% (71878/107280)[Kremote: Counting objects:  68% (72951/107280)[Kremote: Counting objects:  69% (74024/107280)[Kremote: Counting objects:  70% (75096/107280)[Kremote: Counting objects:  71% (76169/107280)[Kremote: Counting objects:  72% (77242/107280)[Kremote: Counting objects:  73% (78315/107280)[Kremote: Counting objects:  74% (79388/107280)[Kremote: Counting objects:  75% (80460/107280)[Kremote: Counting objects:  76% (81533/107280)[Kremote: Counting objects:  77% (82606/107280)[Kremote: Counting objects:  78% (83679/107280)[Kremote: Counting objects:  79% (84752/107280)[Kremote: Counting objects:  80% (85824/107280)[Kremote: Counting objects:  81% (86897/107280)[Kremote: Counting objects:  82% (87970/107280)[Kremote: Counting objects:  83% (89043/107280)[Kremote: Counting objects:  84% (90116/107280)[Kremote: Counting objects:  85% (91188/107280)[Kremote: Counting objects:  86% (92261/107280)[Kremote: Counting objects:  87% (93334/107280)[Kremote: Counting objects:  88% (94407/107280)[Kremote: Counting objects:  89% (95480/107280)[Kremote: Counting objects:  90% (96552/107280)[Kremote: Counting objects:  91% (97625/107280)[Kremote: Counting objects:  92% (98698/107280)[Kremote: Counting objects:  93% (99771/107280)[Kremote: Counting objects:  94% (100844/107280)[Kremote: Counting objects:  95% (101916/107280)[Kremote: Counting objects:  96% (102989/107280)[Kremote: Counting objects:  97% (104062/107280)[Kremote: Counting objects:  98% (105135/107280)[Kremote: Counting objects:  99% (106208/107280)[Kremote: Counting objects: 100% (107280/107280)[Kremote: Counting objects: 100% (107280/107280), done.[K
+remote: Compressing objects:   0% (1/29499)[Kremote: Compressing objects:   1% (295/29499)[Kremote: Compressing objects:   2% (590/29499)[Kremote: Compressing objects:   3% (885/29499)[Kremote: Compressing objects:   4% (1180/29499)[Kremote: Compressing objects:   5% (1475/29499)[Kremote: Compressing objects:   6% (1770/29499)[Kremote: Compressing objects:   7% (2065/29499)[Kremote: Compressing objects:   8% (2360/29499)[Kremote: Compressing objects:   9% (2655/29499)[Kremote: Compressing objects:  10% (2950/29499)[Kremote: Compressing objects:  11% (3245/29499)[Kremote: Compressing objects:  12% (3540/29499)[Kremote: Compressing objects:  13% (3835/29499)[Kremote: Compressing objects:  14% (4130/29499)[Kremote: Compressing objects:  15% (4425/29499)[Kremote: Compressing objects:  16% (4720/29499)[Kremote: Compressing objects:  17% (5015/29499)[Kremote: Compressing objects:  18% (5310/29499)[Kremote: Compressing objects:  19% (5605/29499)[Kremote: Compressing objects:  20% (5900/29499)[Kremote: Compressing objects:  21% (6195/29499)[Kremote: Compressing objects:  22% (6490/29499)[Kremote: Compressing objects:  23% (6785/29499)[Kremote: Compressing objects:  24% (7080/29499)[Kremote: Compressing objects:  25% (7375/29499)[Kremote: Compressing objects:  26% (7670/29499)[Kremote: Compressing objects:  27% (7965/29499)[Kremote: Compressing objects:  28% (8260/29499)[Kremote: Compressing objects:  29% (8555/29499)[Kremote: Compressing objects:  30% (8850/29499)[Kremote: Compressing objects:  31% (9145/29499)[Kremote: Compressing objects:  32% (9440/29499)[Kremote: Compressing objects:  33% (9735/29499)[Kremote: Compressing objects:  34% (10030/29499)[Kremote: Compressing objects:  35% (10325/29499)[Kremote: Compressing objects:  36% (10620/29499)[Kremote: Compressing objects:  37% (10915/29499)[Kremote: Compressing objects:  38% (11210/29499)[Kremote: Compressing objects:  39% (11505/29499)[Kremote: Compressing objects:  40% (11800/29499)[Kremote: Compressing objects:  41% (12095/29499)[Kremote: Compressing objects:  42% (12390/29499)[Kremote: Compressing objects:  43% (12685/29499)[Kremote: Compressing objects:  44% (12980/29499)[Kremote: Compressing objects:  45% (13275/29499)[Kremote: Compressing objects:  46% (13570/29499)[Kremote: Compressing objects:  47% (13865/29499)[Kremote: Compressing objects:  48% (14160/29499)[Kremote: Compressing objects:  49% (14455/29499)[Kremote: Compressing objects:  50% (14750/29499)[Kremote: Compressing objects:  51% (15045/29499)[Kremote: Compressing objects:  52% (15340/29499)[Kremote: Compressing objects:  53% (15635/29499)[Kremote: Compressing objects:  54% (15930/29499)[Kremote: Compressing objects:  55% (16225/29499)[Kremote: Compressing objects:  56% (16520/29499)[Kremote: Compressing objects:  57% (16815/29499)[Kremote: Compressing objects:  58% (17110/29499)[Kremote: Compressing objects:  59% (17405/29499)[Kremote: Compressing objects:  60% (17700/29499)[Kremote: Compressing objects:  61% (17995/29499)[Kremote: Compressing objects:  62% (18290/29499)[Kremote: Compressing objects:  63% (18585/29499)[Kremote: Compressing objects:  64% (18880/29499)[Kremote: Compressing objects:  65% (19175/29499)[Kremote: Compressing objects:  66% (19470/29499)[Kremote: Compressing objects:  67% (19765/29499)[Kremote: Compressing objects:  68% (20060/29499)[Kremote: Compressing objects:  69% (20355/29499)[Kremote: Compressing objects:  70% (20650/29499)[Kremote: Compressing objects:  71% (20945/29499)[Kremote: Compressing objects:  72% (21240/29499)[Kremote: Compressing objects:  73% (21535/29499)[Kremote: Compressing objects:  74% (21830/29499)[Kremote: Compressing objects:  75% (22125/29499)[Kremote: Compressing objects:  76% (22420/29499)[Kremote: Compressing objects:  77% (22715/29499)[Kremote: Compressing objects:  78% (23010/29499)[Kremote: Compressing objects:  79% (23305/29499)[Kremote: Compressing objects:  80% (23600/29499)[Kremote: Compressing objects:  81% (23895/29499)[Kremote: Compressing objects:  82% (24190/29499)[Kremote: Compressing objects:  83% (24485/29499)[Kremote: Compressing objects:  84% (24780/29499)[Kremote: Compressing objects:  85% (25075/29499)[Kremote: Compressing objects:  86% (25370/29499)[Kremote: Compressing objects:  87% (25665/29499)[Kremote: Compressing objects:  88% (25960/29499)[Kremote: Compressing objects:  89% (26255/29499)[Kremote: Compressing objects:  90% (26550/29499)[Kremote: Compressing objects:  91% (26845/29499)[Kremote: Compressing objects:  92% (27140/29499)[Kremote: Compressing objects:  93% (27435/29499)[Kremote: Compressing objects:  94% (27730/29499)[Kremote: Compressing objects:  95% (28025/29499)[Kremote: Compressing objects:  96% (28320/29499)[Kremote: Compressing objects:  97% (28615/29499)[Kremote: Compressing objects:  98% (28910/29499)[Kremote: Compressing objects:  99% (29205/29499)[Kremote: Compressing objects: 100% (29499/29499)[Kremote: Compressing objects: 100% (29499/29499), done.[K
+Receiving objects:   0% (1/107280)Receiving objects:   1% (1073/107280)Receiving objects:   2% (2146/107280), 732.00 KiB | 1.39 MiB/sReceiving objects:   3% (3219/107280), 732.00 KiB | 1.39 MiB/sReceiving objects:   3% (3892/107280), 732.00 KiB | 1.39 MiB/sReceiving objects:   4% (4292/107280), 1.42 MiB | 1.39 MiB/s  Receiving objects:   5% (5364/107280), 1.42 MiB | 1.39 MiB/sReceiving objects:   6% (6437/107280), 2.14 MiB | 1.41 MiB/sReceiving objects:   7% (7510/107280), 2.14 MiB | 1.41 MiB/sReceiving objects:   8% (8583/107280), 2.14 MiB | 1.41 MiB/sReceiving objects:   8% (9232/107280), 2.82 MiB | 1.39 MiB/sReceiving objects:   9% (9656/107280), 2.82 MiB | 1.39 MiB/sReceiving objects:  10% (10728/107280), 2.82 MiB | 1.39 MiB/sReceiving objects:  11% (11801/107280), 2.82 MiB | 1.39 MiB/sReceiving objects:  12% (12874/107280), 3.54 MiB | 1.39 MiB/sReceiving objects:  13% (13947/107280), 3.54 MiB | 1.39 MiB/sReceiving objects:  14% (15020/107280), 3.54 MiB | 1.39 MiB/sReceiving objects:  14% (15241/107280), 3.54 MiB | 1.39 MiB/sReceiving objects:  15% (16092/107280), 4.24 MiB | 1.39 MiB/sReceiving objects:  16% (17165/107280), 4.24 MiB | 1.39 MiB/sReceiving objects:  17% (18238/107280), 4.24 MiB | 1.39 MiB/sReceiving objects:  18% (19311/107280), 4.95 MiB | 1.39 MiB/sReceiving objects:  19% (20384/107280), 4.95 MiB | 1.39 MiB/sReceiving objects:  19% (20791/107280), 4.95 MiB | 1.39 MiB/sReceiving objects:  20% (21456/107280), 5.67 MiB | 1.39 MiB/sReceiving objects:  21% (22529/107280), 5.67 MiB | 1.39 MiB/sReceiving objects:  22% (23602/107280), 5.67 MiB | 1.39 MiB/sReceiving objects:  22% (24451/107280), 6.36 MiB | 1.39 MiB/sReceiving objects:  22% (24507/107280), 7.78 MiB | 1.39 MiB/sReceiving objects:  23% (24675/107280), 9.15 MiB | 1.39 MiB/sReceiving objects:  23% (24708/107280), 9.15 MiB | 1.39 MiB/sReceiving objects:  23% (25171/107280), 10.55 MiB | 1.39 MiB/sReceiving objects:  24% (25748/107280), 11.22 MiB | 1.38 MiB/sReceiving objects:  25% (26820/107280), 11.94 MiB | 1.38 MiB/sReceiving objects:  25% (26889/107280), 11.94 MiB | 1.38 MiB/sReceiving objects:  26% (27893/107280), 13.31 MiB | 1.38 MiB/sReceiving objects:  26% (28767/107280), 13.31 MiB | 1.38 MiB/sReceiving objects:  27% (28966/107280), 13.31 MiB | 1.38 MiB/sReceiving objects:  27% (29751/107280), 14.64 MiB | 1.36 MiB/sReceiving objects:  28% (30039/107280), 15.26 MiB | 1.35 MiB/sReceiving objects:  29% (31112/107280), 15.90 MiB | 1.32 MiB/sReceiving objects:  29% (31941/107280), 15.90 MiB | 1.32 MiB/sReceiving objects:  30% (32184/107280), 15.90 MiB | 1.32 MiB/sReceiving objects:  31% (33257/107280), 16.47 MiB | 1.30 MiB/sReceiving objects:  32% (34330/107280), 17.19 MiB | 1.30 MiB/sReceiving objects:  32% (34421/107280), 17.19 MiB | 1.30 MiB/sReceiving objects:  33% (35403/107280), 17.91 MiB | 1.30 MiB/sReceiving objects:  33% (35983/107280), 18.57 MiB | 1.29 MiB/sReceiving objects:  34% (36476/107280), 19.28 MiB | 1.30 MiB/sReceiving objects:  35% (37548/107280), 19.97 MiB | 1.30 MiB/sReceiving objects:  35% (38360/107280), 19.97 MiB | 1.30 MiB/sReceiving objects:  36% (38621/107280), 19.97 MiB | 1.30 MiB/sReceiving objects:  37% (39694/107280), 20.65 MiB | 1.31 MiB/sReceiving objects:  38% (40767/107280), 21.35 MiB | 1.33 MiB/sReceiving objects:  38% (41546/107280), 21.35 MiB | 1.33 MiB/sReceiving objects:  39% (41840/107280), 21.35 MiB | 1.33 MiB/sReceiving objects:  40% (42912/107280), 22.04 MiB | 1.34 MiB/sReceiving objects:  41% (43985/107280), 22.75 MiB | 1.37 MiB/sReceiving objects:  41% (44006/107280), 23.42 MiB | 1.36 MiB/sReceiving objects:  42% (45058/107280), 23.42 MiB | 1.36 MiB/sReceiving objects:  43% (46131/107280), 24.10 MiB | 1.36 MiB/sReceiving objects:  43% (46456/107280), 24.10 MiB | 1.36 MiB/sReceiving objects:  43% (46530/107280), 25.47 MiB | 1.36 MiB/sReceiving objects:  43% (46865/107280), 26.89 MiB | 1.36 MiB/sReceiving objects:  44% (47204/107280), 27.57 MiB | 1.36 MiB/sReceiving objects:  45% (48276/107280), 27.57 MiB | 1.36 MiB/sReceiving objects:  46% (49349/107280), 28.20 MiB | 1.34 MiB/sReceiving objects:  46% (49506/107280), 28.20 MiB | 1.34 MiB/sReceiving objects:  47% (50422/107280), 28.20 MiB | 1.34 MiB/sReceiving objects:  48% (51495/107280), 28.86 MiB | 1.34 MiB/sReceiving objects:  49% (52568/107280), 29.54 MiB | 1.34 MiB/sReceiving objects:  49% (53358/107280), 29.54 MiB | 1.34 MiB/sReceiving objects:  50% (53640/107280), 29.54 MiB | 1.34 MiB/sReceiving objects:  51% (54713/107280), 30.25 MiB | 1.34 MiB/sReceiving objects:  52% (55786/107280), 30.25 MiB | 1.34 MiB/sReceiving objects:  53% (56859/107280), 30.25 MiB | 1.34 MiB/sReceiving objects:  54% (57932/107280), 30.93 MiB | 1.34 MiB/sReceiving objects:  54% (58589/107280), 30.93 MiB | 1.34 MiB/sReceiving objects:  55% (59004/107280), 30.93 MiB | 1.34 MiB/sReceiving objects:  56% (60077/107280), 30.93 MiB | 1.34 MiB/sReceiving objects:  56% (60539/107280), 32.28 MiB | 1.34 MiB/sReceiving objects:  56% (60580/107280), 33.56 MiB | 1.31 MiB/sReceiving objects:  56% (60636/107280), 34.96 MiB | 1.33 MiB/sReceiving objects:  56% (60651/107280), 36.37 MiB | 1.34 MiB/sReceiving objects:  56% (60702/107280), 37.77 MiB | 1.35 MiB/sReceiving objects:  57% (61150/107280), 39.14 MiB | 1.36 MiB/sReceiving objects:  57% (61210/107280), 39.14 MiB | 1.36 MiB/sReceiving objects:  58% (62223/107280), 39.14 MiB | 1.36 MiB/sReceiving objects:  59% (63296/107280), 39.14 MiB | 1.36 MiB/sReceiving objects:  60% (64368/107280), 39.84 MiB | 1.37 MiB/sReceiving objects:  60% (64868/107280), 40.52 MiB | 1.37 MiB/sReceiving objects:  61% (65441/107280), 40.52 MiB | 1.37 MiB/sReceiving objects:  62% (66514/107280), 40.52 MiB | 1.37 MiB/sReceiving objects:  63% (67587/107280), 41.21 MiB | 1.37 MiB/sReceiving objects:  63% (68246/107280), 41.88 MiB | 1.37 MiB/sReceiving objects:  64% (68660/107280), 41.88 MiB | 1.37 MiB/sReceiving objects:  65% (69732/107280), 42.57 MiB | 1.37 MiB/sReceiving objects:  65% (70709/107280), 43.26 MiB | 1.36 MiB/sReceiving objects:  66% (70805/107280), 43.26 MiB | 1.36 MiB/sReceiving objects:  67% (71878/107280), 43.26 MiB | 1.36 MiB/sReceiving objects:  68% (72951/107280), 43.95 MiB | 1.36 MiB/sReceiving objects:  68% (73049/107280), 44.67 MiB | 1.37 MiB/sReceiving objects:  69% (74024/107280), 44.67 MiB | 1.37 MiB/sReceiving objects:  70% (75096/107280), 45.39 MiB | 1.37 MiB/sReceiving objects:  70% (76030/107280), 45.39 MiB | 1.37 MiB/sReceiving objects:  71% (76169/107280), 45.39 MiB | 1.37 MiB/sReceiving objects:  72% (77242/107280), 46.11 MiB | 1.37 MiB/sReceiving objects:  73% (78315/107280), 46.11 MiB | 1.37 MiB/sReceiving objects:  74% (79388/107280), 46.11 MiB | 1.37 MiB/sReceiving objects:  75% (80460/107280), 46.81 MiB | 1.37 MiB/sReceiving objects:  75% (81434/107280), 46.81 MiB | 1.37 MiB/sReceiving objects:  76% (81533/107280), 46.81 MiB | 1.37 MiB/sReceiving objects:  77% (82606/107280), 47.53 MiB | 1.37 MiB/sReceiving objects:  78% (83679/107280), 47.53 MiB | 1.37 MiB/sReceiving objects:  79% (84752/107280), 48.25 MiB | 1.38 MiB/sReceiving objects:  80% (85824/107280), 48.25 MiB | 1.38 MiB/sReceiving objects:  80% (86224/107280), 48.25 MiB | 1.38 MiB/sReceiving objects:  81% (86897/107280), 48.96 MiB | 1.39 MiB/sReceiving objects:  82% (87970/107280), 48.96 MiB | 1.39 MiB/sReceiving objects:  83% (89043/107280), 48.96 MiB | 1.39 MiB/sReceiving objects:  84% (90116/107280), 49.63 MiB | 1.38 MiB/sReceiving objects:  85% (91188/107280), 49.63 MiB | 1.38 MiB/sReceiving objects:  85% (91843/107280), 49.63 MiB | 1.38 MiB/sReceiving objects:  86% (92261/107280), 50.33 MiB | 1.38 MiB/sReceiving objects:  87% (93334/107280), 50.33 MiB | 1.38 MiB/sReceiving objects:  88% (94407/107280), 50.33 MiB | 1.38 MiB/sReceiving objects:  89% (95480/107280), 51.05 MiB | 1.39 MiB/sReceiving objects:  90% (96552/107280), 51.05 MiB | 1.39 MiB/sReceiving objects:  91% (97625/107280), 51.05 MiB | 1.39 MiB/sReceiving objects:  91% (98171/107280), 51.05 MiB | 1.39 MiB/sReceiving objects:  92% (98698/107280), 51.05 MiB | 1.39 MiB/sReceiving objects:  93% (99771/107280), 51.74 MiB | 1.38 MiB/sReceiving objects:  94% (100844/107280), 51.74 MiB | 1.38 MiB/sReceiving objects:  95% (101916/107280), 51.74 MiB | 1.38 MiB/sReceiving objects:  96% (102989/107280), 52.43 MiB | 1.38 MiB/sReceiving objects:  97% (104062/107280), 52.43 MiB | 1.38 MiB/sReceiving objects:  97% (104334/107280), 52.43 MiB | 1.38 MiB/sReceiving objects:  98% (105135/107280), 53.11 MiB | 1.38 MiB/sReceiving objects:  99% (106208/107280), 53.11 MiB | 1.38 MiB/sremote: Total 107280 (delta 75856), reused 107277 (delta 75853), pack-reused 0[K
+Receiving objects: 100% (107280/107280), 53.79 MiB | 1.38 MiB/sReceiving objects: 100% (107280/107280), 53.99 MiB | 1.36 MiB/s, done.
+Resolving deltas:   0% (0/75856)Resolving deltas:   1% (816/75856)Resolving deltas:   2% (1527/75856)Resolving deltas:   3% (2283/75856)Resolving deltas:   4% (3082/75856)Resolving deltas:   5% (3812/75856)Resolving deltas:   6% (4599/75856)Resolving deltas:   7% (5428/75856)Resolving deltas:   8% (6105/75856)Resolving deltas:   9% (6848/75856)Resolving deltas:  10% (7683/75856)Resolving deltas:  11% (8360/75856)Resolving deltas:  12% (9110/75856)Resolving deltas:  13% (10281/75856)Resolving deltas:  14% (10773/75856)Resolving deltas:  15% (11680/75856)Resolving deltas:  16% (12139/75856)Resolving deltas:  17% (12908/75856)Resolving deltas:  18% (13697/75856)Resolving deltas:  19% (14607/75856)Resolving deltas:  20% (15240/75856)Resolving deltas:  21% (15970/75856)Resolving deltas:  22% (16705/75856)Resolving deltas:  23% (17463/75856)Resolving deltas:  24% (18357/75856)Resolving deltas:  25% (18993/75856)Resolving deltas:  26% (19731/75856)Resolving deltas:  27% (20802/75856)Resolving deltas:  28% (21543/75856)Resolving deltas:  29% (21999/75856)Resolving deltas:  30% (22816/75856)Resolving deltas:  31% (23710/75856)Resolving deltas:  32% (24292/75856)Resolving deltas:  33% (25214/75856)Resolving deltas:  34% (25802/75856)Resolving deltas:  35% (26629/75856)Resolving deltas:  36% (27319/75856)Resolving deltas:  37% (28084/75856)Resolving deltas:  38% (29034/75856)Resolving deltas:  39% (29666/75856)Resolving deltas:  40% (30354/75856)Resolving deltas:  41% (31391/75856)Resolving deltas:  42% (31870/75856)Resolving deltas:  43% (33298/75856)Resolving deltas:  44% (33419/75856)Resolving deltas:  45% (34198/75856)Resolving deltas:  46% (34919/75856)Resolving deltas:  47% (35912/75856)Resolving deltas:  48% (36702/75856)Resolving deltas:  49% (37266/75856)Resolving deltas:  50% (37933/75856)Resolving deltas:  51% (38913/75856)Resolving deltas:  52% (39738/75856)Resolving deltas:  53% (40263/75856)Resolving deltas:  54% (41260/75856)Resolving deltas:  56% (42588/75856)Resolving deltas:  57% (43317/75856)Resolving deltas:  58% (44193/75856)Resolving deltas:  59% (44800/75856)Resolving deltas:  60% (45514/75856)Resolving deltas:  61% (46273/75856)Resolving deltas:  62% (47031/75856)Resolving deltas:  63% (47801/75856)Resolving deltas:  64% (48565/75856)Resolving deltas:  65% (49322/75856)Resolving deltas:  66% (50113/75856)Resolving deltas:  67% (50857/75856)Resolving deltas:  68% (51583/75856)Resolving deltas:  69% (52343/75856)Resolving deltas:  70% (53107/75856)Resolving deltas:  71% (53859/75856)Resolving deltas:  72% (54618/75856)Resolving deltas:  72% (54688/75856)Resolving deltas:  73% (55464/75856)Resolving deltas:  74% (56837/75856)Resolving deltas:  75% (56893/75856)Resolving deltas:  76% (57714/75856)Resolving deltas:  77% (58474/75856)Resolving deltas:  77% (59010/75856)Resolving deltas:  78% (59176/75856)Resolving deltas:  79% (60169/75856)Resolving deltas:  80% (60697/75856)Resolving deltas:  81% (61466/75856)Resolving deltas:  82% (62251/75856)Resolving deltas:  83% (63004/75856)Resolving deltas:  84% (63739/75856)Resolving deltas:  85% (64489/75856)Resolving deltas:  86% (65264/75856)Resolving deltas:  87% (66008/75856)Resolving deltas:  87% (66474/75856)Resolving deltas:  88% (66826/75856)Resolving deltas:  89% (67557/75856)Resolving deltas:  90% (68298/75856)Resolving deltas:  91% (69045/75856)Resolving deltas:  92% (69842/75856)Resolving deltas:  93% (70561/75856)Resolving deltas:  94% (71306/75856)Resolving deltas:  95% (72088/75856)Resolving deltas:  96% (72829/75856)Resolving deltas:  97% (73584/75856)Resolving deltas:  98% (74479/75856)Resolving deltas:  99% (75114/75856)Resolving deltas: 100% (75856/75856)Resolving deltas: 100% (75856/75856), done.
+]777;notify;Command completed;git clone https://github.com/libgit2/libgit2]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlibgit2/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git add README
+fatal: pathspec 'README' did not match any files
+]777;notify;Command completed;git add README]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# i[Kgit diff
+[?1h=[K[?1l>]777;notify;Command completed;git diff]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mlibgit2/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]777;notify;Command completed;git commit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git add libgit2
+warning: adding embedded git repository: libgit2
+[33mhint: You've added another git repository inside your current repository.[m
+[33mhint: Clones of the outer repository will not contain the contents of[m
+[33mhint: the embedded repository and will not know how to obtain it.[m
+[33mhint: If you meant to add a submodule, use:[m
+[33mhint: [m
+[33mhint: 	git submodule add <url> libgit2[m
+[33mhint: [m
+[33mhint: If you added this path by mistake, you can remove it from the[m
+[33mhint: index with:[m
+[33mhint: [m
+[33mhint: 	git rm --cached libgit2[m
+[33mhint: [m
+[33mhint: See "git help submodule" for more information.[m
+]777;notify;Command completed;git add libgit2]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git add libgit2
+]777;notify;Command completed;git add libgit2]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git add README
+fatal: pathspec 'README' did not match any files
+]777;notify;Command completed;git add README]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   libgit2[m
+
+]777;notify;Command completed;git status]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git diff
+[?1h=[K[?1l>]777;notify;Command completed;git diff]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git commut
+git: 'commut' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+]777;notify;Command completed;git commut]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git commit
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"/home/gemerson/COMP3500/new_project1/.git/COMMIT_EDITMSG" 10L, 260C[2;1H# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#[7Cnew file:   libgit2
+#
+[94m~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h
+
+
+
+
+
+
+
+
+[9;1H[7C[?25l[m[24;1H[1m-- INSERT --[m[24;13H[K[9;2H[?25h[8;2H
+#[?25l [?25h[24;1H[K[9;1H[?25l[7C[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l".git/COMMIT_EDITMSG" 10L, 259C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t[K[master 9cba9c1] 	new file:   libgit2
+ 1 file changed, 1 insertion(+)
+ create mode 160000 libgit2
+]777;notify;Command completed;git commit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# git log
+[?1h=[33mcommit 9cba9c1e1ef405ba9c8c6033ae8bcb4a772cce6b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Gabriel Emerson <gte0002@auburn.edu>[m
+Date:   Fri Jan 22 14:03:25 2021 -0600[m
+[m
+            new file:   libgit2[m
+[m
+[33mcommit 32d4cc6ebbd7b5416a99f936d1a29690ad242040[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: Gabriel Emerson <gte0002@auburn.edu>[m
+Date:   Fri Jan 22 13:54:01 2021 -0600[m
+[m
+    Initial project 1[m
+[K[?1l>]777;notify;Command completed;git log]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/new_project1]7;file://gemerson-lynux/home/gemerson/COMP3500/new_project1[root@gemerson-lynux new_project1]# exit
+exit
+
+Script done on 2021-01-22 14:05:54-06:00

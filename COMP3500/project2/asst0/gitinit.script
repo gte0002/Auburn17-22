@@ -1,0 +1,782 @@
+Script started on 2021-02-04 17:05:17-06:00
+]777;notify;Command completed;exit]0;gemerson@localhost:/home/gemerson]7;file://localhost.localdomain/home/gemerson[root@localhost gemerson]# ls
+[0m[38;5;33mCOMP3500[0m  [38;5;33mDesktop[0m    [38;5;33mDownloads[0m  [38;5;33mPictures[0m  [38;5;33mTemplates[0m   [38;5;33mVideos[0m
+[38;5;33mcs161[0m     [38;5;33mDocuments[0m  [38;5;33mMusic[0m      [38;5;33mPublic[0m    typescript
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson]7;file://localhost.localdomain/home/gemerson[root@localhost gemerson]# cd cs161
+]777;notify;Command completed;cd cs161]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# cd os161
+]777;notify;Command completed;cd os161]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# ls
+[0m[38;5;33mbin[0m      [38;5;40mconfigure[0m  defs.mk.sample  [38;5;33mkern[0m  Makefile  [38;5;33mmk[0m    [38;5;33mtestbin[0m
+CHANGES  COPYING    [38;5;33minclude[0m         [38;5;33mlib[0m   [38;5;33mman[0m       [38;5;33msbin[0m
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git init
+bash: git: command not found...
+Install package 'git-core' to provide command 'git'? [N/y] y
+
+
+ * Waiting in queue... 
+The following packages have to be installed:
+ git-core-2.27.0-1.el8.x86_64	Core package of git with minimal functionality
+Proceed with changes? [N/y] y
+
+
+ * Waiting in queue... 
+ * Waiting for authentication... 
+ * Waiting in queue... 
+ * Downloading packages... 
+ * Requesting data... 
+ * Testing changes... 
+ * Installing packages... 
+Initialized empty Git repository in /home/gemerson/cs161/os161/.git/
+
+]777;notify;Command completed;git init]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+]777;notify;Command completed;git remote add origin]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# https://gitlab.eng.auburn.edu/gte0002/os161.git
+bash: https://gitlab.eng.auburn.edu/gte0002/os161.git: No such file or directory
+]777;notify;Command completed;https://gitlab.eng.auburn.edu/gte0002/os161.git]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git remote add origin 
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+]777;notify;Command completed;git remote add origin ]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git remote add origin  https://gitlab.eng.auburn.edu/gte0002/os161.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pgit remote add origin  [K[K https://gitlab.eng.auburn.edu/gte0 002/os161.git
+]777;notify;Command completed;git remote add origin https://gitlab.eng.auburn.edu/gte0002/os161.git]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git add .
+]777;notify;Command completed;git add .]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git commit -m "Initial OS161 commit"
+[master (root-commit) 6d4bf7f] Initial OS161 commit
+ Committer: root <root@localhost.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 656 files changed, 44190 insertions(+)
+ create mode 100644 .cvsignore
+ create mode 100644 CHANGES
+ create mode 100644 COPYING
+ create mode 100644 Makefile
+ create mode 100644 bin/Makefile
+ create mode 100644 bin/cat/.cvsignore
+ create mode 100644 bin/cat/Makefile
+ create mode 100644 bin/cat/cat.c
+ create mode 100644 bin/cat/depend.mk
+ create mode 100644 bin/cp/.cvsignore
+ create mode 100644 bin/cp/Makefile
+ create mode 100644 bin/cp/cp.c
+ create mode 100644 bin/cp/depend.mk
+ create mode 100644 bin/false/.cvsignore
+ create mode 100644 bin/false/Makefile
+ create mode 100644 bin/false/depend.mk
+ create mode 100644 bin/false/false.c
+ create mode 100644 bin/ln/.cvsignore
+ create mode 100644 bin/ln/Makefile
+ create mode 100644 bin/ln/depend.mk
+ create mode 100644 bin/ln/ln.c
+ create mode 100644 bin/ls/.cvsignore
+ create mode 100644 bin/ls/Makefile
+ create mode 100644 bin/ls/depend.mk
+ create mode 100644 bin/ls/ls.c
+ create mode 100644 bin/mkdir/.cvsignore
+ create mode 100644 bin/mkdir/Makefile
+ create mode 100644 bin/mkdir/depend.mk
+ create mode 100644 bin/mkdir/mkdir.c
+ create mode 100644 bin/mv/.cvsignore
+ create mode 100644 bin/mv/Makefile
+ create mode 100644 bin/mv/depend.mk
+ create mode 100644 bin/mv/mv.c
+ create mode 100644 bin/pwd/.cvsignore
+ create mode 100644 bin/pwd/Makefile
+ create mode 100644 bin/pwd/depend.mk
+ create mode 100644 bin/pwd/pwd.c
+ create mode 100644 bin/rm/.cvsignore
+ create mode 100644 bin/rm/Makefile
+ create mode 100644 bin/rm/depend.mk
+ create mode 100644 bin/rm/rm.c
+ create mode 100644 bin/rmdir/.cvsignore
+ create mode 100644 bin/rmdir/Makefile
+ create mode 100644 bin/rmdir/depend.mk
+ create mode 100644 bin/rmdir/rmdir.c
+ create mode 100644 bin/sh/.cvsignore
+ create mode 100644 bin/sh/Makefile
+ create mode 100644 bin/sh/depend.mk
+ create mode 100644 bin/sh/dependh.mk
+ create mode 100644 bin/sh/sh.c
+ create mode 100644 bin/sync/.cvsignore
+ create mode 100644 bin/sync/Makefile
+ create mode 100644 bin/sync/depend.mk
+ create mode 100644 bin/sync/sync.c
+ create mode 100644 bin/true/.cvsignore
+ create mode 100644 bin/true/Makefile
+ create mode 100644 bin/true/depend.mk
+ create mode 100644 bin/true/true.c
+ create mode 100755 configure
+ create mode 100644 defs.mk.sample
+ create mode 100644 include/Makefile
+ create mode 100644 include/assert.h
+ create mode 100644 include/err.h
+ create mode 100644 include/errno.h
+ create mode 100644 include/fcntl.h
+ create mode 100644 include/limits.h
+ create mode 100644 include/setjmp.h
+ create mode 100644 include/stdarg.h
+ create mode 100644 include/stdio.h
+ create mode 100644 include/stdlib.h
+ create mode 100644 include/string.h
+ create mode 100644 include/sys/ioctl.h
+ create mode 100644 include/sys/reboot.h
+ create mode 100644 include/sys/stat.h
+ create mode 100644 include/sys/types.h
+ create mode 100644 include/sys/wait.h
+ create mode 100644 include/time.h
+ create mode 100644 include/unistd.h
+ create mode 100644 kern/Makefile
+ create mode 100644 kern/arch/mips/conf/Makefile.mips
+ create mode 100644 kern/arch/mips/conf/conf.arch
+ create mode 100644 kern/arch/mips/conf/ldscript
+ create mode 100644 kern/arch/mips/include/asmdefs.h
+ create mode 100644 kern/arch/mips/include/bus.h
+ create mode 100644 kern/arch/mips/include/pcb.h
+ create mode 100644 kern/arch/mips/include/setjmp.h
+ create mode 100644 kern/arch/mips/include/specialreg.h
+ create mode 100644 kern/arch/mips/include/spl.h
+ create mode 100644 kern/arch/mips/include/switchframe.h
+ create mode 100644 kern/arch/mips/include/tlb.h
+ create mode 100644 kern/arch/mips/include/trapframe.h
+ create mode 100644 kern/arch/mips/include/types.h
+ create mode 100644 kern/arch/mips/include/vm.h
+ create mode 100644 kern/arch/mips/mips/cache_mips1.S
+ create mode 100644 kern/arch/mips/mips/dumbvm.c
+ create mode 100644 kern/arch/mips/mips/exception.S
+ create mode 100644 kern/arch/mips/mips/interrupt.c
+ create mode 100644 kern/arch/mips/mips/lamebus_mips.c
+ create mode 100644 kern/arch/mips/mips/pcb.c
+ create mode 100644 kern/arch/mips/mips/ram.c
+ create mode 100644 kern/arch/mips/mips/spl.c
+ create mode 100644 kern/arch/mips/mips/start.S
+ create mode 100644 kern/arch/mips/mips/switch.S
+ create mode 100644 kern/arch/mips/mips/syscall.c
+ create mode 100644 kern/arch/mips/mips/threadstart.S
+ create mode 100644 kern/arch/mips/mips/tlb_mips1.S
+ create mode 100644 kern/arch/mips/mips/trap.c
+ create mode 100644 kern/asst1/catlock.c
+ create mode 100644 kern/asst1/catsem.c
+ create mode 100644 kern/asst1/stoplight.c
+ create mode 100644 kern/compile/.cvsignore
+ create mode 100644 kern/conf/ASST0
+ create mode 100644 kern/conf/ASST1
+ create mode 100644 kern/conf/ASST2
+ create mode 100644 kern/conf/ASST2-OPT
+ create mode 100644 kern/conf/ASST3
+ create mode 100644 kern/conf/ASST4
+ create mode 100644 kern/conf/ASST5
+ create mode 100644 kern/conf/conf.kern
+ create mode 100755 kern/conf/config
+ create mode 100755 kern/conf/newvers.sh
+ create mode 100644 kern/dev/generic/beep.c
+ create mode 100644 kern/dev/generic/beep.h
+ create mode 100644 kern/dev/generic/console.c
+ create mode 100644 kern/dev/generic/console.h
+ create mode 100644 kern/dev/generic/pseudorand.c
+ create mode 100644 kern/dev/generic/pseudorand.h
+ create mode 100644 kern/dev/generic/pseudorand_att.c
+ create mode 100644 kern/dev/generic/random.c
+ create mode 100644 kern/dev/generic/random.h
+ create mode 100644 kern/dev/generic/rtclock.c
+ create mode 100644 kern/dev/generic/rtclock.h
+ create mode 100644 kern/dev/init.c
+ create mode 100644 kern/dev/lamebus/beep_ltimer.c
+ create mode 100644 kern/dev/lamebus/con_lscreen.c
+ create mode 100644 kern/dev/lamebus/con_lser.c
+ create mode 100644 kern/dev/lamebus/conf.lamebus
+ create mode 100644 kern/dev/lamebus/emu.c
+ create mode 100644 kern/dev/lamebus/emu.h
+ create mode 100644 kern/dev/lamebus/emu_att.c
+ create mode 100644 kern/dev/lamebus/lamebus.c
+ create mode 100644 kern/dev/lamebus/lamebus.h
+ create mode 100644 kern/dev/lamebus/lhd.c
+ create mode 100644 kern/dev/lamebus/lhd.h
+ create mode 100644 kern/dev/lamebus/lhd_att.c
+ create mode 100644 kern/dev/lamebus/lnet.c
+ create mode 100644 kern/dev/lamebus/lnet_att.c
+ create mode 100644 kern/dev/lamebus/lrandom.c
+ create mode 100644 kern/dev/lamebus/lrandom.h
+ create mode 100644 kern/dev/lamebus/lrandom_att.c
+ create mode 100644 kern/dev/lamebus/lscreen.c
+ create mode 100644 kern/dev/lamebus/lscreen.h
+ create mode 100644 kern/dev/lamebus/lscreen_att.c
+ create mode 100644 kern/dev/lamebus/lser.c
+ create mode 100644 kern/dev/lamebus/lser.h
+ create mode 100644 kern/dev/lamebus/lser_att.c
+ create mode 100644 kern/dev/lamebus/ltimer.c
+ create mode 100644 kern/dev/lamebus/ltimer.h
+ create mode 100644 kern/dev/lamebus/ltimer_att.c
+ create mode 100644 kern/dev/lamebus/ltrace.c
+ create mode 100644 kern/dev/lamebus/ltrace.h
+ create mode 100644 kern/dev/lamebus/ltrace_att.c
+ create mode 100644 kern/dev/lamebus/random_lrandom.c
+ create mode 100644 kern/dev/lamebus/rtclock_ltimer.c
+ create mode 100644 kern/fs/sfs/sfs_fs.c
+ create mode 100644 kern/fs/sfs/sfs_io.c
+ create mode 100644 kern/fs/sfs/sfs_vnode.c
+ create mode 100644 kern/fs/vfs/device.c
+ create mode 100644 kern/fs/vfs/devnull.c
+ create mode 100644 kern/fs/vfs/vfscwd.c
+ create mode 100644 kern/fs/vfs/vfslist.c
+ create mode 100644 kern/fs/vfs/vfslookup.c
+ create mode 100644 kern/fs/vfs/vfspath.c
+ create mode 100644 kern/fs/vfs/vnode.c
+ create mode 100644 kern/include/addrspace.h
+ create mode 100644 kern/include/array.h
+ create mode 100644 kern/include/bitmap.h
+ create mode 100644 kern/include/clock.h
+ create mode 100644 kern/include/curthread.h
+ create mode 100644 kern/include/dev.h
+ create mode 100644 kern/include/elf.h
+ create mode 100644 kern/include/emufs.h
+ create mode 100644 kern/include/fs.h
+ create mode 100644 kern/include/kern/callno.h
+ create mode 100644 kern/include/kern/errmsg.h
+ create mode 100644 kern/include/kern/errno.h
+ create mode 100644 kern/include/kern/ioctl.h
+ create mode 100644 kern/include/kern/limits.h
+ create mode 100644 kern/include/kern/sfs.h
+ create mode 100644 kern/include/kern/stat.h
+ create mode 100644 kern/include/kern/types.h
+ create mode 100644 kern/include/kern/unistd.h
+ create mode 100644 kern/include/lib.h
+ create mode 100644 kern/include/queue.h
+ create mode 100644 kern/include/scheduler.h
+ create mode 100644 kern/include/sfs.h
+ create mode 100644 kern/include/stdarg.h
+ create mode 100644 kern/include/synch.h
+ create mode 100644 kern/include/syscall.h
+ create mode 100644 kern/include/test.h
+ create mode 100644 kern/include/thread.h
+ create mode 100644 kern/include/types.h
+ create mode 100644 kern/include/uio.h
+ create mode 100644 kern/include/version.h
+ create mode 100644 kern/include/vfs.h
+ create mode 100644 kern/include/vm.h
+ create mode 100644 kern/include/vnode.h
+ create mode 100644 kern/lib/array.c
+ create mode 100644 kern/lib/bitmap.c
+ create mode 100644 kern/lib/copyinout.c
+ create mode 100644 kern/lib/kgets.c
+ create mode 100644 kern/lib/kheap.c
+ create mode 100644 kern/lib/kprintf.c
+ create mode 100644 kern/lib/misc.c
+ create mode 100644 kern/lib/ntoh.c
+ create mode 100644 kern/lib/queue.c
+ create mode 100644 kern/main/main.c
+ create mode 100644 kern/main/menu.c
+ create mode 100644 kern/test/arraytest.c
+ create mode 100644 kern/test/bitmaptest.c
+ create mode 100644 kern/test/fstest.c
+ create mode 100644 kern/test/malloctest.c
+ create mode 100644 kern/test/nettest.c
+ create mode 100644 kern/test/queuetest.c
+ create mode 100644 kern/test/synchtest.c
+ create mode 100644 kern/test/threadtest.c
+ create mode 100644 kern/test/tt3.c
+ create mode 100644 kern/thread/hardclock.c
+ create mode 100644 kern/thread/scheduler.c
+ create mode 100644 kern/thread/synch.c
+ create mode 100644 kern/thread/thread.c
+ create mode 100644 kern/userprog/loadelf.c
+ create mode 100644 kern/userprog/runprogram.c
+ create mode 100644 kern/userprog/uio.c
+ create mode 100644 kern/vm/addrspace.c
+ create mode 100644 lib/Makefile
+ create mode 100644 lib/crt0/Makefile
+ create mode 100644 lib/crt0/mips-crt0.S
+ create mode 100644 lib/hostcompat/.cvsignore
+ create mode 100644 lib/hostcompat/Makefile
+ create mode 100644 lib/hostcompat/dependh.mk
+ create mode 100644 lib/hostcompat/err.c
+ create mode 100644 lib/hostcompat/host-err.h
+ create mode 100644 lib/hostcompat/hostcompat.c
+ create mode 100644 lib/hostcompat/hostcompat.h
+ create mode 100644 lib/hostcompat/time.c
+ create mode 100644 lib/libc/.cvsignore
+ create mode 100644 lib/libc/Makefile
+ create mode 100644 lib/libc/__assert.c
+ create mode 100644 lib/libc/__printf.c
+ create mode 100644 lib/libc/__puts.c
+ create mode 100644 lib/libc/abort.c
+ create mode 100644 lib/libc/atoi.c
+ create mode 100644 lib/libc/bzero.c
+ create mode 100755 lib/libc/callno-parse.sh
+ create mode 100644 lib/libc/depend.mk
+ create mode 100644 lib/libc/err.c
+ create mode 100644 lib/libc/errno.c
+ create mode 100644 lib/libc/exit.c
+ create mode 100644 lib/libc/getchar.c
+ create mode 100644 lib/libc/getcwd.c
+ create mode 100644 lib/libc/memcmp.c
+ create mode 100644 lib/libc/memcpy.c
+ create mode 100644 lib/libc/memmove.c
+ create mode 100644 lib/libc/memset.c
+ create mode 100644 lib/libc/mips-setjmp.S
+ create mode 100644 lib/libc/printf.c
+ create mode 100644 lib/libc/putchar.c
+ create mode 100644 lib/libc/puts.c
+ create mode 100644 lib/libc/random.c
+ create mode 100644 lib/libc/snprintf.c
+ create mode 100644 lib/libc/strcat.c
+ create mode 100644 lib/libc/strchr.c
+ create mode 100644 lib/libc/strcmp.c
+ create mode 100644 lib/libc/strcpy.c
+ create mode 100644 lib/libc/strerror.c
+ create mode 100644 lib/libc/strlen.c
+ create mode 100644 lib/libc/strrchr.c
+ create mode 100644 lib/libc/strtok.c
+ create mode 100644 lib/libc/strtok_r.c
+ create mode 100644 lib/libc/syscalls-mips.S
+ create mode 100644 lib/libc/system.c
+ create mode 100644 lib/libc/time.c
+ create mode 100644 man/Makefile
+ create mode 100644 man/bin/Makefile
+ create mode 100644 man/bin/cat.html
+ create mode 100644 man/bin/cp.html
+ create mode 100644 man/bin/false.html
+ create mode 100644 man/bin/index.html
+ create mode 100644 man/bin/ln.html
+ create mode 100644 man/bin/ls.html
+ create mode 100644 man/bin/mkdir.html
+ create mode 100644 man/bin/mv.html
+ create mode 100644 man/bin/pwd.html
+ create mode 100644 man/bin/rm.html
+ create mode 100644 man/bin/rmdir.html
+ create mode 100644 man/bin/sh.html
+ create mode 100644 man/bin/sync.html
+ create mode 100644 man/bin/true.html
+ create mode 100644 man/dev/Makefile
+ create mode 100644 man/dev/beep.html
+ create mode 100644 man/dev/con.html
+ create mode 100644 man/dev/emu.html
+ create mode 100644 man/dev/index.html
+ create mode 100644 man/dev/lamebus.html
+ create mode 100644 man/dev/lhd.html
+ create mode 100644 man/dev/lnet.html
+ create mode 100644 man/dev/lrandom.html
+ create mode 100644 man/dev/lscreen.html
+ create mode 100644 man/dev/lser.html
+ create mode 100644 man/dev/ltimer.html
+ create mode 100644 man/dev/null.html
+ create mode 100644 man/dev/pseudorand.html
+ create mode 100644 man/dev/random.html
+ create mode 100644 man/dev/rtclock.html
+ create mode 100644 man/libc/Makefile
+ create mode 100644 man/libc/__vprintf.html
+ create mode 100644 man/libc/abort.html
+ create mode 100644 man/libc/assert.html
+ create mode 100644 man/libc/atoi.html
+ create mode 100644 man/libc/bzero.html
+ create mode 100644 man/libc/calloc.html
+ create mode 100644 man/libc/err.html
+ create mode 100644 man/libc/exit.html
+ create mode 100644 man/libc/free.html
+ create mode 100644 man/libc/getchar.html
+ create mode 100644 man/libc/getcwd.html
+ create mode 100644 man/libc/index.html
+ create mode 100644 man/libc/malloc.html
+ create mode 100644 man/libc/memcpy.html
+ create mode 100644 man/libc/memmove.html
+ create mode 100644 man/libc/memset.html
+ create mode 100644 man/libc/printf.html
+ create mode 100644 man/libc/putchar.html
+ create mode 100644 man/libc/puts.html
+ create mode 100644 man/libc/random.html
+ create mode 100644 man/libc/realloc.html
+ create mode 100644 man/libc/setjmp.html
+ create mode 100644 man/libc/snprintf.html
+ create mode 100644 man/libc/stdarg.html
+ create mode 100644 man/libc/strcat.html
+ create mode 100644 man/libc/strchr.html
+ create mode 100644 man/libc/strcmp.html
+ create mode 100644 man/libc/strcpy.html
+ create mode 100644 man/libc/strerror.html
+ create mode 100644 man/libc/strlen.html
+ create mode 100644 man/libc/strrchr.html
+ create mode 100644 man/libc/strtok.html
+ create mode 100644 man/libc/strtok_r.html
+ create mode 100644 man/libc/system.html
+ create mode 100644 man/libc/time.html
+ create mode 100644 man/libc/warn.html
+ create mode 100644 man/misc/Makefile
+ create mode 100644 man/misc/index.html
+ create mode 100644 man/sbin/Makefile
+ create mode 100644 man/sbin/dumpsfs.html
+ create mode 100644 man/sbin/halt.html
+ create mode 100644 man/sbin/index.html
+ create mode 100644 man/sbin/mksfs.html
+ create mode 100644 man/sbin/poweroff.html
+ create mode 100644 man/sbin/reboot.html
+ create mode 100644 man/syscall/Makefile
+ create mode 100644 man/syscall/__getcwd.html
+ create mode 100644 man/syscall/__time.html
+ create mode 100644 man/syscall/_exit.html
+ create mode 100644 man/syscall/chdir.html
+ create mode 100644 man/syscall/close.html
+ create mode 100644 man/syscall/dup2.html
+ create mode 100644 man/syscall/errno.html
+ create mode 100644 man/syscall/execv.html
+ create mode 100644 man/syscall/fork.html
+ create mode 100644 man/syscall/fstat.html
+ create mode 100644 man/syscall/fsync.html
+ create mode 100644 man/syscall/ftruncate.html
+ create mode 100644 man/syscall/getdirentry.html
+ create mode 100644 man/syscall/getpid.html
+ create mode 100644 man/syscall/index.html
+ create mode 100644 man/syscall/ioctl.html
+ create mode 100644 man/syscall/link.html
+ create mode 100644 man/syscall/lseek.html
+ create mode 100644 man/syscall/lstat.html
+ create mode 100644 man/syscall/mkdir.html
+ create mode 100644 man/syscall/open.html
+ create mode 100644 man/syscall/pipe.html
+ create mode 100644 man/syscall/read.html
+ create mode 100644 man/syscall/readlink.html
+ create mode 100644 man/syscall/reboot.html
+ create mode 100644 man/syscall/remove.html
+ create mode 100644 man/syscall/rename.html
+ create mode 100644 man/syscall/rmdir.html
+ create mode 100644 man/syscall/sbrk.html
+ create mode 100644 man/syscall/stat.html
+ create mode 100644 man/syscall/symlink.html
+ create mode 100644 man/syscall/sync.html
+ create mode 100644 man/syscall/waitpid.html
+ create mode 100644 man/syscall/write.html
+ create mode 100644 man/testbin/Makefile
+ create mode 100644 man/testbin/add.html
+ create mode 100644 man/testbin/argtest.html
+ create mode 100644 man/testbin/badcall.html
+ create mode 100644 man/testbin/bigfile.html
+ create mode 100644 man/testbin/conman.html
+ create mode 100644 man/testbin/crash.html
+ create mode 100644 man/testbin/ctest.html
+ create mode 100644 man/testbin/dirseek.html
+ create mode 100644 man/testbin/dirtest.html
+ create mode 100644 man/testbin/f_test.html
+ create mode 100644 man/testbin/farm.html
+ create mode 100644 man/testbin/faulter.html
+ create mode 100644 man/testbin/filetest.html
+ create mode 100644 man/testbin/forkbomb.html
+ create mode 100644 man/testbin/forktest.html
+ create mode 100644 man/testbin/guzzle.html
+ create mode 100644 man/testbin/hash.html
+ create mode 100644 man/testbin/hog.html
+ create mode 100644 man/testbin/huge.html
+ create mode 100644 man/testbin/index.html
+ create mode 100644 man/testbin/kitchen.html
+ create mode 100644 man/testbin/malloctest.html
+ create mode 100644 man/testbin/matmult.html
+ create mode 100644 man/testbin/palin.html
+ create mode 100644 man/testbin/randcall.html
+ create mode 100644 man/testbin/rmdirtest.html
+ create mode 100644 man/testbin/rmtest.html
+ create mode 100644 man/testbin/sink.html
+ create mode 100644 man/testbin/sort.html
+ create mode 100644 man/testbin/sty.html
+ create mode 100644 man/testbin/tail.html
+ create mode 100644 man/testbin/tictac.html
+ create mode 100644 man/testbin/triplehuge.html
+ create mode 100644 man/testbin/triplemat.html
+ create mode 100644 man/testbin/triplesort.html
+ create mode 100644 man/testbin/userthreads.html
+ create mode 100644 man/toplevel/Makefile
+ create mode 100644 man/toplevel/index.html
+ create mode 100644 mk/hostprog.mk
+ create mode 100644 mk/lib.mk
+ create mode 100644 mk/man.mk
+ create mode 100644 mk/prog.mk
+ create mode 100644 sbin/Makefile
+ create mode 100644 sbin/dumpsfs/.cvsignore
+ create mode 100644 sbin/dumpsfs/Makefile
+ create mode 100644 sbin/dumpsfs/depend.mk
+ create mode 100644 sbin/dumpsfs/dependh.mk
+ create mode 100644 sbin/dumpsfs/dumpsfs.c
+ create mode 100644 sbin/halt/.cvsignore
+ create mode 100644 sbin/halt/Makefile
+ create mode 100644 sbin/halt/depend.mk
+ create mode 100644 sbin/halt/halt.c
+ create mode 100644 sbin/mksfs/.cvsignore
+ create mode 100644 sbin/mksfs/Makefile
+ create mode 100644 sbin/mksfs/depend.mk
+ create mode 100644 sbin/mksfs/dependh.mk
+ create mode 100644 sbin/mksfs/disk.c
+ create mode 100644 sbin/mksfs/disk.h
+ create mode 100644 sbin/mksfs/mksfs.c
+ create mode 100644 sbin/mksfs/support.c
+ create mode 100644 sbin/mksfs/support.h
+ create mode 100644 sbin/poweroff/.cvsignore
+ create mode 100644 sbin/poweroff/Makefile
+ create mode 100644 sbin/poweroff/depend.mk
+ create mode 100644 sbin/poweroff/poweroff.c
+ create mode 100644 sbin/reboot/.cvsignore
+ create mode 100644 sbin/reboot/Makefile
+ create mode 100644 sbin/reboot/depend.mk
+ create mode 100644 sbin/reboot/reboot.c
+ create mode 100644 testbin/Makefile
+ create mode 100644 testbin/add/.cvsignore
+ create mode 100644 testbin/add/Makefile
+ create mode 100644 testbin/add/add.c
+ create mode 100644 testbin/add/depend.mk
+ create mode 100644 testbin/argtest/.cvsignore
+ create mode 100644 testbin/argtest/Makefile
+ create mode 100644 testbin/argtest/argtest.c
+ create mode 100644 testbin/argtest/depend.mk
+ create mode 100644 testbin/badcall/.cvsignore
+ create mode 100644 testbin/badcall/Makefile
+ create mode 100644 testbin/badcall/bad_chdir.c
+ create mode 100644 testbin/badcall/bad_close.c
+ create mode 100644 testbin/badcall/bad_dup2.c
+ create mode 100644 testbin/badcall/bad_execv.c
+ create mode 100644 testbin/badcall/bad_fsync.c
+ create mode 100644 testbin/badcall/bad_ftruncate.c
+ create mode 100644 testbin/badcall/bad_getcwd.c
+ create mode 100644 testbin/badcall/bad_getdirentry.c
+ create mode 100644 testbin/badcall/bad_ioctl.c
+ create mode 100644 testbin/badcall/bad_link.c
+ create mode 100644 testbin/badcall/bad_lseek.c
+ create mode 100644 testbin/badcall/bad_mkdir.c
+ create mode 100644 testbin/badcall/bad_open.c
+ create mode 100644 testbin/badcall/bad_pipe.c
+ create mode 100644 testbin/badcall/bad_read.c
+ create mode 100644 testbin/badcall/bad_readlink.c
+ create mode 100644 testbin/badcall/bad_reboot.c
+ create mode 100644 testbin/badcall/bad_remove.c
+ create mode 100644 testbin/badcall/bad_rename.c
+ create mode 100644 testbin/badcall/bad_rmdir.c
+ create mode 100644 testbin/badcall/bad_sbrk.c
+ create mode 100644 testbin/badcall/bad_stat.c
+ create mode 100644 testbin/badcall/bad_symlink.c
+ create mode 100644 testbin/badcall/bad_time.c
+ create mode 100644 testbin/badcall/bad_waitpid.c
+ create mode 100644 testbin/badcall/bad_write.c
+ create mode 100644 testbin/badcall/common_buf.c
+ create mode 100644 testbin/badcall/common_fds.c
+ create mode 100644 testbin/badcall/common_path.c
+ create mode 100644 testbin/badcall/config.h
+ create mode 100644 testbin/badcall/depend.mk
+ create mode 100644 testbin/badcall/driver.c
+ create mode 100644 testbin/badcall/test.h
+ create mode 100644 testbin/bigfile/.cvsignore
+ create mode 100644 testbin/bigfile/Makefile
+ create mode 100644 testbin/bigfile/bigfile.c
+ create mode 100644 testbin/bigfile/depend.mk
+ create mode 100644 testbin/conman/.cvsignore
+ create mode 100644 testbin/conman/Makefile
+ create mode 100644 testbin/conman/conman.c
+ create mode 100644 testbin/conman/depend.mk
+ create mode 100644 testbin/crash/.cvsignore
+ create mode 100644 testbin/crash/Makefile
+ create mode 100644 testbin/crash/crash.c
+ create mode 100644 testbin/crash/depend.mk
+ create mode 100644 testbin/ctest/.cvsignore
+ create mode 100644 testbin/ctest/Makefile
+ create mode 100644 testbin/ctest/ctest.c
+ create mode 100644 testbin/ctest/depend.mk
+ create mode 100644 testbin/dirconc/.cvsignore
+ create mode 100644 testbin/dirconc/Makefile
+ create mode 100644 testbin/dirconc/depend.mk
+ create mode 100644 testbin/dirconc/dirconc.c
+ create mode 100644 testbin/dirseek/.cvsignore
+ create mode 100644 testbin/dirseek/Makefile
+ create mode 100644 testbin/dirseek/depend.mk
+ create mode 100644 testbin/dirseek/dirseek.c
+ create mode 100644 testbin/dirtest/.cvsignore
+ create mode 100644 testbin/dirtest/Makefile
+ create mode 100644 testbin/dirtest/depend.mk
+ create mode 100644 testbin/dirtest/dirtest.c
+ create mode 100644 testbin/f_test/.cvsignore
+ create mode 100644 testbin/f_test/Makefile
+ create mode 100644 testbin/f_test/depend.mk
+ create mode 100644 testbin/f_test/f_hdr.h
+ create mode 100644 testbin/f_test/f_read.c
+ create mode 100644 testbin/f_test/f_test.c
+ create mode 100644 testbin/f_test/f_write.c
+ create mode 100644 testbin/farm/.cvsignore
+ create mode 100644 testbin/farm/Makefile
+ create mode 100644 testbin/farm/depend.mk
+ create mode 100644 testbin/farm/farm.c
+ create mode 100644 testbin/faulter/.cvsignore
+ create mode 100644 testbin/faulter/Makefile
+ create mode 100644 testbin/faulter/depend.mk
+ create mode 100644 testbin/faulter/faulter.c
+ create mode 100644 testbin/filetest/.cvsignore
+ create mode 100644 testbin/filetest/Makefile
+ create mode 100644 testbin/filetest/depend.mk
+ create mode 100644 testbin/filetest/filetest.c
+ create mode 100644 testbin/forkbomb/.cvsignore
+ create mode 100644 testbin/forkbomb/Makefile
+ create mode 100644 testbin/forkbomb/depend.mk
+ create mode 100644 testbin/forkbomb/forkbomb.c
+ create mode 100644 testbin/forktest/.cvsignore
+ create mode 100644 testbin/forktest/Makefile
+ create mode 100644 testbin/forktest/depend.mk
+ create mode 100644 testbin/forktest/forktest.c
+ create mode 100644 testbin/guzzle/.cvsignore
+ create mode 100644 testbin/guzzle/Makefile
+ create mode 100644 testbin/guzzle/depend.mk
+ create mode 100644 testbin/guzzle/guzzle.c
+ create mode 100644 testbin/hash/.cvsignore
+ create mode 100644 testbin/hash/Makefile
+ create mode 100644 testbin/hash/depend.mk
+ create mode 100644 testbin/hash/dependh.mk
+ create mode 100644 testbin/hash/hash.c
+ create mode 100644 testbin/hog/.cvsignore
+ create mode 100644 testbin/hog/Makefile
+ create mode 100644 testbin/hog/depend.mk
+ create mode 100644 testbin/hog/hog.c
+ create mode 100644 testbin/huge/.cvsignore
+ create mode 100644 testbin/huge/Makefile
+ create mode 100644 testbin/huge/depend.mk
+ create mode 100644 testbin/huge/huge.c
+ create mode 100644 testbin/kitchen/.cvsignore
+ create mode 100644 testbin/kitchen/Makefile
+ create mode 100644 testbin/kitchen/depend.mk
+ create mode 100644 testbin/kitchen/kitchen.c
+ create mode 100644 testbin/malloctest/.cvsignore
+ create mode 100644 testbin/malloctest/Makefile
+ create mode 100644 testbin/malloctest/depend.mk
+ create mode 100644 testbin/malloctest/malloctest.c
+ create mode 100644 testbin/matmult/.cvsignore
+ create mode 100644 testbin/matmult/Makefile
+ create mode 100644 testbin/matmult/depend.mk
+ create mode 100644 testbin/matmult/matmult-orig.c
+ create mode 100644 testbin/matmult/matmult.c
+ create mode 100644 testbin/palin/.cvsignore
+ create mode 100644 testbin/palin/Makefile
+ create mode 100644 testbin/palin/depend.mk
+ create mode 100644 testbin/palin/palin.c
+ create mode 100644 testbin/parallelvm/.cvsignore
+ create mode 100644 testbin/parallelvm/Makefile
+ create mode 100644 testbin/parallelvm/depend.mk
+ create mode 100644 testbin/parallelvm/parallelvm.c
+ create mode 100644 testbin/randcall/.cvsignore
+ create mode 100644 testbin/randcall/Makefile
+ create mode 100644 testbin/randcall/callspecs.txt
+ create mode 100644 testbin/randcall/depend.mk
+ create mode 100644 testbin/randcall/extern.h
+ create mode 100755 testbin/randcall/gencalls.sh
+ create mode 100644 testbin/randcall/main.c
+ create mode 100644 testbin/rmdirtest/.cvsignore
+ create mode 100644 testbin/rmdirtest/Makefile
+ create mode 100644 testbin/rmdirtest/depend.mk
+ create mode 100644 testbin/rmdirtest/rmdirtest.c
+ create mode 100644 testbin/rmtest/.cvsignore
+ create mode 100644 testbin/rmtest/Makefile
+ create mode 100644 testbin/rmtest/depend.mk
+ create mode 100644 testbin/rmtest/rmtest.c
+ create mode 100644 testbin/sink/.cvsignore
+ create mode 100644 testbin/sink/Makefile
+ create mode 100644 testbin/sink/depend.mk
+ create mode 100644 testbin/sink/sink.c
+ create mode 100644 testbin/sort/.cvsignore
+ create mode 100644 testbin/sort/Makefile
+ create mode 100644 testbin/sort/depend.mk
+ create mode 100644 testbin/sort/sort.c
+ create mode 100644 testbin/sty/.cvsignore
+ create mode 100644 testbin/sty/Makefile
+ create mode 100644 testbin/sty/depend.mk
+ create mode 100644 testbin/sty/sty.c
+ create mode 100644 testbin/tail/.cvsignore
+ create mode 100644 testbin/tail/Makefile
+ create mode 100644 testbin/tail/depend.mk
+ create mode 100644 testbin/tail/tail.c
+ create mode 100644 testbin/tictac/.cvsignore
+ create mode 100644 testbin/tictac/Makefile
+ create mode 100644 testbin/tictac/depend.mk
+ create mode 100644 testbin/tictac/tictac.c
+ create mode 100644 testbin/triplehuge/.cvsignore
+ create mode 100644 testbin/triplehuge/Makefile
+ create mode 100644 testbin/triplehuge/depend.mk
+ create mode 100644 testbin/triplehuge/triple.c
+ create mode 100644 testbin/triplehuge/triple.h
+ create mode 100644 testbin/triplehuge/triplehuge.c
+ create mode 100644 testbin/triplemat/.cvsignore
+ create mode 100644 testbin/triplemat/Makefile
+ create mode 100644 testbin/triplemat/depend.mk
+ create mode 100644 testbin/triplemat/triplemat.c
+ create mode 100644 testbin/triplesort/.cvsignore
+ create mode 100644 testbin/triplesort/Makefile
+ create mode 100644 testbin/triplesort/depend.mk
+ create mode 100644 testbin/triplesort/triplesort.c
+ create mode 100644 testbin/userthreads/.cvsignore
+ create mode 100644 testbin/userthreads/Makefile
+ create mode 100644 testbin/userthreads/depend.mk
+ create mode 100644 testbin/userthreads/userthreads.c
+]777;notify;Command completed;git commit -m "Initial OS161 commit"]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# git push -u origin master
+No protocol specified
+
+(gnome-ssh-askpass:149441): Gtk-[1;33mWARNING[0m **: [34m17:12:14.184[0m: cannot open display: :0
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Username for 'https://gitlab.eng.auburn.edu': gte0002
+No protocol specified
+
+(gnome-ssh-askpass:149442): Gtk-[1;33mWARNING[0m **: [34m17:12:19.830[0m: cannot open display: :0
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Password for 'https://gte0002@gitlab.eng.auburn.edu': 
+Enumerating objects: 751, done.
+Counting objects:   0% (1/751)Counting objects:   1% (8/751)Counting objects:   2% (16/751)Counting objects:   3% (23/751)Counting objects:   4% (31/751)Counting objects:   5% (38/751)Counting objects:   6% (46/751)Counting objects:   7% (53/751)Counting objects:   8% (61/751)Counting objects:   9% (68/751)Counting objects:  10% (76/751)Counting objects:  11% (83/751)Counting objects:  12% (91/751)Counting objects:  13% (98/751)Counting objects:  14% (106/751)Counting objects:  15% (113/751)Counting objects:  16% (121/751)Counting objects:  17% (128/751)Counting objects:  18% (136/751)Counting objects:  19% (143/751)Counting objects:  20% (151/751)Counting objects:  21% (158/751)Counting objects:  22% (166/751)Counting objects:  23% (173/751)Counting objects:  24% (181/751)Counting objects:  25% (188/751)Counting objects:  26% (196/751)Counting objects:  27% (203/751)Counting objects:  28% (211/751)Counting objects:  29% (218/751)Counting objects:  30% (226/751)Counting objects:  31% (233/751)Counting objects:  32% (241/751)Counting objects:  33% (248/751)Counting objects:  34% (256/751)Counting objects:  35% (263/751)Counting objects:  36% (271/751)Counting objects:  37% (278/751)Counting objects:  38% (286/751)Counting objects:  39% (293/751)Counting objects:  40% (301/751)Counting objects:  41% (308/751)Counting objects:  42% (316/751)Counting objects:  43% (323/751)Counting objects:  44% (331/751)Counting objects:  45% (338/751)Counting objects:  46% (346/751)Counting objects:  47% (353/751)Counting objects:  48% (361/751)Counting objects:  49% (368/751)Counting objects:  50% (376/751)Counting objects:  51% (384/751)Counting objects:  52% (391/751)Counting objects:  53% (399/751)Counting objects:  54% (406/751)Counting objects:  55% (414/751)Counting objects:  56% (421/751)Counting objects:  57% (429/751)Counting objects:  58% (436/751)Counting objects:  59% (444/751)Counting objects:  60% (451/751)Counting objects:  61% (459/751)Counting objects:  62% (466/751)Counting objects:  63% (474/751)Counting objects:  64% (481/751)Counting objects:  65% (489/751)Counting objects:  66% (496/751)Counting objects:  67% (504/751)Counting objects:  68% (511/751)Counting objects:  69% (519/751)Counting objects:  70% (526/751)Counting objects:  71% (534/751)Counting objects:  72% (541/751)Counting objects:  73% (549/751)Counting objects:  74% (556/751)Counting objects:  75% (564/751)Counting objects:  76% (571/751)Counting objects:  77% (579/751)Counting objects:  78% (586/751)Counting objects:  79% (594/751)Counting objects:  80% (601/751)Counting objects:  81% (609/751)Counting objects:  82% (616/751)Counting objects:  83% (624/751)Counting objects:  84% (631/751)Counting objects:  85% (639/751)Counting objects:  86% (646/751)Counting objects:  87% (654/751)Counting objects:  88% (661/751)Counting objects:  89% (669/751)Counting objects:  90% (676/751)Counting objects:  91% (684/751)Counting objects:  92% (691/751)Counting objects:  93% (699/751)Counting objects:  94% (706/751)Counting objects:  95% (714/751)Counting objects:  96% (721/751)Counting objects:  97% (729/751)Counting objects:  98% (736/751)Counting objects:  99% (744/751)Counting objects: 100% (751/751)Counting objects: 100% (751/751), done.
+Compressing objects:   0% (1/686)Compressing objects:   1% (7/686)Compressing objects:   2% (14/686)Compressing objects:   3% (21/686)Compressing objects:   4% (28/686)Compressing objects:   5% (35/686)Compressing objects:   6% (42/686)Compressing objects:   7% (49/686)Compressing objects:   8% (55/686)Compressing objects:   9% (62/686)Compressing objects:  10% (69/686)Compressing objects:  11% (76/686)Compressing objects:  12% (83/686)Compressing objects:  13% (90/686)Compressing objects:  14% (97/686)Compressing objects:  15% (103/686)Compressing objects:  16% (110/686)Compressing objects:  17% (117/686)Compressing objects:  18% (124/686)Compressing objects:  19% (131/686)Compressing objects:  20% (138/686)Compressing objects:  21% (145/686)Compressing objects:  22% (151/686)Compressing objects:  23% (158/686)Compressing objects:  24% (165/686)Compressing objects:  25% (172/686)Compressing objects:  26% (179/686)Compressing objects:  27% (186/686)Compressing objects:  28% (193/686)Compressing objects:  29% (199/686)Compressing objects:  30% (206/686)Compressing objects:  31% (213/686)Compressing objects:  32% (220/686)Compressing objects:  33% (227/686)Compressing objects:  34% (234/686)Compressing objects:  35% (241/686)Compressing objects:  36% (247/686)Compressing objects:  37% (254/686)Compressing objects:  38% (261/686)Compressing objects:  39% (268/686)Compressing objects:  40% (275/686)Compressing objects:  41% (282/686)Compressing objects:  42% (289/686)Compressing objects:  43% (295/686)Compressing objects:  44% (302/686)Compressing objects:  45% (309/686)Compressing objects:  46% (316/686)Compressing objects:  47% (323/686)Compressing objects:  48% (330/686)Compressing objects:  49% (337/686)Compressing objects:  50% (343/686)Compressing objects:  51% (350/686)Compressing objects:  52% (357/686)Compressing objects:  53% (364/686)Compressing objects:  54% (371/686)Compressing objects:  55% (378/686)Compressing objects:  56% (385/686)Compressing objects:  57% (392/686)Compressing objects:  58% (398/686)Compressing objects:  59% (405/686)Compressing objects:  60% (412/686)Compressing objects:  61% (419/686)Compressing objects:  62% (426/686)Compressing objects:  63% (433/686)Compressing objects:  64% (440/686)Compressing objects:  65% (446/686)Compressing objects:  66% (453/686)Compressing objects:  67% (460/686)Compressing objects:  68% (467/686)Compressing objects:  69% (474/686)Compressing objects:  70% (481/686)Compressing objects:  71% (488/686)Compressing objects:  72% (494/686)Compressing objects:  73% (501/686)Compressing objects:  74% (508/686)Compressing objects:  75% (515/686)Compressing objects:  76% (522/686)Compressing objects:  77% (529/686)Compressing objects:  78% (536/686)Compressing objects:  79% (542/686)Compressing objects:  80% (549/686)Compressing objects:  81% (556/686)Compressing objects:  82% (563/686)Compressing objects:  83% (570/686)Compressing objects:  84% (577/686)Compressing objects:  85% (584/686)Compressing objects:  86% (590/686)Compressing objects:  87% (597/686)Compressing objects:  88% (604/686)Compressing objects:  89% (611/686)Compressing objects:  90% (618/686)Compressing objects:  91% (625/686)Compressing objects:  92% (632/686)Compressing objects:  93% (638/686)Compressing objects:  94% (645/686)Compressing objects:  95% (652/686)Compressing objects:  96% (659/686)Compressing objects:  97% (666/686)Compressing objects:  98% (673/686)Compressing objects:  99% (680/686)Compressing objects: 100% (686/686)Compressing objects: 100% (686/686), done.
+Writing objects:   0% (1/751)Writing objects:   1% (8/751)Writing objects:   2% (16/751)Writing objects:   3% (23/751)Writing objects:   4% (31/751)Writing objects:   5% (38/751)Writing objects:   6% (46/751)Writing objects:   7% (53/751)Writing objects:   8% (61/751)Writing objects:   9% (68/751)Writing objects:  10% (76/751)Writing objects:  11% (83/751)Writing objects:  12% (91/751)Writing objects:  13% (98/751)Writing objects:  14% (106/751)Writing objects:  15% (113/751)Writing objects:  16% (121/751)Writing objects:  17% (128/751)Writing objects:  18% (136/751)Writing objects:  19% (146/751)Writing objects:  20% (151/751)Writing objects:  21% (158/751)Writing objects:  22% (166/751)Writing objects:  23% (173/751)Writing objects:  24% (181/751)Writing objects:  25% (188/751)Writing objects:  26% (196/751)Writing objects:  27% (203/751)Writing objects:  28% (211/751)Writing objects:  29% (218/751)Writing objects:  30% (226/751)Writing objects:  31% (233/751)Writing objects:  32% (241/751)Writing objects:  33% (248/751)Writing objects:  34% (256/751)Writing objects:  35% (263/751)Writing objects:  36% (271/751)Writing objects:  37% (278/751)Writing objects:  38% (286/751)Writing objects:  39% (293/751)Writing objects:  40% (301/751)Writing objects:  41% (308/751)Writing objects:  42% (316/751)Writing objects:  43% (323/751)Writing objects:  44% (331/751)Writing objects:  45% (338/751)Writing objects:  46% (346/751)Writing objects:  47% (353/751)Writing objects:  48% (361/751)Writing objects:  49% (368/751)Writing objects:  50% (376/751)Writing objects:  51% (384/751)Writing objects:  52% (391/751)Writing objects:  53% (400/751)Writing objects:  54% (406/751)Writing objects:  55% (414/751)Writing objects:  56% (421/751)Writing objects:  57% (429/751)Writing objects:  58% (436/751)Writing objects:  59% (444/751)Writing objects:  60% (451/751)Writing objects:  61% (459/751)Writing objects:  62% (466/751)Writing objects:  63% (474/751)Writing objects:  64% (481/751)Writing objects:  65% (489/751)Writing objects:  66% (496/751)Writing objects:  67% (504/751)Writing objects:  68% (511/751)Writing objects:  69% (519/751)Writing objects:  70% (526/751)Writing objects:  71% (535/751)Writing objects:  72% (544/751)Writing objects:  73% (549/751)Writing objects:  74% (556/751)Writing objects:  75% (564/751)Writing objects:  76% (571/751)Writing objects:  77% (579/751)Writing objects:  78% (586/751)Writing objects:  79% (594/751)Writing objects:  80% (601/751)Writing objects:  81% (609/751)Writing objects:  82% (616/751)Writing objects:  83% (624/751)Writing objects:  84% (631/751)Writing objects:  85% (639/751)Writing objects:  86% (646/751)Writing objects:  87% (654/751)Writing objects:  88% (661/751)Writing objects:  89% (669/751)Writing objects:  90% (676/751)Writing objects:  91% (684/751)Writing objects:  92% (691/751)Writing objects:  93% (699/751)Writing objects:  94% (706/751)Writing objects:  95% (714/751)Writing objects:  96% (721/751)Writing objects:  97% (729/751)Writing objects:  98% (736/751)Writing objects:  99% (744/751)Writing objects: 100% (751/751)Writing objects: 100% (751/751), 387.56 KiB | 6.68 MiB/s, done.
+Total 751 (delta 101), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/101)[Kremote: Resolving deltas:   1% (2/101)[Kremote: Resolving deltas:   2% (3/101)[Kremote: Resolving deltas:   3% (4/101)[Kremote: Resolving deltas:   4% (5/101)[Kremote: Resolving deltas:   5% (6/101)[Kremote: Resolving deltas:   6% (7/101)[Kremote: Resolving deltas:   7% (8/101)[Kremote: Resolving deltas:   8% (9/101)[Kremote: Resolving deltas:   9% (10/101)[Kremote: Resolving deltas:  10% (11/101)[Kremote: Resolving deltas:  11% (12/101)[Kremote: Resolving deltas:  12% (13/101)[Kremote: Resolving deltas:  13% (14/101)[Kremote: Resolving deltas:  14% (15/101)[Kremote: Resolving deltas:  15% (16/101)[Kremote: Resolving deltas:  16% (17/101)[Kremote: Resolving deltas:  17% (18/101)[Kremote: Resolving deltas:  18% (19/101)[Kremote: Resolving deltas:  19% (20/101)[Kremote: Resolving deltas:  20% (21/101)[Kremote: Resolving deltas:  21% (22/101)[Kremote: Resolving deltas:  22% (23/101)[Kremote: Resolving deltas:  23% (24/101)[Kremote: Resolving deltas:  24% (25/101)[Kremote: Resolving deltas:  25% (26/101)[Kremote: Resolving deltas:  26% (27/101)[Kremote: Resolving deltas:  27% (28/101)[Kremote: Resolving deltas:  28% (29/101)[Kremote: Resolving deltas:  29% (30/101)[Kremote: Resolving deltas:  30% (31/101)[Kremote: Resolving deltas:  31% (32/101)[Kremote: Resolving deltas:  32% (33/101)[Kremote: Resolving deltas:  33% (34/101)[Kremote: Resolving deltas:  34% (35/101)[Kremote: Resolving deltas:  35% (36/101)[Kremote: Resolving deltas:  36% (37/101)[Kremote: Resolving deltas:  37% (38/101)[Kremote: Resolving deltas:  38% (39/101)[Kremote: Resolving deltas:  39% (40/101)[Kremote: Resolving deltas:  40% (41/101)[Kremote: Resolving deltas:  41% (42/101)[Kremote: Resolving deltas:  42% (43/101)[Kremote: Resolving deltas:  43% (44/101)[Kremote: Resolving deltas:  44% (45/101)[Kremote: Resolving deltas:  45% (46/101)[Kremote: Resolving deltas:  46% (47/101)[Kremote: Resolving deltas:  47% (48/101)[Kremote: Resolving deltas:  48% (49/101)[Kremote: Resolving deltas:  49% (50/101)[Kremote: Resolving deltas:  50% (51/101)[Kremote: Resolving deltas:  51% (52/101)[Kremote: Resolving deltas:  52% (53/101)[Kremote: Resolving deltas:  53% (54/101)[Kremote: Resolving deltas:  54% (55/101)[Kremote: Resolving deltas:  55% (56/101)[Kremote: Resolving deltas:  56% (57/101)[Kremote: Resolving deltas:  57% (58/101)[Kremote: Resolving deltas:  58% (59/101)[Kremote: Resolving deltas:  59% (60/101)[Kremote: Resolving deltas:  60% (61/101)[Kremote: Resolving deltas:  61% (62/101)[Kremote: Resolving deltas:  62% (63/101)[Kremote: Resolving deltas:  63% (64/101)[Kremote: Resolving deltas:  64% (65/101)[Kremote: Resolving deltas:  65% (66/101)[Kremote: Resolving deltas:  66% (67/101)[Kremote: Resolving deltas:  67% (68/101)[Kremote: Resolving deltas:  68% (69/101)[Kremote: Resolving deltas:  69% (70/101)[Kremote: Resolving deltas:  70% (71/101)[Kremote: Resolving deltas:  71% (72/101)[Kremote: Resolving deltas:  72% (73/101)[Kremote: Resolving deltas:  73% (74/101)[Kremote: Resolving deltas:  74% (75/101)[Kremote: Resolving deltas:  75% (76/101)[Kremote: Resolving deltas:  76% (77/101)[Kremote: Resolving deltas:  77% (78/101)[Kremote: Resolving deltas:  78% (79/101)[Kremote: Resolving deltas:  79% (80/101)[Kremote: Resolving deltas:  80% (81/101)[Kremote: Resolving deltas:  81% (82/101)[Kremote: Resolving deltas:  82% (83/101)[Kremote: Resolving deltas:  83% (84/101)[Kremote: Resolving deltas:  84% (85/101)[Kremote: Resolving deltas:  85% (86/101)[Kremote: Resolving deltas:  86% (87/101)[Kremote: Resolving deltas:  87% (88/101)[Kremote: Resolving deltas:  88% (89/101)[Kremote: Resolving deltas:  89% (90/101)[Kremote: Resolving deltas:  90% (91/101)[Kremote: Resolving deltas:  91% (92/101)[Kremote: Resolving deltas:  92% (93/101)[Kremote: Resolving deltas:  93% (94/101)[Kremote: Resolving deltas:  94% (95/101)[Kremote: Resolving deltas:  95% (96/101)[Kremote: Resolving deltas:  96% (97/101)[Kremote: Resolving deltas:  97% (98/101)[Kremote: Resolving deltas:  98% (99/101)[Kremote: Resolving deltas:  99% (100/101)[Kremote: Resolving deltas: 100% (101/101)[Kremote: Resolving deltas: 100% (101/101), done.[K
+To https://gitlab.eng.auburn.edu/gte0002/os161.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]777;notify;Command completed;git push -u origin master]0;gemerson@localhost:/home/gemerson/cs161/os161]7;file://localhost.localdomain/home/gemerson/cs161/os161[root@localhost os161]# cd //[K[K..
+]777;notify;Command completed;cd ..]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# ls
+[0m[38;5;33masst0[0m               [38;5;33mcs161-gcc-1.5[0m  [38;5;33mos161[0m        sys161.conf
+[38;5;33mcs161-binutils-1.5[0m  [38;5;33mcs161-gdb-1.5[0m  [38;5;33msys161-1.14[0m
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# rm -rf os161
+]777;notify;Command completed;rm -rf os161]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# ls
+[0m[38;5;33masst0[0m               [38;5;33mcs161-gcc-1.5[0m  [38;5;33msys161-1.14[0m
+[38;5;33mcs161-binutils-1.5[0m  [38;5;33mcs161-gdb-1.5[0m  sys161.conf
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# git clone g[Khtt[K[K[K[K[Ke https://gitlab.eng.auburn.edu/gte0002/os161.gitt src
+Cloning into 'src'...
+No protocol specified
+
+(gnome-ssh-askpass:149514): Gtk-[1;33mWARNING[0m **: [34m17:16:00.760[0m: cannot open display: :0
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Username for 'https://gitlab.eng.auburn.edu': gte0002
+No protocol specified
+
+(gnome-ssh-askpass:149516): Gtk-[1;33mWARNING[0m **: [34m17:16:04.569[0m: cannot open display: :0
+error: unable to read askpass response from '/usr/libexec/openssh/gnome-ssh-askpass'
+Password for 'https://gte0002@gitlab.eng.auburn.edu': 
+remote: Enumerating objects: 751, done.[K
+remote: Counting objects:   0% (1/751)[Kremote: Counting objects:   1% (8/751)[Kremote: Counting objects:   2% (16/751)[Kremote: Counting objects:   3% (23/751)[Kremote: Counting objects:   4% (31/751)[Kremote: Counting objects:   5% (38/751)[Kremote: Counting objects:   6% (46/751)[Kremote: Counting objects:   7% (53/751)[Kremote: Counting objects:   8% (61/751)[Kremote: Counting objects:   9% (68/751)[Kremote: Counting objects:  10% (76/751)[Kremote: Counting objects:  11% (83/751)[Kremote: Counting objects:  12% (91/751)[Kremote: Counting objects:  13% (98/751)[Kremote: Counting objects:  14% (106/751)[Kremote: Counting objects:  15% (113/751)[Kremote: Counting objects:  16% (121/751)[Kremote: Counting objects:  17% (128/751)[Kremote: Counting objects:  18% (136/751)[Kremote: Counting objects:  19% (143/751)[Kremote: Counting objects:  20% (151/751)[Kremote: Counting objects:  21% (158/751)[Kremote: Counting objects:  22% (166/751)[Kremote: Counting objects:  23% (173/751)[Kremote: Counting objects:  24% (181/751)[Kremote: Counting objects:  25% (188/751)[Kremote: Counting objects:  26% (196/751)[Kremote: Counting objects:  27% (203/751)[Kremote: Counting objects:  28% (211/751)[Kremote: Counting objects:  29% (218/751)[Kremote: Counting objects:  30% (226/751)[Kremote: Counting objects:  31% (233/751)[Kremote: Counting objects:  32% (241/751)[Kremote: Counting objects:  33% (248/751)[Kremote: Counting objects:  34% (256/751)[Kremote: Counting objects:  35% (263/751)[Kremote: Counting objects:  36% (271/751)[Kremote: Counting objects:  37% (278/751)[Kremote: Counting objects:  38% (286/751)[Kremote: Counting objects:  39% (293/751)[Kremote: Counting objects:  40% (301/751)[Kremote: Counting objects:  41% (308/751)[Kremote: Counting objects:  42% (316/751)[Kremote: Counting objects:  43% (323/751)[Kremote: Counting objects:  44% (331/751)[Kremote: Counting objects:  45% (338/751)[Kremote: Counting objects:  46% (346/751)[Kremote: Counting objects:  47% (353/751)[Kremote: Counting objects:  48% (361/751)[Kremote: Counting objects:  49% (368/751)[Kremote: Counting objects:  50% (376/751)[Kremote: Counting objects:  51% (384/751)[Kremote: Counting objects:  52% (391/751)[Kremote: Counting objects:  53% (399/751)[Kremote: Counting objects:  54% (406/751)[Kremote: Counting objects:  55% (414/751)[Kremote: Counting objects:  56% (421/751)[Kremote: Counting objects:  57% (429/751)[Kremote: Counting objects:  58% (436/751)[Kremote: Counting objects:  59% (444/751)[Kremote: Counting objects:  60% (451/751)[Kremote: Counting objects:  61% (459/751)[Kremote: Counting objects:  62% (466/751)[Kremote: Counting objects:  63% (474/751)[Kremote: Counting objects:  64% (481/751)[Kremote: Counting objects:  65% (489/751)[Kremote: Counting objects:  66% (496/751)[Kremote: Counting objects:  67% (504/751)[Kremote: Counting objects:  68% (511/751)[Kremote: Counting objects:  69% (519/751)[Kremote: Counting objects:  70% (526/751)[Kremote: Counting objects:  71% (534/751)[Kremote: Counting objects:  72% (541/751)[Kremote: Counting objects:  73% (549/751)[Kremote: Counting objects:  74% (556/751)[Kremote: Counting objects:  75% (564/751)[Kremote: Counting objects:  76% (571/751)[Kremote: Counting objects:  77% (579/751)[Kremote: Counting objects:  78% (586/751)[Kremote: Counting objects:  79% (594/751)[Kremote: Counting objects:  80% (601/751)[Kremote: Counting objects:  81% (609/751)[Kremote: Counting objects:  82% (616/751)[Kremote: Counting objects:  83% (624/751)[Kremote: Counting objects:  84% (631/751)[Kremote: Counting objects:  85% (639/751)[Kremote: Counting objects:  86% (646/751)[Kremote: Counting objects:  87% (654/751)[Kremote: Counting objects:  88% (661/751)[Kremote: Counting objects:  89% (669/751)[Kremote: Counting objects:  90% (676/751)[Kremote: Counting objects:  91% (684/751)[Kremote: Counting objects:  92% (691/751)[Kremote: Counting objects:  93% (699/751)[Kremote: Counting objects:  94% (706/751)[Kremote: Counting objects:  95% (714/751)[Kremote: Counting objects:  96% (721/751)[Kremote: Counting objects:  97% (729/751)[Kremote: Counting objects:  98% (736/751)[Kremote: Counting objects:  99% (744/751)[Kremote: Counting objects: 100% (751/751)[Kremote: Counting objects: 100% (751/751), done.[K
+remote: Compressing objects:   0% (1/585)[Kremote: Compressing objects:   1% (6/585)[Kremote: Compressing objects:   2% (12/585)[Kremote: Compressing objects:   3% (18/585)[Kremote: Compressing objects:   4% (24/585)remote: Compressing objects:   5% (30/585)[Kremote: Compressing objects:   6% (36/585)[Kremote: Compressing objects:   7% (41/585)[Kremote: Compressing objects:   8% (47/585)[Kremote: Compressing objects:   9% (53/585)[Kremote: Compressing objects:  10% (59/585)[Kremote: Compressing objects:  11% (65/585)[Kremote: Compressing objects:  12% (71/585)[Kremote: Compressing objects:  13% (77/585)[Kremote: Compressing objects:  14% (82/585)[Kremote: Compressing objects:  15% (88/585)[Kremote: Compressing objects:  16% (94/585)[Kremote: Compressing objects:  17% (100/585)[Kremote: Compressing objects:  18% (106/585)[Kremote: Compressing objects:  19% (112/585)[Kremote: Compressing objects:  20% (117/585)[Kremote: Compressing objects:  21% (123/585)[Kremote: Compressing objects:  22% (129/585)[Kremote: Compressing objects:  23% (135/585)[Kremote: Compressing objects:  24% (141/585)[Kremote: Compressing objects:  25% (147/585)[Kremote: Compressing objects:  26% (153/585)[Kremote: Compressing objects:  27% (158/585)[Kremote: Compressing objects:  28% (164/585)[Kremote: Compressing objects:  29% (170/585)[Kremote: Compressing objects:  30% (176/585)[Kremote: Compressing objects:  31% (182/585)[Kremote: Compressing objects:  32% (188/585)[Kremote: Compressing objects:  33% (194/585)[Kremote: Compressing objects:  34% (199/585)[Kremote: Compressing objects:  35% (205/585)[Kremote: Compressing objects:  36% (211/585)[Kremote: Compressing objects:  37% (217/585)[Kremote: Compressing objects:  38% (223/585)[Kremote: Compressing objects:  39% (229/585)[Kremote: Compressing objects:  40% (234/585)[Kremote: Compressing objects:  41% (240/585)[Kremote: Compressing objects:  42% (246/585)[Kremote: Compressing objects:  43% (252/585)[Kremote: Compressing objects:  44% (258/585)[Kremote: Compressing objects:  45% (264/585)[Kremote: Compressing objects:  46% (270/585)[Kremote: Compressing objects:  47% (275/585)[Kremote: Compressing objects:  48% (281/585)[Kremote: Compressing objects:  49% (287/585)[Kremote: Compressing objects:  50% (293/585)[Kremote: Compressing objects:  51% (299/585)[Kremote: Compressing objects:  52% (305/585)[Kremote: Compressing objects:  53% (311/585)[Kremote: Compressing objects:  54% (316/585)[Kremote: Compressing objects:  55% (322/585)[Kremote: Compressing objects:  56% (328/585)[Kremote: Compressing objects:  57% (334/585)[Kremote: Compressing objects:  58% (340/585)[Kremote: Compressing objects:  59% (346/585)[Kremote: Compressing objects:  60% (351/585)[Kremote: Compressing objects:  61% (357/585)[Kremote: Compressing objects:  62% (363/585)[Kremote: Compressing objects:  63% (369/585)[Kremote: Compressing objects:  64% (375/585)[Kremote: Compressing objects:  65% (381/585)[Kremote: Compressing objects:  66% (387/585)[Kremote: Compressing objects:  67% (392/585)[Kremote: Compressing objects:  68% (398/585)[Kremote: Compressing objects:  69% (404/585)[Kremote: Compressing objects:  70% (410/585)[Kremote: Compressing objects:  71% (416/585)[Kremote: Compressing objects:  72% (422/585)[Kremote: Compressing objects:  73% (428/585)[Kremote: Compressing objects:  74% (433/585)[Kremote: Compressing objects:  75% (439/585)[Kremote: Compressing objects:  76% (445/585)[Kremote: Compressing objects:  77% (451/585)[Kremote: Compressing objects:  78% (457/585)[Kremote: Compressing objects:  79% (463/585)[Kremote: Compressing objects:  80% (468/585)[Kremote: Compressing objects:  81% (474/585)[Kremote: Compressing objects:  82% (480/585)[Kremote: Compressing objects:  83% (486/585)[Kremote: Compressing objects:  84% (492/585)[Kremote: Compressing objects:  85% (498/585)[Kremote: Compressing objects:  86% (504/585)[Kremote: Compressing objects:  87% (509/585)[Kremote: Compressing objects:  88% (515/585)[Kremote: Compressing objects:  89% (521/585)[Kremote: Compressing objects:  90% (527/585)[Kremote: Compressing objects:  91% (533/585)[Kremote: Compressing objects:  92% (539/585)[Kremote: Compressing objects:  93% (545/585)[Kremote: Compressing objects:  94% (550/585)[Kremote: Compressing objects:  95% (556/585)[Kremote: Compressing objects:  96% (562/585)[Kremote: Compressing objects:  97% (568/585)[Kremote: Compressing objects:  98% (574/585)[Kremote: Compressing objects:  99% (580/585)[Kremote: Compressing objects: 100% (585/585)[Kremote: Compressing objects: 100% (585/585), done.[K
+Receiving objects:   0% (1/751)Receiving objects:   1% (8/751)Receiving objects:   2% (16/751)Receiving objects:   3% (23/751)Receiving objects:   4% (31/751)Receiving objects:   5% (38/751)Receiving objects:   6% (46/751)Receiving objects:   7% (53/751)Receiving objects:   8% (61/751)Receiving objects:   9% (68/751)Receiving objects:  10% (76/751)Receiving objects:  11% (83/751)Receiving objects:  12% (91/751)Receiving objects:  13% (98/751)Receiving objects:  14% (106/751)Receiving objects:  15% (113/751)Receiving objects:  16% (121/751)Receiving objects:  17% (128/751)Receiving objects:  18% (136/751)Receiving objects:  19% (143/751)Receiving objects:  20% (151/751)Receiving objects:  21% (158/751)Receiving objects:  22% (166/751)Receiving objects:  23% (173/751)Receiving objects:  24% (181/751)Receiving objects:  25% (188/751)Receiving objects:  26% (196/751)Receiving objects:  27% (203/751)Receiving objects:  28% (211/751)Receiving objects:  29% (218/751)Receiving objects:  30% (226/751)Receiving objects:  31% (233/751)Receiving objects:  32% (241/751)Receiving objects:  33% (248/751)Receiving objects:  34% (256/751)Receiving objects:  35% (263/751)Receiving objects:  36% (271/751)Receiving objects:  37% (278/751)Receiving objects:  38% (286/751)Receiving objects:  39% (293/751)Receiving objects:  40% (301/751)Receiving objects:  41% (308/751)Receiving objects:  42% (316/751)Receiving objects:  43% (323/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  44% (331/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  45% (338/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  46% (346/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  47% (353/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  48% (361/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  49% (368/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  50% (376/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  51% (384/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  52% (391/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  53% (399/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  54% (406/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  55% (414/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  56% (421/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  57% (429/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  58% (436/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  59% (444/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  60% (451/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  61% (459/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  62% (466/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  63% (474/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  64% (481/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  65% (489/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  66% (496/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  67% (504/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  68% (511/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  69% (519/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  70% (526/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  71% (534/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  72% (541/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  73% (549/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  74% (556/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  75% (564/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  76% (571/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  77% (579/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  78% (586/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  79% (594/751), 228.00 KiB | 416.00 KiB/sremote: Total 751 (delta 101), reused 751 (delta 101), pack-reused 0[K
+Receiving objects:  80% (601/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  81% (609/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  82% (616/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  83% (624/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  84% (631/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  85% (639/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  86% (646/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  87% (654/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  88% (661/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  89% (669/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  90% (676/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  91% (684/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  92% (691/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  93% (699/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  94% (706/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  95% (714/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  96% (721/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  97% (729/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  98% (736/751), 228.00 KiB | 416.00 KiB/sReceiving objects:  99% (744/751), 228.00 KiB | 416.00 KiB/sReceiving objects: 100% (751/751), 228.00 KiB | 416.00 KiB/sReceiving objects: 100% (751/751), 387.56 KiB | 512.00 KiB/s, done.
+Resolving deltas:   0% (0/101)Resolving deltas:  33% (34/101)Resolving deltas:  42% (43/101)Resolving deltas:  43% (44/101)Resolving deltas:  44% (45/101)Resolving deltas:  45% (46/101)Resolving deltas:  50% (51/101)Resolving deltas:  53% (54/101)Resolving deltas:  56% (57/101)Resolving deltas:  57% (58/101)Resolving deltas:  58% (59/101)Resolving deltas:  59% (60/101)Resolving deltas:  60% (61/101)Resolving deltas:  61% (62/101)Resolving deltas:  62% (63/101)Resolving deltas:  63% (64/101)Resolving deltas:  65% (66/101)Resolving deltas:  66% (67/101)Resolving deltas:  67% (68/101)Resolving deltas:  68% (69/101)Resolving deltas:  70% (71/101)Resolving deltas:  71% (72/101)Resolving deltas:  74% (75/101)Resolving deltas:  77% (78/101)Resolving deltas:  80% (81/101)Resolving deltas:  81% (82/101)Resolving deltas:  83% (84/101)Resolving deltas:  85% (86/101)Resolving deltas:  87% (88/101)Resolving deltas:  88% (89/101)Resolving deltas:  89% (90/101)Resolving deltas:  90% (91/101)Resolving deltas:  99% (100/101)Resolving deltas: 100% (101/101)Resolving deltas: 100% (101/101), done.
+]777;notify;Command completed;git clone https://gitlab.eng.auburn.edu/gte0002/os161.git src]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# ls
+[0m[38;5;33masst0[0m               [38;5;33mcs161-gcc-1.5[0m  [38;5;33msrc[0m          sys161.conf
+[38;5;33mcs161-binutils-1.5[0m  [38;5;33mcs161-gdb-1.5[0m  [38;5;33msys161-1.14[0m
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# exit
+exit
+
+Script done on 2021-02-04 17:16:28-06:00

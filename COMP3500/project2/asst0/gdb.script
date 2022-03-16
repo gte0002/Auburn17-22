@@ -1,0 +1,54 @@
+Script started on 2021-02-05 13:40:25-06:00
+]777;notify;Command completed;exit]0;gemerson@localhost:/home/gemerson/cs161]7;file://localhost.localdomain/home/gemerson/cs161[root@localhost cs161]# cd root
+]777;notify;Command completed;cd root]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# cs161-gdb kernel
+bash: cs161-gdb: command not found...
+]777;notify;Command completed;cs161-gdb kernel]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# ls
+[0m[38;5;33mbin[0m           [38;5;33msbin[0m
+[38;5;33mhostbin[0m       [38;5;51mstat161[0m
+[38;5;33mhostinclude[0m   [38;5;40mstat161-1.14[0m
+[38;5;33mhostlib[0m       [38;5;51msys161[0m
+[38;5;51mhub161[0m        [38;5;40msys161-1.14[0m
+[38;5;40mhub161-1.14[0m   sys161.conf
+[38;5;33minclude[0m       sys161.conf.sample
+[38;5;51mkernel[0m        [38;5;33mtestbin[0m
+[38;5;40mkernel-ASST0[0m  [38;5;51mtrace161[0m
+[38;5;33mlib[0m           [38;5;40mtrace161-1.14[0m
+[38;5;33mman[0m
+]777;notify;Command completed;ls]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# echo $PATH
+/home/gemerson/cs161/bin:/home/gemerson/cs161/bin:/home/gemerson/.local/bin:/home/gemerson/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+]777;notify;Command completed;echo $PATH]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# export PATH-[K=~/cs161 /bin:$PATH
+]777;notify;Command completed;export PATH=~/cs161/bin:$PATH]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# export PATH=~/cs161//bin:$PATH[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcho $PATH
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcs161-gdb kernel[9Pd roots161-gdb kernel
+[?1034hGNU gdb 6.6
+Copyright (C) 2006 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "--host=x86_64-unknown-linux-gnu --target=mips-elf"...
+(gdb) target remote unix:.sockets/gdb
+Remote debugging using unix:.sockets/gdb
+__start ()
+    at ../../arch/mips/mips/start.S:24
+24	../../arch/mips/mips/start.S: No such file or directory.
+	in ../../arch/mips/mips/start.S
+Current language:  auto; currently asm
+(gdb) break menu
+Breakpoint 1 at 0x8001ba5c
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0xffffffff8001ba5c in menu
+    ()
+(gdb) where
+#0  0xffffffff8001ba5c in menu ()
+#1  0xffffffff8001a994 in kmain ()
+#2  0xffffffff8000d274 in __start ()
+    at ../../arch/mips/mips/start.S:163
+(gdb) detach
+Ending remote debugging.
+(gdb) quit
+]777;notify;Command completed;cs161-gdb kernel]0;gemerson@localhost:/home/gemerson/cs161/root]7;file://localhost.localdomain/home/gemerson/cs161/root[root@localhost root]# exit
+exit
+
+Script done on 2021-02-05 13:44:23-06:00

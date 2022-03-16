@@ -1,0 +1,196 @@
+Script started on 2021-01-21 13:18:45-06:00
+]777;notify;Command completed;exit]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# pwd
+/home/gemerson/COMP3500/project1
+]777;notify;Command completed;pwd]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# nproc
+1
+]777;notify;Command completed;nproc]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# top
+[?1h=[?25l[H[2J(B[mtop - 13:19:26 up 19 min,  3 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 187 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 186 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3736.4 (B[m[39;49mtotal,(B[m[39;49m[1m   2095.7 (B[m[39;49mfree,(B[m[39;49m[1m    874.2 (B[m[39;49mused,(B[m[39;49m[1m    766.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   2628.0 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  (B[m[39;49m[K
+(B[m   1743 gemerson  20   0 2649084 267916 111732 S   6.2   7.0   0:07.07 gnome-s+ (B[m[39;49m[K
+(B[m      1 root      20   0  180052  14276   9236 S   0.0   0.4   0:01.34 systemd  (B[m[39;49m[K
+(B[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd (B[m[39;49m[K
+(B[m      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   (B[m[39;49m[K
+(B[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ (B[m[39;49m[K
+(B[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ (B[m[39;49m[K
+(B[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ (B[m[39;49m[K
+(B[m     10 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftir+ (B[m[39;49m[K
+(B[m     11 root      20   0       0      0      0 I   0.0   0.0   0:00.04 rcu_sch+ (B[m[39;49m[K
+(B[m     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ (B[m[39;49m[K
+(B[m     13 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+ (B[m[39;49m[K
+(B[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0  (B[m[39;49m[K
+(B[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+ (B[m[39;49m[K
+(B[m     17 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    (B[m[39;49m[K
+(B[m     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd  (B[m[39;49m[K
+(B[m     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungta+ (B[m[39;49m[K
+(B[m     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+ (B[m[39;49m[K[H(B[mtop - 13:19:29 up 19 min,  3 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3736.4 (B[m[39;49mtotal,(B[m[39;49m[1m   2095.5 (B[m[39;49mfree,(B[m[39;49m[1m    874.4 (B[m[39;49mused,(B[m[39;49m[1m    766.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   2627.8 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m   1875 root      20   0  205212  32512  10568 S   0.3   0.8   0:01.07 sssd_kcm (B[m[39;49m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 13:19:32 up 19 min,  3 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  2.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 97.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.3 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3736.4 (B[m[39;49mtotal,(B[m[39;49m[1m   2095.4 (B[m[39;49mfree,(B[m[39;49m[1m    874.4 (B[m[39;49mused,(B[m[39;49m[1m    766.5 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   2627.7 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m   1743 gemerson  20   0 2649100 267920 111732 S   2.3   7.0   0:07.14 gnome-s+ (B[m[39;49m[K
+(B[m    148 root      20   0       0      0      0 I   0.3   0.0   0:00.18 kworker+ (B[m[39;49m[K
+(B[m   2290 gemerson  20   0  519328  41116  28556 S   0.3   1.1   0:00.75 gnome-t+ (B[m[39;49m[K
+(B[m[1m   3167 root      20   0   65384   5272   4412 R   0.3   0.1   0:00.01 top      (B[m[39;49m[K
+(B[m      1 root      20   0  180052  14276   9236 S   0.0   0.4   0:01.34 systemd  (B[m[39;49m[K
+(B[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd (B[m[39;49m[K
+(B[m      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   (B[m[39;49m[K
+(B[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ (B[m[39;49m[K
+(B[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ (B[m[39;49m[K
+(B[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ (B[m[39;49m[K
+(B[m     10 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftir+ (B[m[39;49m[K
+(B[m     11 root      20   0       0      0      0 I   0.0   0.0   0:00.04 rcu_sch+ (B[m[39;49m[K
+(B[m     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ (B[m[39;49m[K
+(B[m     13 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+ (B[m[39;49m[K
+(B[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0  (B[m[39;49m[K
+(B[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+ (B[m[39;49m[K
+(B[m     17 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[K]777;notify;Command completed;top]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# clear
+[3J[H[2J]777;notify;Command completed;clear]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  [0m[38;5;33mtest1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# pwd
+/home/gemerson/COMP3500/project1
+]777;notify;Command completed;pwd]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# cd -
+/home/gemerson/COMP3500
+]777;notify;Command completed;cd -]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mproject1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# mkdir test2
+]777;notify;Command completed;mkdir test2]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mproject1[0m  [38;5;33mtest2[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# mv test2 tes3
+]777;notify;Command completed;mv test2 tes3]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mproject1[0m  [38;5;33mtes3[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# rm tes3
+rm: cannot remove 'tes3': Is a directory
+]777;notify;Command completed;rm tes3]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# rmdir
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+]777;notify;Command completed;rmdir]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# rm -r tes3
+rm: remove directory 'tes3'? yes
+]777;notify;Command completed;rm -r tes3]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mproject1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# clear
+[3J[H[2J]777;notify;Command completed;clear]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# ls
+[0m[38;5;33mproject1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500]7;file://gemerson-lynux/home/gemerson/COMP3500[root@gemerson-lynux COMP3500]# cd project1
+]777;notify;Command completed;cd project1]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script  [0m[38;5;33mtest1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# man chmod
+[?1049h[22;0;0t[?1h=CHMOD(1)                         User Commands                        CHMOD(1)[m
+[m
+[1mNAME[0m[m
+       chmod - change file mode bits[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mchmod [22m[[4mOPTION[24m]... [4mMODE[24m[[4m,MODE[24m]... [4mFILE[24m...[m
+       [1mchmod [22m[[4mOPTION[24m]... [4mOCTAL-MODE[24m [4mFILE[24m...[m
+       [1mchmod [22m[[4mOPTION[24m]... [4m--reference=RFILE[24m [4mFILE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       This manual page documents the GNU version of [1mchmod[22m.  [1mchmod [22mchanges the[m
+       file mode bits of each given file  according  to  [4mmode[24m,  which  can  be[m
+       either a symbolic representation of changes to make, or an octal number[m
+       representing the bit pattern for the new mode bits.[m
+[m
+       The format of a symbolic mode is  [[1mugoa[22m...][[[1m-+=[22m][[4mperms[24m...]...],  where[m
+       [4mperms[24m  is  either zero or more letters from the set [1mrwxXst[22m, or a single[m
+       letter from the set [1mugo[22m.  Multiple symbolic modes can be  given,  sepa‐[m
+       rated by commas.[m
+[m
+       A  combination  of the letters [1mugoa [22mcontrols which users' access to the[m
+       file will be changed: the user who owns it  ([1mu[22m),  other  users  in  the[m
+[7m Manual page chmod(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]777;notify;Command completed;man chmod]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# nproc
+1
+]777;notify;Command completed;nproc]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# who [K
+gemerson tty2         2021-01-21 13:00 (tty2)
+gemerson pts/1        2021-01-21 13:02
+root     pts/2        2021-01-21 13:18
+]777;notify;Command completed;who]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# top
+[?1h=[?25l[H[2J(B[mtop - 13:26:35 up 26 min,  3 users,  load average: 0.00, 0.00, 0.01(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 187 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 186 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  6.7 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 93.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3736.4 (B[m[39;49mtotal,(B[m[39;49m[1m   2084.2 (B[m[39;49mfree,(B[m[39;49m[1m    885.1 (B[m[39;49mused,(B[m[39;49m[1m    767.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   2617.1 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  (B[m[39;49m[K
+(B[m     10 root      20   0       0      0      0 S   6.7   0.0   0:00.02 ksoftir+ (B[m[39;49m[K
+(B[m      1 root      20   0  180052  14276   9236 S   0.0   0.4   0:01.36 systemd  (B[m[39;49m[K
+(B[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd (B[m[39;49m[K
+(B[m      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   (B[m[39;49m[K
+(B[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ (B[m[39;49m[K
+(B[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ (B[m[39;49m[K
+(B[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ (B[m[39;49m[K
+(B[m     11 root      20   0       0      0      0 I   0.0   0.0   0:00.05 rcu_sch+ (B[m[39;49m[K
+(B[m     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ (B[m[39;49m[K
+(B[m     13 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+ (B[m[39;49m[K
+(B[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0  (B[m[39;49m[K
+(B[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+ (B[m[39;49m[K
+(B[m     17 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    (B[m[39;49m[K
+(B[m     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd  (B[m[39;49m[K
+(B[m     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungta+ (B[m[39;49m[K
+(B[m     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+ (B[m[39;49m[K
+(B[m     21 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeba+ (B[m[39;49m[K[H(B[mtop - 13:26:38 up 27 min,  3 users,  load average: 0.00, 0.00, 0.01(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.3 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.3 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   3736.4 (B[m[39;49mtotal,(B[m[39;49m[1m   2084.1 (B[m[39;49mfree,(B[m[39;49m[1m    885.2 (B[m[39;49mused,(B[m[39;49m[1m    767.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m   1024.0 (B[m[39;49mtotal,(B[m[39;49m[1m   1024.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   2617.0 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m   1743 gemerson  20   0 2654824 276380 111856 S   0.3   7.2   0:09.43 gnome-s+ (B[m[39;49m[K
+(B[m   2290 gemerson  20   0  519328  41404  28620 S   0.3   1.1   0:01.01 gnome-t+ (B[m[39;49m[K
+(B[m      1 root      20   0  180052  14276   9236 S   0.0   0.4   0:01.36 systemd  (B[m[39;49m[K
+(B[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd (B[m[39;49m[K
+(B[m      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   (B[m[39;49m[K
+(B[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ (B[m[39;49m[K
+(B[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ (B[m[39;49m[K
+(B[m      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ (B[m[39;49m[K
+(B[m     10 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ (B[m[39;49m[K
+(B[m     11 root      20   0       0      0      0 I   0.0   0.0   0:00.05 rcu_sch+ (B[m[39;49m[K
+(B[m     12 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ (B[m[39;49m[K
+(B[m     13 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 watchdo+ (B[m[39;49m[K
+(B[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0  (B[m[39;49m[K
+(B[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+ (B[m[39;49m[K
+(B[m     17 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns    (B[m[39;49m[K
+(B[m     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd  (B[m[39;49m[K
+(B[m     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungta+ (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[K]777;notify;Command completed;top]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# clear
+[3J[H[2J]777;notify;Command completed;clear]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# pwd
+/home/gemerson/COMP3500/project1
+]777;notify;Command completed;pwd]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# mkdir test[K[K[K[K[K[K[K[K[K[Kls
+commands.script  [0m[38;5;33mtest1[0m
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# rmdir test1
+]777;notify;Command completed;rmdir test1]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# ls
+commands.script
+]777;notify;Command completed;ls]0;gemerson@gemerson-lynux:/home/gemerson/COMP3500/project1]7;file://gemerson-lynux/home/gemerson/COMP3500/project1[root@gemerson-lynux project1]# exit
+exit
+
+Script done on 2021-01-21 13:33:16-06:00

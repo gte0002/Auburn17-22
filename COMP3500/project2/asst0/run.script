@@ -1,0 +1,49 @@
+Script started on 2021-02-05 01:21:07-06:00
+]777;notify;Command completed;script]0;gemerson@localhost://home/gemerson/cs161]7;file://localhost.localdomain//home/gemerson/cs161[root@localhost cs161]# cd root
+]777;notify;Command completed;cd root]0;gemerson@localhost://home/gemerson/cs161/root]7;file://localhost.localdomain//home/gemerson/cs161/root[root@localhost root]# ls
+[0m[38;5;33mbin[0m              [38;5;33minclude[0m       [38;5;40mstat161-1.14.old[0m    [38;5;33mtestbin[0m
+[38;5;33mhostbin[0m          [38;5;51mkernel[0m        [38;5;51mstat161.old[0m         [38;5;51mtrace161[0m
+[38;5;33mhostinclude[0m      [38;5;40mkernel-ASST0[0m  [38;5;51msys161[0m              [38;5;40mtrace161-1.14[0m
+[38;5;33mhostlib[0m          [38;5;33mlib[0m           [38;5;40msys161-1.14[0m         [38;5;40mtrace161-1.14.old[0m
+[38;5;51mhub161[0m           [38;5;33mman[0m           [38;5;40msys161-1.14.old[0m     [38;5;51mtrace161.old[0m
+[38;5;40mhub161-1.14[0m      [38;5;33msbin[0m          sys161.conf
+[38;5;40mhub161-1.14.old[0m  [38;5;51mstat161[0m       sys161.conf.sample
+[38;5;51mhub161.old[0m       [38;5;40mstat161-1.14[0m  [38;5;51msys161.old[0m
+]777;notify;Command completed;ls]0;gemerson@localhost://home/gemerson/cs161/root]7;file://localhost.localdomain//home/gemerson/cs161/root[root@localhost root]# ./sys161 kernel
+sys161: System/161 release 1.14, compiled Feb  4 2021 11:43:24
+
+OS/161 base system version 1.10
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST0 #2)
+
+Cpu is MIPS r2000/r3000
+1872k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: 
+OS/161 kernel [? for menu]: p /sbin/poweroff , <return>
+Operation took 0.000162800 seconds
+OS/161 kernel [? for menu]: Shutting down.
+The system is halted.
+sys161: 1306210878 cycles (10436873k, 18u, 1295773987i)
+sys161: 5882 irqs 6 exns 0r/0w disk 29r/700w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 52.229926 seconds (25.0089 mhz)
+sys161: Elapsed virtual time: 52.248435120 seconds (25 mhz)
+]777;notify;Command completed;./sys161 kernel]0;gemerson@localhost://home/gemerson/cs161/root]7;file://localhost.localdomain//home/gemerson/cs161/root[root@localhost root]# exit
+exit
+
+Script done on 2021-02-05 01:22:39-06:00

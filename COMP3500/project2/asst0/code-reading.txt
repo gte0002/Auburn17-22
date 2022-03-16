@@ -1,0 +1,26 @@
+Text file for answering questions on part 5
+
+1. #define sp $29
+2. LAMEbus
+3. splhigh() sets spl to the highest value, disabling all interrupts. spl0() sets spl to 0, enabling all interrupts
+4. To make sure we get a 32 bit unsigned integer
+5. The old interrupt state
+6. #define SPL_HIGH
+7. They are HZ times a second and #define HZ 100
+8. d_open, d_close, d_io, d_ioctl
+9. SFS_VOLNAME_SIZE 32 
+10. type u_int32_t which means 32 bits or 4 bytes
+11. fs_sync, fs_getvolname, fs_getroot, fs_umount
+12. void thread_sleep(const void *addr);
+13. typedef int32_t pid_t (32 bits/4 bytes) 
+14. open, close, reclaim, read, readlink, getdirentry, write, ioctl, stat, gettype, tryseek, fsync, mmap, truncate, namefile, creat, symlink, mkdir, link, remove, rmdir, rename, lookup, lookparent
+15. #define PATH_MAX 1024
+16. #define SYS_reboot 8
+17. #define STDIN_FILENO 0 (defined in unistd.h)
+18. Yes, the scheduler bootstrap just creates the run queue and the thread bootstrap just initializes the first threat
+19. "Zombies are threads/processes that have exited but not been fully deleted yet
+20. runqueue = q_create(32)
+21. the name of device is always device: such as lhd0
+22. the same with raw appended: lhd0raw
+23. vn_countlock
+24. block and character devices
