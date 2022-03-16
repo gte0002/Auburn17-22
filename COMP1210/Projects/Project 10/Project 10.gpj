@@ -1,0 +1,43 @@
+!1237;s
+J
+SAU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SCU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+S+U0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SJU0CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012File\012CLASSPATH+=.%;\012CLASSPATH+=%<SRC_CLASSPATHS>%;\012ProjectOrFile\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Debug +Debug_Applet\012CLASSPATH=+%;%<INJECTION_CLASSPATHS>\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012CLASSPATH+=%<CLASSES_DIR>%;\012
+SXU0
+SOU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SyU0PATH+=%<PYTHON_PATH>%;\012PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning\012GCC_COLORS=
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!170;g
+%\011Car.java
+%\011UseTaxComparator.java
+%\011VehiclesPart2.java
+%\011SemiTractorTrailer.java
+%\011Motorcycle.java
+%\011UseTaxList.java
+%\011Vehicle.java
+%\011Truck.java
+!170;f
+%\011Car.java
+%\011UseTaxComparator.java
+%\011VehiclesPart2.java
+%\011SemiTractorTrailer.java
+%\011Motorcycle.java
+%\011UseTaxList.java
+%\011Vehicle.java
+%\011Truck.java
+!180;l
+%\011MotorcycleTest.java
+%\011SemiTractorTrailerTest.java
+%\011VehiclesPart2Test.java
+%\011TruckTest.java
+%\011CarTest.java
+%\011UseTaxListTest.java
+%\011UseTaxComparatorTest.java
+!1495;t
+jgrJUnit0xr	%\011UseTaxComparator.java	1512170372583:P%\011UseTaxComparatorTest.java	%\011VehiclesPart2Test.java	1512170367452:P%\011VehiclesPart2.java	%\011VehiclesPart2.java	1512170367452:P%\011VehiclesPart2Test.java	%\011UseTaxList.java	1512170839390:F%\011UseTaxListTest.java	%\011UseTaxListTest.java	1512170839390:F%\011UseTaxList.java	%\011SemiTractorTrailerTest.java	1512168580236:P%\011SemiTractorTrailer.java	%\011MotorcycleTest.java	1512168587993:P%\011Motorcycle.java	%\011Car.java	1512168596930:P%\011CarTest.java	%\011TruckTest.java	1512168572284:P%\011Truck.java	%\011SemiTractorTrailer.java	1512168580236:P%\011SemiTractorTrailerTest.java	%\011Motorcycle.java	1512168587993:P%\011MotorcycleTest.java	%\011CarTest.java	1512168596930:P%\011Car.java	%\011UseTaxComparatorTest.java	1512170372583:P%\011UseTaxComparator.java	%\011Truck.java	1512168572284:P%\011TruckTest.java	
+jgrCheckstyle0xr	%\011VehiclesPart2Test.java	1512170804273:P	%\011VehiclesPart2.java	1512170804273:P	%\011UseTaxComparator.java	1512170804273:P	%\011UseTaxList.java	1512170804273:P	%\011Vehicle.java	1512170804273:P	%\011UseTaxListTest.java	1512170804273:P	%\011SemiTractorTrailerTest.java	1512170804273:P	%\011MotorcycleTest.java	1512170804273:P	%\011Car.java	1512170804273:P	%\011TruckTest.java	1512170804273:P	%\011SemiTractorTrailer.java	1512170804273:P	%\011Motorcycle.java	1512170804273:P	%\011CarTest.java	1512170804273:P	%\011Truck.java	1512170804273:P	%\011UseTaxComparatorTest.java	1512170804273:P	

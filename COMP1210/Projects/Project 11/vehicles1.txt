@@ -1,0 +1,11 @@
+Tax District 52
+Car; Jones, Sam; 2017 Honda Accord; 22000; false
+car; Jones, Jo; 2017 Honda Accord; 22000; true
+race car; Zinc, Zed; 2013 Custom Hot Rod; 61000; false
+Car; Smith, Pat; 2015 Mercedes-Benz Coupe; 110000; false
+Car; Smith, Jack; 2015 Mercedes-Benz Coupe; 110000; true
+Truck; Williams, Jo; 2012 Chevy Silverado; 30000; false; 1.5
+Firetruck; Body, Abel; 2015 GMC FE250; 55000; false; 2.5
+truck; Williams, Sam; 2010 Chevy Mack; 40000; true; 2.5
+Semi; Williams, Pat; 2012 International Big Boy; 45000; false; 5.0; 4
+Motorcycle; Brando, Marlon; 1964 Harley-Davidson Sportster; 14000; false; 750
