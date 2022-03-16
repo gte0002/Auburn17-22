@@ -1,0 +1,11 @@
+Problem 1 uses the python3 + pip method. It also uses the dpkt method. 
+(dpkt folder is in the problem-1-src folder, I am unsure if it is needed or not)
+
+There should be no having to build or do anything specific with the file (besides making sure dpkt is available)
+
+To run the code simply do:
+
+'python3 detector.py example-data.pcap'
+
+where "example-data.pcap" was the file given and used for testing of this method, however, any .pcap file will work here.
+(the example-data.pcap file is included in the problem-1-src folder in case it is needed for testing)

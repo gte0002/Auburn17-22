@@ -1,0 +1,43 @@
+test-case-a: String thats not simple or complex
+  why-can-be-abused: Trying to unmarshal a string from deserialization that is not in nosj form. Such as, '{a:abcd}'. This does not throw an error for not being not in nosj form. This will simply print out the function as, {'a': 'abcd'}, a dictionary type. This can be abused because the output in this case can be exactly whatever the user inputs. This can lead to attacks where outputs are forced to look like things the program does not want to see. For instance, forcing the output to look like an error. This is tied to several phishing techniques or can even be used to pass commands to read or modify data.
+
+  root-cause: In the program, we check to see if the input into the unmarshal function is a type dictionary, empty, or a string. Action is then taken if the input is in fact a string. However, we cannot differentiate between types of strings. This means when passing a string that is neither a simple string, or a complex string, our program does not work, and just puts the input into a dictionary type and returns it.
+  
+  root-cause-rationale: This is not good for our program since it allows whoever the user is to dictate exactly what our output will be. In this case, whatever the user inputs, will be the output. Knowing this, the user can find out that the encryption 's' at the end of simple strings is only put on the end of a string if the string is not complex. This should throw an error since the string is not a simple string or a complex string, but instead it passes the string through, giving that the program will only remove the last 's' in the string if it is a simple string. 
+=========================================================================================================
+test-case-b: marshaling null character in key of dictionary
+  why-can-be-abused: marshaling a null character (such as {'\00':...} ) from serialization should throw an error, however, using the null character in the key can sometimes let it through since a lot of programs only check for these characters in the value. And most of the time, if the null character can pass through the marshal, if you try to then unmarshal the result an error is thrown. Null characters need to always be dealt with in every scenario since they can be used for different attacks when left alone. These can be anything from modifying directories, or any other path traversal attack. 
+  
+  root-cause: This is caused by not being sure to deal with any and all instances of null characters. The null_byte attacks are a growing cause today because of how easy it is to sneak a null character into space and create chaos. In our instance, we did not check for the null in the key of the dictionary, because we are told it is not a valid input. Furthermore, even if Serialization catches this null byte and deals with it by simply letting it pass, the unmarshalling in deserialization will certainly crash since it must convert back from string to type dictionary. This creates a problem since an attacker may continuously pass a null character and continuously crash the program.
+  
+  root-cause-rationale: This effects our program mostly because the null_byte attacks are growing every day in how easy it is for a DoS attack to occur by simply passing a null character. This shows why the author must go through these programs and make sure there are checks in each space of any type to ensure there are no null bits. It is easy to see why these attacks are growing more common since going through to check every space in an input for this program is not too bad, however, you can clearly see that with a larger program this could add a lot of time and remove a lot of efficiency. Therefore, the author must find balance in checking as many spaces as possible to clear, without checking too many places making the program slow/inefficient. 
+===========================================================================================================
+
+DONT LIKE THE IDEA
+
+test-case-c: Integer passed as type string?????????
+  why-can-be-abused: //Maybe check to make sure what this output should be before determining if it is a vulnerability. 
+  
+  root-cause: 
+  
+  root-cause-rationale: 
+=========================================================
+
+I THINK IDEA ALREADY BEING USED
+
+test-case-d: Using strange symbols In input of marshaling
+  why-can-be-abused: //This could work for all types of symbols whether in value or key in both marshal and unmarshal.
+  
+  root-cause: 
+  
+  root-cause-rationale: 
+=========================================================
+
+IDEA #5
+
+test-case-e: //Next idea
+  why-can-be-abused: 
+  
+  root-cause: 
+  
+  root-cause-rationale: 

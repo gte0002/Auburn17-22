@@ -1,0 +1,96 @@
+################################################################################
+# SUMMARY
+################################################################################
+The nosj data format is the latest and greatest way to serialize data such that
+it can be shared across arbitrary mediums. Although formats like JSON, XML, and
+protocol-buffers already exist, they do not subscribe to nosj's philosophy of
+"No one ever needs more than three data-types!". nosj was created for the
+purpose of having a simple and easy-to-use interface allows even the most
+complex data structures to be represented in an easy-to-use and
+easy-to-understand way.
+
+A nosj object is a representation of the standard Python dictionary type and
+consists of a root-level map containing zero or more key-value pairs (see map
+data-type). When the object is in its marshalled-state, white-space is
+irrelevant with the exception of white-space within the string data-type and
+map-key elements described below.
+
+################################################################################
+# DATA-TYPES
+################################################################################
+The nosj format consists of three data-types: maps, integers, and strings. Each
+is described in-depth below.
+
+# Data-Type: integer
+A nosj integer represents a whole-number value between positive-infinity and
+negative-infinity. A marshalled integer consists of the ascii-character "i", an
+optional ascii-dash representing a negative-sign ("-"), and one or more
+ascii-digits ("0" through "9").
+
+Examples:
+    Marshalled nosj integer: i1234
+    Integer value: 1234
+
+    Marshalled nosj integer: i-5678
+    Integer value: -5678
+
+# Data-Type: string
+A nosj string is a sequence of ascii bytes bytes which can be used to represent
+arbitrary internal data such as unicode or raw-binary. There are two distinct
+representations of a nosj string data-type as described below.
+
+### Representation #1: Simple Strings
+In the simple representation, the string is restricted to ascii characters
+considered "printable" with the exception of the percent-sign, comma, and braces
+(i.e. all letters, numbers, punctuation, and whitespace except "%", "," (0x2C),
+"{", and "}"). This representation is annotated by a trailing "s" which is NOT
+part of the data being encoded.
+
+Examples:
+    Marshalled nosj string: abcds
+    String value: "abcd"
+
+    Marshalled nosj string: ef ghs
+    String value: "ef gh"
+
+### Representation #2: Complex Strings
+In the complex representation, the string is percent-encoded as is commonly the
+case in URLs. Arbitrary bytes may be represented this way but a complex string
+MUST have at least one percent-encoded representation.
+
+Examples:
+    Marshalled nosj string: ab%2Ccd
+    String value: "ab,cd"
+
+    Marshalled nosj string: ef%00gh
+    String value: "ef<null-byte>gh"
+
+# Data-Type: map
+A nosj map is a sequence of zero or more key-value pairs that take the form of
+{key-1:value-1, key-2:value-2, ...} similar to the traditional hash-map data
+structure. Values may be any of the three canonical nosj data-types (map, string
+or integer) and maps may be nested to an arbitrary depth. Keys, on the
+otherhand, MUST be an ascii-string consisting of one or more of the following:
+- Upper or lowercase letters "a" through "z"
+- Numerical digits "0" through "9"
+- The characters " " (space), "-", "_", "+", and "."
+
+Examples:
+    Marshalled nosj map: {x:abcds}
+    Key-1: "x"
+    Value-1: "abcd" (string)
+
+    Marshalled nosj map: {x:abcds,y:i123}
+    Key-1: "x"
+    Value-1: "abcd" (string)
+    Key-2: "y"
+    Value-2: 123 (integer)
+
+    Marshalled nosj map: {x:{y:i123}}
+    Key-1: "x"
+    Value-1: (map)
+        Key-1-1: "y"
+        Value-1-1: 123 (integer)
+
+ERRATA:
+- 17Aug2021: Fixed confusing typo in nested-map example.
