@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct 23 18:32:35 2021
+# Process ID: 19368
+# Current directory: D:/Christobel/Classes/Digital System Design/Lab9/Lab9/Lab9.runs/impl_1
+# Command line: vivado.exe -log five_ring.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source five_ring.tcl -notrace
+# Log file: D:/Christobel/Classes/Digital System Design/Lab9/Lab9/Lab9.runs/impl_1/five_ring.vdi
+# Journal file: D:/Christobel/Classes/Digital System Design/Lab9/Lab9/Lab9.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source five_ring.tcl -notrace

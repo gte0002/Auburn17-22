@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ELEC 4200/lab9/9_1/9_1.srcs/sources_1/new/Multiplier_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ELEC 4200/lab9/9_1/9_1.srcs/sim_1/new/tb_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_3_3

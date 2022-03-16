@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\Christobel\Classes\Digital System Design\Lab7\Lab7\Lab7.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

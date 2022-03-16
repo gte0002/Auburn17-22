@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 13 17:09:11 2021
+# Process ID: 9404
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab7/Extra/Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2368 C:\Users\bobog\Desktop\School\ELEC 4200\lab7\Extra\Lab7\Lab7.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab7/Extra/Lab7/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab7/Extra/Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab7/Extra/Lab7/Lab7.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Sep 22 00:09:39 2021
+# Process ID: 15336
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/Lab5.runs/synth_1
+# Command line: vivado.exe -log task1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source task1.tcl
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/Lab5.runs/synth_1/task1.vds
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/Lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source task1.tcl -notrace

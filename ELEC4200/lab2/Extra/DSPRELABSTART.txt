@@ -1,0 +1,92 @@
+-------------------------------------------
+Task 1:
+reg [6:0] led;
+wire [3:0] num;
+always @* begin
+  case (num)
+    4'b0000 : led = 7'b1111110;
+    /* you fill in the rest */
+    4'b1111 : led = 7'b1000111;
+  endcase
+end
+-------------------------------------------
+
+Task 2:
+
+module convert_4_2(v,z,m);
+input [3:0]v;
+output reg z;
+output reg [3:0]m; // Input Output Port declaration
+always(v) // Combinational block (polling the input v)
+if(v < 4'b1001) // Check if input is less than 9
+{z,m} = {1'b0,v}; // If it is less than 9 then don't covert input , send it as it is and make z as zero.
+else
+begin
+z=1'b1; // If number is greater than 9 then we need to make z as one.
+m=v-4'b1010; // Subtract 10 from input so that we get zero at output m,
+end
+endmodule
+
+--------------------------------------------
+
+Task 3:
+
+module two_out_of_five(x,y);
+input [3:0] x;
+output [4:0] y;
+  
+assign y[0]=(~x[3])&(~x[2])&(~x[1])+(~x[3])&(~x[2])&x[0]+x[2]&x[1]&(~x[0]);
+assign y[1]=(~x[3])&(~ x[2])&(~x[0])+(~x[3])&(~x[2])&(~x[0])+x[2]&x[1]&x[0];
+assign y[2]=~(x[3])&(~x[1])&x[0]+(~x[2])&x[1]&(~x[0])+x[3]&(~x[0]);
+assign y[3]=(~x[2])&x[1]&x[0]+x[2]&(~x[1])+x[3]&x[0];
+assign y[4]=x[2]&x[1]&(~x[0])+x[3];
+endmodule
+
+-----------------------------------------
+
+Task 4:
+
+module ripple_carry_adder(a,b,cin,s,cout);
+input [3:0] a,b; input; cin;
+output [3:0] s;
+output cout;
+wire w1,w2,w3;
+
+fulladder f1(x[0],y[0],0,s[0],w1);
+fulladder f1(x[1],y[1],w1,s[1],w2);
+fulladder f1(x[2],y[2],w2,s[2],w3);
+fulladder f1(x[3],y[3],w3,s[3],cout);
+
+---------------------------------------------
+Task 5:
+
+module seven_seg_decoder(clk,s,seven_seg);
+
+input [3:0]s ;
+input clk;
+output reg [6:0] seven_seg;
+
+rca sum(s);
+
+always @(posedge clk)
+begin
+case (bcd)
+4'b0000 : begin seven_seg = 7'b1111110; end
+4'b0001 : begin seven_seg = 7'b0110000; end
+4'b0010 : begin seven_seg = 7'b1101101; end
+4'b0011 : begin seven_seg = 7'b1111001; end
+4'b0100 : begin seven_seg = 7'b0110011; end
+4'b0101 : begin seven_seg = 7'b1011011; end
+4'b0110 : begin seven_seg = 7'b1011111; end
+4'b0111 : begin seven_seg = 7'b1110000; end
+4'b1000 : begin seven_seg = 7'b1111111; end
+4'b1001 : begin seven_seg = 7'b1110011; end
+default : begin seven_seg = 7'b0000000; end
+endcase
+end
+endmodule
+
+-------------------------------------------------
+Task 6:
+
+

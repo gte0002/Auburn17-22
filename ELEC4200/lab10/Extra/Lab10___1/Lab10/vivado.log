@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov  3 22:51:48 2021
+# Process ID: 17424
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8804 C:\Users\bobog\Desktop\School\ELEC 4200\lab10\Extra\Lab10\Lab10\Lab10.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Christobel/Classes/Digital System Design/Lab10/Lab10' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.gen/sources_1', nor could it be found using path 'D:/Christobel/Classes/Digital System Design/Lab10/Lab10/Lab10.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task8wim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task8wim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task8wim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task8
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:59]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:68]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:75]
+ERROR: [VRFC 10-2989] 'A' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:78]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:79]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:82]
+ERROR: [VRFC 10-2989] 'B' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:86]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:87]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:92]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:95]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:98]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:100]
+ERROR: [VRFC 10-2989] 'State' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:102]
+ERROR: [VRFC 10-2989] 'O' is not declared [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:103]
+ERROR: [VRFC 10-2865] module 'task8' ignored due to previous errors [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property is_enabled false [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task8.v}}]
+set_property is_enabled false [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task8sim.v}}]
+set_property is_enabled true [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task1.v}}]
+set_property is_enabled true [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v}}]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task1sim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task1sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task1sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module add_product
+INFO: [VRFC 10-311] analyzing module data_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xelab -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'load' on this module [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task1sim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task1sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task1sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module add_product
+INFO: [VRFC 10-311] analyzing module data_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1sim
+INFO: [VRFC 10-2458] undeclared symbol start, assumed default net type wire [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:33]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:36]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:37]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:38]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:39]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:40]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:41]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:43]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:48]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:49]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:50]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:51]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:52]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:53]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register start is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:54]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task1sim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task1sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task1sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module add_product
+INFO: [VRFC 10-311] analyzing module data_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xelab -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.add_product
+Compiling module xil_defaultlib.data_processor
+Compiling module xil_defaultlib.task1
+Compiling module xil_defaultlib.task1sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot task1sim_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/bobog/Desktop/School/ELEC -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/bobog/Desktop/School/ELEC" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov  3 22:57:43 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1132.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "task1sim_behav -key {Behavioral:sim_1:Functional:task1sim} -tclbatch {task1sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source task1sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'task1sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1132.301 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property is_enabled false [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task1.v}}]
+set_property is_enabled true [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task7.v}}]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task1sim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task1sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task1sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xelab -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'load' on this module [C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'task1sim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'task1sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj task1sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sources_1/new/task7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task7
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module add_product
+INFO: [VRFC 10-311] analyzing module data_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.srcs/sim_1/new/task1sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module task1sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+"xelab -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 94ed2eaa11854c22b715f7d7a136fffd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot task1sim_behav xil_defaultlib.task1sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.add_product
+Compiling module xil_defaultlib.data_processor
+Compiling module xil_defaultlib.task7
+Compiling module xil_defaultlib.task1sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot task1sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/Extra/Lab10/Lab10/Lab10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "task1sim_behav -key {Behavioral:sim_1:Functional:task1sim} -tclbatch {task1sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source task1sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'task1sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1132.301 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  4 00:15:59 2021...
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        current_project project_10_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Lab10_1_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Lab10_1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Lab10_1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.srcs/sources_1/new/Lab10_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab10_1
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module add_product
+INFO: [VRFC 10-311] analyzing module data_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.srcs/sim_1/new/Lab10_1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab10_1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.sim/sim_1/behav/xsim'
+"xelab -wto 8787f9102a1745d890a0172ffac6a29c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab10_1_tb_behav xil_defaultlib.Lab10_1_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 8787f9102a1745d890a0172ffac6a29c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab10_1_tb_behav xil_defaultlib.Lab10_1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.add_product
+Compiling module xil_defaultlib.data_processor
+Compiling module xil_defaultlib.Lab10_1
+Compiling module xil_defaultlib.Lab10_1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Lab10_1_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/bobog/Desktop/School/ELEC -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/bobog/Desktop/School/ELEC" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov  3 23:08:12 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_1/project_10_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Lab10_1_tb_behav -key {Behavioral:sim_1:Functional:Lab10_1_tb} -tclbatch {Lab10_1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Lab10_1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Lab10_1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_project project_10_3
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab7/project_7_1/project_7_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab7_mod/project_7_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only. * IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2018.1) has a different revision in the IP Catalog.
+WARNING: [Project 1-229] Project 'project_7_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab5/project_5_1/project_5_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab5_mod/project_5_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_5_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab3_mod/project_3_4' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_3_4.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+current_project project_10_3
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_3/project_10_3.srcs/sources_1/new/ROM.mem} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab10/project_10_3/project_10_3.srcs/sources_1/new/ROM.mem}}
+close_project
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  4 00:27:46 2021...

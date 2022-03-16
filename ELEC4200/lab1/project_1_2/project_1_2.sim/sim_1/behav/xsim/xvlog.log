@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab1_gateLevel_2wide
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'Y' is not allowed [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:25]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'A' is not allowed [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:26]
+ERROR: [VRFC 10-3642] port 'A' must not be declared to be an array [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:24]
+WARNING: [VRFC 10-3594] non-net port 'A' cannot be of mode inout [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:24]
+ERROR: [VRFC 10-3648] port declaration not allowed in 'Lab1_gateLevel_2wide' with formal port declaration list [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:25]
+ERROR: [VRFC 10-3648] port declaration not allowed in 'Lab1_gateLevel_2wide' with formal port declaration list [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:26]
+ERROR: [VRFC 10-3155] cannot access memory 'B' directly [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:29]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Y' is not permitted [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:31]
+ERROR: [VRFC 10-3161] cannot assign to memory 'Y' directly [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:31]
+ERROR: [VRFC 10-2865] module 'Lab1_gateLevel_2wide' ignored due to previous errors [C:/Users/bobog/Desktop/Lab1_gateLevel_2wide.v:24]

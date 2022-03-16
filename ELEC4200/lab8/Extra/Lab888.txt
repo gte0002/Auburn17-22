@@ -1,0 +1,376 @@
+// Task 1
+module Register_with_synch_reset_load_behavior(input [3:0] D, input Clk, input reset, input load, output reg [3:0] Q);
+    always @(posedge Clk)
+    if (reset)    
+         begin
+             Q <= 4'b0;
+    end
+    else if (load)
+        begin
+            Q <= D;
+        end
+endmodule
+
+module Lab7_1_tb();
+
+    reg [3:0] D;
+    reg Clk, reset, load;
+    wire [3:0] Q;
+    Register_with_synch_reset_load_behavior UUT(.D(D), .Clk(Clk), .reset(reset), .load(load), .Q(Q));
+
+    initial 
+        begin
+            Clk = 0;
+            forever
+            begin
+            #10 Clk = ~Clk;
+            end
+        
+    end
+    initial begin
+        D = 0; load = 0; reset = 0;
+        #20 D = 4'b0101;
+        #40 load = 1'b1;
+        #20 D = 4'b1001; load = 0;
+        #40 load = 1'b1;
+        #20 load = 1'b0;
+        #15 reset = 1'b1;
+        #40 load = 1'b1;
+        #20 load = 1'b0;
+        #25 reset = 1'b0;
+        #40 load = 1'b1;
+        #40 $finish;
+
+    end
+endmodule
+
+//Task 2
+module Register_with_synch_reset_set_load_ehavior(input [3:0]D, input Clk, input reset, input set, input load, output reg [3:0] Q);
+
+    always @(posedge Clk)
+    if (reset)
+        begin
+            Q <= 4'b0;
+        end
+    else if (set)
+        begin
+            Q <= 4'b1;
+        end
+    else if (load)
+        begin
+            Q <= D;
+        end
+endmodule
+
+// Task 3
+module delay_line3_behavior(input Clk, input ShiftIn, output ShiftOut); (
+    reg [2:0] shift_reg;
+    always @ (posedge Clk)
+        shift_reg <= {shift_reg [1:0], ShiftIn};
+        assign ShiftOut = shift_reg[2];
+endmodule
+
+module Lab7_3_tb;
+    reg Clk, ShiftIn;
+    wire ShiftOut;
+
+    delay_line3_behavior UUT(.Clk(Clk), .ShiftIn(ShiftIn), .ShiftOut(ShiftOut));
+
+    initial
+         begin
+             Clk = 0;
+             forever 
+                begin
+                #10 Clk=~Clk;
+                end
+                 
+             end
+        
+    initial begin
+        ShiftIn = 0;
+
+            #20 ShiftIn = 1'b1;
+            #40 ShiftIn = 1'b0;
+            #20 ShiftIn = 1'b1;
+            #40 ShiftIn = 1'b0;
+            #90 $finish;
+    end
+endmodule
+
+// Task 4
+
+module Parallel_in_serial_out_load_enable_behavior(input Clk, input ShiftIn, input [3:0] ParallelIn, input load, input ShiftEn, output ShiftOut,output [3:0] RegContent);
+    reg [3:0] shift_reg;
+    always @(posedge Clk)
+        if(load)
+            shift_reg <= ParallelIn;
+        else if (ShiftEn)
+            shift_reg <= {shift_reg[2:0], ShiftIn};
+        assign ShiftOut = shift_reg[3];
+        assign RegContent = shift_reg;
+    
+endmodule
+
+module Lab7_4_tb;
+    reg Clk, load, ShiftEn,ShiftIn;
+    reg [3:0] ParallelIn;
+    wire [3:0] RegContent;
+    wire ShiftOut;
+    Parallel_in_serial_out_load_enable_behavior DUT(.Clk(Clk),.load(load),.ShiftEn(ShiftEn),.ShiftIn(ShiftIn),.ParallelIn(ParallelIn),.RegContent(RegContent),.ShiftOut(ShiftOut));
+
+    initial
+        begin
+            Clk = 0;
+            forever
+                begin
+                    #10 Clk=~Clk;
+                end
+        end
+    initial begin
+        load = 0;
+        ShiftIn = 0;
+        ShiftEn = 0;
+
+            #0 ShiftIn=1'b1; ParallelIn = 4'b0011;
+            #20 ParallelIn = 4'b0101;
+            #40 load = 1'b1;
+            #20 load = 1'b0;
+            #20 ShiftEn = 1'b1;
+            #80 ParallelIn = 4'b1001;
+            #20 load = 1'b1;
+            #20 load = 1'b0;
+            #55 load = 1'b1;
+            #20 load = 1'b0;
+            #25 ShiftEn = 1'b0;
+            #40 load = 1'b1;
+            #20 load = 1'b0;
+            #30 $finish;
+    end
+endmodule
+
+// Task 5
+
+module Lab7_5(input Clk, input ShiftEn, input ShiftIn, output [3:0] ParallelOut, output ShiftOut);
+    reg [3:0] shift_reg;
+
+    always @(posedge clk ) 
+        if(ShiftEn)
+            shift_reg <= {shift_reg[3:0],ShiftIn};
+            assign ParallelOut = shift_reg;
+            assign ShiftOut = shift_reg[3];    
+endmodule
+
+module lab7_5_tb;
+    reg Clk, ShiftEn, ShiftIn;
+    wire [3:0] ParallelOut;
+    wire ShiftOut;
+
+    Lab7_5 DUT(.Clk(Clk),.ShiftEn(ShiftEn),.ShiftIn(ShiftIn),.ParallelOut(ParallelOut),.ShiftOut(ShiftOut));
+
+    initial begin
+        Clk = 0;
+        forever begin
+            #10 Clk=~Clk;
+        end
+    end
+    initial begin
+        ShiftEn = 0;
+        ShiftIn = 0;
+
+        #0 ShiftIn = 1'b1;
+        #40 ShiftEn = 1'b1;
+        #40 ShiftEn = 1'b0;
+        #40 ShiftEn = 1'b1;
+        #40 ShiftEn = 1'b0;
+        #40 ShiftIn = 1'b0;
+        #40 ShiftEn = 1'b1;
+        #40 ShiftEn = 1'b0;
+        #40 ShiftEn = 1'b1;
+        #40 ShiftEn = 1'b0;
+        #50 $finish;
+    end
+endmodule
+
+// Task 6
+// Define T_FF
+module T_ff (input Clk, input reset, input T, output reg Q);
+    always @(posedge clk or negedge reset)
+     begin
+         if(~reset)
+            Q <= 1'b0;
+        else
+            Q <= Q ^ T;
+    end
+endmodule
+//Define 8 bit Counter
+
+module counter_8bit(input Clk, input Clear_n, input Enable, output [7:0] Q) 
+    wire w0, w1, w2, w3, w4, w5, w6, w7;
+    //ff1
+    T_ff ff0(.Clk(Clk),.reset(Clear_n),.T(Enable),.Q(Q[0]));
+    and (w0, Q[0], Enable);
+    //ff2
+    T_ff ff1(.Clk(Clk),.reset(Clear_n),.T(w0),.Q(Q[1]));
+    and (w1,Q[1],w0);
+    //ff3
+    T_ff ff2(.Clk(Clk),.reset(Clear_n),.T(w1),.Q(Q[2]));
+    and (w2,Q[2],w1);
+    //ff4
+    T_ff ff3(.Clk(Clk),.reset(Clear_n),.T(w2),.Q(Q[3]));
+    and (w3,Q[3],w2);
+    //ff5
+    T_ff ff4(.Clk(Clk),.reset(Clear_n),.T(w3),.Q(Q[4]));
+    and (w4,Q[4],w3);
+    //ff6
+    T_ff ff5(.Clk(Clk),.reset(Clear_n),.T(w4),.Q(Q[5]));
+    and (w5,Q[5],w4);
+    //ff7
+    T_ff ff6(.Clk(Clk),.reset(Clear_n),.T(w5),.Q(Q[6]));
+    and (w6,Q[6],w5);
+    //ff8
+    T_ff ff7(.Clk(Clk),.reset(Clear_n),.T(w6),.Q(Q[7]));
+endmodule
+
+
+module counter_8bit_tb;
+    reg Clk,Clear_n,Enable;
+    wire [7:0] Q;
+
+    counter_8bit UUT(.Clk(Clk),.Clear_n(Clear_n),.Enable(Enable),.Q(Q));
+
+    initial begin
+        Clk = 0;
+        forever 
+        #5 Clk = ~Clk;
+        end
+    initial begin
+        Enable = 0;
+        Clear_n = 0;
+
+        #20 Enable = 1'b1;
+        #20 Clear_n = 1'b1;
+        #80 Enable = 1'b0;
+        #80 Enable = 1'b1;
+        #300 $finish;
+    end
+endmodule
+
+// Task 7
+
+//D Flip-flop
+module D_ff_behavioral(D,Clk,reset,Q);
+    input D,Clk,reset;
+    output reg Q;
+    always @(posedge clk or negedge reset)
+        if(~reset)
+            Q <= 1'b0;
+        else
+            Q <= D;
+endmodule
+//T Flip-Flop
+module T_ff(T,Clk,reset,Q);
+    input T, Clk, reset;
+    output Q;
+
+    wire Q_in, w1;
+
+    assign w1 = (T^Q);
+    assign Q_in = Q;
+    D_ff_behavioral ff1(.D(w1),.Clk(Clk),.reset(reset),.Q(Q0));
+endmodule
+// 8-bit Counter
+module dff_counter_8bit(input Clk, input Clear_n, input Enable, output [7:0] Q) 
+    wire w0, w1, w2, w3, w4, w5, w6, w7;
+    //ff1
+    T_ff ff0(.Clk(Clk),.reset(Clear_n),.T(Enable),.Q(Q[0]));
+    and (w0, Q[0], Enable);
+    //ff2
+    T_ff ff1(.Clk(Clk),.reset(Clear_n),.T(w0),.Q(Q[1]));
+    and (w1,Q[1],w0);
+    //ff3
+    T_ff ff2(.Clk(Clk),.reset(Clear_n),.T(w1),.Q(Q[2]));
+    and (w2,Q[2],w1);
+    //ff4
+    T_ff ff3(.Clk(Clk),.reset(Clear_n),.T(w2),.Q(Q[3]));
+    and (w3,Q[3],w2);
+    //ff5
+    T_ff ff4(.Clk(Clk),.reset(Clear_n),.T(w3),.Q(Q[4]));
+    and (w4,Q[4],w3);
+    //ff6
+    T_ff ff5(.Clk(Clk),.reset(Clear_n),.T(w4),.Q(Q[5]));
+    and (w5,Q[5],w4);
+    //ff7
+    T_ff ff6(.Clk(Clk),.reset(Clear_n),.T(w5),.Q(Q[6]));
+    and (w6,Q[6],w5);
+    //ff8
+    T_ff ff7(.Clk(Clk),.reset(Clear_n),.T(w6),.Q(Q[7]));
+endmodule
+
+module dff_8bit_counter_tb;
+    reg Clk,Clear_n,Enable;
+    wire [7:0] Q;
+
+    dff_counter_8bit UUT(.Clk(Clk),.Clear_n(Clear_n),.Enable(Enable),.Q(Q));
+
+    initial begin
+        Clk =0;
+        forever 
+            #5 Clk = ~Clk;
+    end
+
+    initial begin
+        Enable = 0;
+        Clear_n = 0;
+        #20 Enable = 1'b1;
+        #20 Clear_n = 1'b1;
+        #80 Enable = 1'b0;
+        #80 Enable = 1'b1;
+        #310 $finish;
+    end
+endmodule
+
+//Task 8
+
+module downcounter_4bit(input Clock, input Enable,input Clear, input Load,output [3:0] Q);
+    reg [3:0] count;
+    wire cnt_done;
+
+    assign cnt_done = ~| count;
+    assign Q = count;
+
+    always @(posedge Clock)
+        if (Clear)
+            count <= 0;
+        else if (Enable)
+        if (Load| cnt_done)
+            count <= 4'b1010; // decimal 10
+        else
+        count <= count - 1;
+endmodule
+
+
+module Lab7_8_tb;
+reg Clock,Enable,Clear,Load;
+wire [3:0] Q;
+
+downcounter_4bit UUT(.Clock(Clock),.Enable(Enable),.Clear(Clear),.Load(Load),.Q(Q));
+
+initial begin
+    Clock = 0;
+    forever
+        begin
+        #5 Clock = ~Clock;
+        end
+initial begin
+    Clock=0; Enable=0;Clear=0; Load=0;
+
+    #20 Enable = 1'b1;
+    #20 Clear = 1'b1;
+    #20 Clear = 1'b0;
+    #20 Load = 1'b1;
+    #10 Load = 1'b0;
+    #80 Enable = 1'b0;
+    #40 Enable = 1'b1;
+    #220 $finish; 
+end    
+endmodule

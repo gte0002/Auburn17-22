@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Oct 21 13:11:12 2021
+# Process ID: 6356
+# Current directory: C:/Users/gte0002/lab8_mod/project_8_3/project_8_3.runs/synth_1
+# Command line: vivado.exe -log delay_line3_behavior.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source delay_line3_behavior.tcl
+# Log file: C:/Users/gte0002/lab8_mod/project_8_3/project_8_3.runs/synth_1/delay_line3_behavior.vds
+# Journal file: C:/Users/gte0002/lab8_mod/project_8_3/project_8_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source delay_line3_behavior.tcl -notrace

@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Sep  6 15:30:30 2021
+# Process ID: 5948
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16644 C:\Users\bobog\Desktop\School\ELEC 4200\lab2\project_2_1\project_2_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/project_2_1.xpr}
+update_compile_order -fileset sources_1
+close_project
+create_project project_3_1 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1} -part xc7k70tfbv676-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new/Lab3_3to8Dec.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new/Lab3_3to8Dec.v}}
+update_compile_order -fileset sources_1
+create_project project_3_2 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2} -part xc7k70tfbv676-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new/Lab3_IC_Design.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new/Lab3_IC_Design.v}}
+update_compile_order -fileset sources_1
+create_project project_3_3 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3} -part xc7a100tcsg324-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new/Lab3_8to3ENC.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/sources_1/new/Lab3_8to3ENC.v}}
+update_compile_order -fileset sources_1
+current_project project_3_1
+close_project
+current_project project_3_2
+close_project
+create_project project_3_1 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1} -part xc7a100tcsg324-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new/Lab3_3to8DEC.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/sources_1/new/Lab3_3to8DEC.v}}
+update_compile_order -fileset sources_1
+create_project project_3_2 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2} -part xc7a100tcsg324-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new/Lab3_IC_Design.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/sources_1/new/Lab3_IC_Design.v}}
+update_compile_order -fileset sources_1
+create_project project_3_4 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4} -part xc7a100tcsg324-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new/Lab3_Comparator.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/sources_1/new/Lab3_Comparator.v}}
+update_compile_order -fileset sources_1
+create_project project_3_5 {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5} -part xc7a100tcsg324-1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new/Lab3_Multiplier.v} w ]
+add_files {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/sources_1/new/Lab3_Multiplier.v}}
+update_compile_order -fileset sources_1
+current_project project_3_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new/3to8_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_1/project_3_1.srcs/constrs_1/new/3to8_const.xdc}}
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1
+current_project project_3_2
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new/IC_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_2/project_3_2.srcs/constrs_1/new/IC_const.xdc}}
+current_project project_3_3
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new/8to3_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_3/project_3_3.srcs/constrs_1/new/8to3_const.xdc}}
+current_project project_3_4
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new/comp_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_4/project_3_4.srcs/constrs_1/new/comp_const.xdc}}
+current_project project_3_5
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new
+file mkdir C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1
+file mkdir {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new}
+close [ open {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new/mult_const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.srcs/constrs_1/new/mult_const.xdc}}
+current_project project_3_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/project_2_1.xpr}
+update_compile_order -fileset sources_1
+current_project project_3_1
+current_project project_2_1
+close_project
+current_project project_3_2
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/lab3_given/lab3_1_2/decoder_74138_dataflow_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_project
+current_project project_3_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/lab3_given/lab3_1_1/decoder_3to8_dataflow_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_project
+close_project
+close_project

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov  7 11:22:35 2021
+# Process ID: 1524
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19276 C:\Users\bobog\Desktop\School\ELEC 4200\lab10\WORKING FILES\task1and2\9_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2/9_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/ELEC 4200/lab9/9_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project '9_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1118.691 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task3/9_3.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/ELEC 4200/lab9/9_3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only. * IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2020.2) has a different revision in the IP Catalog.
+WARNING: [Project 1-229] Project '9_3.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+update_compile_order -fileset sources_1

@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/gte0002/lab8_mod/project_8_3/project_8_3.srcs/constrs_1/new/Lab8_3_const.xdc rfile:../../../project_8_3.srcs/constrs_1/new/Lab8_3_const.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { ShiftIn }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
+set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V10   IOSTANDARD LVCMOS33 } [get_ports { Clk }]; #IO_L21P_T3_DQS_14 Sch=sw[15]
+set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { ShiftOut }]; #IO_L18P_T2_A24_15 Sch=led[0]

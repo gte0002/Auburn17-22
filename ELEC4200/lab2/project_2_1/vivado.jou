@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Sep  8 16:50:29 2021
+# Process ID: 11848
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16848 C:\Users\bobog\Desktop\School\ELEC 4200\lab2\project_2_1\project_2_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/project_2_1.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_2/project_2_2.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_3/project_2_3.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_4/project_2_4.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_5/project_2_5.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_6/project_2_6.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/Extra/Multiplication.mem}}

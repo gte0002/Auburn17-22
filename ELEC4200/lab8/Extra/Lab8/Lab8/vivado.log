@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 20 21:06:05 2021
+# Process ID: 7656
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab8/Lab8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17580 C:\Users\bobog\Desktop\School\ELEC 4200\lab8\Extra\Lab8\Lab8\Lab8.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab8/Lab8/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab8/Lab8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab8/Lab8/Lab8.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Christobel/Classes/Digital System Design/Lab8/Lab8' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab8/Lab8/Lab8.gen/sources_1', nor could it be found using path 'D:/Christobel/Classes/Digital System Design/Lab8/Lab8/Lab8.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_7/project_8_7.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_7/project_8_7.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab88/Lab8/Lab8.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Christobel/Classes/Digital System Design/Lab8/Lab8' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/bobog/Desktop/School/ELEC 4200/lab8/Extra/Lab88/Lab8/Lab8.gen/sources_1', nor could it be found using path 'D:/Christobel/Classes/Digital System Design/Lab8/Lab8/Lab8.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+current_project Lab8
+close_project
+current_project project_8_7
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 20 21:33:22 2021...

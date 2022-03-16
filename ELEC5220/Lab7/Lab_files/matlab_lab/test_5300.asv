@@ -1,0 +1,79 @@
+clear
+close all
+cells = read_bf_file('apcom5m1');
+K = length(cells);
+N=30;
+phase1 = zeros(1, K);
+phase2 = zeros(1, K);
+phase3 = zeros(1, K);
+relative_phase12 = zeros(1, K);
+relative_phase23 = zeros(1, K);
+relative_phase31 = zeros(1, K);
+t=zeros(1,length(cells));
+sumy=zeros(N,length(cells));
+%sumy=zeros(10,floor(length(cells)/20));
+
+count = 1;
+figure
+for id=1:30
+  for i = 5 :  length(cells)
+	csi = cells{i}.csi;
+    
+	csi1 = reshape(csi(1,1, :), 1, N);
+	csi2 = reshape(csi(1,2, :), 1, N);
+	csi3 = reshape(csi(1,3, :), 1, N);
+    
+	
+	phase1(count) =abs(csi1(id));
+	phase2(count) =abs(csi2(id));
+	phase3(count) =angle(csi3(id));
+	
+   relative_phase12(count) = angle(csi2(id)*conj(csi1(id)));
+    relative_phase23(count) = angle(csi3(id)*conj(csi2(id)) );
+	relative_phase31(count) = angle(csi1(id)*conj(csi3(id)));
+	count = count + 1;
+ end
+count=1;
+p1=unwrap( relative_phase31);
+p2=hampel(p1,800,0.1);
+pp2=hampel(p1,50,1);
+
+
+y1=pp2-p2;
+y2=30*(hampel((y1),10,0.5));
+y3=y1;
+n=length(y3);
+sumy(id,:)=y3;
+xx=1:n;
+subplot(2,1,1)
+plot(y3)%plot 
+hold on
+fs=1/(30/n);
+df=fs/n;
+yfft=db(abs(fft(y3,n)));
+xf=[0:df:df*(n-1)]-fs/2;
+%filter=[zeros(1,6),ones(1,44)];
+%fff=yfft(1,1:50);
+subplot(2,1,2)
+plot(xf,fftshift(yfft));
+hold on
+end
+avey=(sumy(5,:));
+modi=errorfil(avey,1);
+modi=meanfilter(modi,20);
+ fil=smooth(modi);
+n2=length(fil);
+yfft2=(abs(fft(fil,n2)));
+fs=1/(30/n2);
+df=fs/n2;
+xf=[0:df:df*(n2-1)]-fs/2;
+figure 
+plot(fil)
+figure
+plot(xf,fftshift(yfft2));
+figure
+im=250*(sumy);
+image(im)
+colormap(jet(256))
+save fill avey
+save ally sumy

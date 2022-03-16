@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Oct  7 00:57:10 2021
+# Process ID: 27916
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20012 C:\Users\bobog\Desktop\School\ELEC 4200\lab6_mod\project_6_4\project_6_4.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_4/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_4/project_6_4.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_1/project_6_1.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_2/project_6_2.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_3/project_6_3.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_5/project_6_5.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_6/project_6_6.xpr}
+update_compile_order -fileset sources_1
+current_project project_6_5
+current_project project_6_6
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_7/project_6_7.xpr}
+update_compile_order -fileset sources_1
+current_project project_6_1
+close_project
+current_project project_6_2
+close_project
+current_project project_6_3
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab6_mod/project_6_44/project_6_44.xpr}
+update_compile_order -fileset sources_1
+close_project
+current_project project_6_4
+close_project
+current_project project_6_5
+close_project
+current_project project_6_6
+close_project

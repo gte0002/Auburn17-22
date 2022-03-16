@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Oct 14 08:38:40 2021
+# Process ID: 2652
+# Current directory: C:/Users/gte0002/lab7_mod/project_7_2/project_7_2.runs/impl_1
+# Command line: vivado.exe -log Lab7_2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab7_2.tcl -notrace
+# Log file: C:/Users/gte0002/lab7_mod/project_7_2/project_7_2.runs/impl_1/Lab7_2.vdi
+# Journal file: C:/Users/gte0002/lab7_mod/project_7_2/project_7_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab7_2.tcl -notrace

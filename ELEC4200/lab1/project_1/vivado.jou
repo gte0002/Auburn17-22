@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Aug 26 08:35:52 2021
+# Process ID: 752
+# Current directory: C:/Users/gte0002/lab1_mod/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7052 C:\Users\gte0002\lab1_mod\project_1\project_1.xpr
+# Log file: C:/Users/gte0002/lab1_mod/project_1/vivado.log
+# Journal file: C:/Users/gte0002/lab1_mod/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gte0002/lab1_mod/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source Lab1_gateLevel.tcl
+file mkdir C:/Users/gte0002/lab1_mod/project_1/project_1.srcs/constrs_1
+file mkdir C:/Users/gte0002/lab1_mod/project_1/project_1.srcs/constrs_1/new
+close [ open C:/Users/gte0002/lab1_mod/project_1/project_1.srcs/constrs_1/new/Master_contraint.xdc w ]
+add_files -fileset constrs_1 C:/Users/gte0002/lab1_mod/project_1/project_1.srcs/constrs_1/new/Master_contraint.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+config_webtalk -user on
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7a100tcsg324-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/gte0002/lab1_mod/project_1/project_1.runs/impl_2/Lab1_gateLevel.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/gte0002/lab1_mod/project_1/project_1.runs/impl_2/Lab1_gateLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Sep  8 16:50:29 2021
+# Process ID: 11848
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16848 C:\Users\bobog\Desktop\School\ELEC 4200\lab2\project_2_1\project_2_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_1/project_2_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1460.305 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_2/project_2_2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_2.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_3/project_2_3.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_3' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_3.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_4/project_2_4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_4' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_4.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_5/project_2_5.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_5' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_5.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab2/project_2_6/project_2_6.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab2_mod/project_2_6' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_2_6.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/bobog/Desktop/School/ELEC 4200/lab3/project_3_5/project_3_5.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/bobog/Desktop/School/ELEC 4200/lab3/Extra/Multiplication.mem}}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  9 00:09:00 2021...

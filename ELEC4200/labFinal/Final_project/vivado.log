@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov 18 16:17:22 2021
+# Process ID: 9964
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/labFinal/Final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6204 C:\Users\bobog\Desktop\School\ELEC 4200\labFinal\Final_project\Final_project.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/labFinal/Final_project/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/labFinal/Final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/labFinal/Final_project/Final_project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/Final_project_mod/Final_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only. * IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2018.1) has a different revision in the IP Catalog.
+WARNING: [Project 1-229] Project 'Final_project.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1450.676 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 18 16:29:07 2021...

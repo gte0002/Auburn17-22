@@ -1,0 +1,9 @@
+clear
+close all
+load fil13
+modi=meanfilter(avey,100);
+modi=smooth(modi);
+subplot(2,1,1)
+plot(modi)
+subplot(2,1,2)
+plot(avey)

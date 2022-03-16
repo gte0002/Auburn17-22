@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/ELEC 4200/lab9/9_3/9_3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,1616651146,verilog,,D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/bcd_to_7_seg.v,,clk_wiz_0,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v,1616651146,verilog,,D:/ELEC 4200/lab9/9_3/9_3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.sim/sim_1/behav/xsim/glbl.v,1605673890,verilog,,,,glbl,,,,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.srcs/sim_1/new/tb_4x4.v,1616663318,verilog,,,,tb_4x4,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/bcd_converter_7_seg.v,1616664810,verilog,,D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/bcd_to_7_seg.v,,bcd_converter_7_seg,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/bcd_to_7_seg.v,1616655964,verilog,,D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/clock_divider.v,,bcd_to_7_seg,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/clock_divider.v,1616666206,verilog,,D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/multiplier_4x4.v,,clock_divider,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,
+D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/multiplier_4x4.v,1616666476,verilog,,D:/ELEC 4200/lab9/9_3/9_3.srcs/sim_1/new/tb_4x4.v,,multiplier_4x4,,,../../../../9_3.gen/sources_1/ip/clk_wiz_0_1,,,,,

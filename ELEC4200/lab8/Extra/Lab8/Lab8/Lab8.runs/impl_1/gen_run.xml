@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1634604747">
+  <File Type="ROUTE-PWR" Name="task7_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="task7.tcl"/>
+  <File Type="BITSTR-MMI" Name="task7.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="task7_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="task7_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="task7_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="task7_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="task7_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="task7_opt.dcp"/>
+  <File Type="OPT-DRC" Name="task7_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="task7.hwdef"/>
+  <File Type="PWROPT-DCP" Name="task7_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="task7_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="task7_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="task7_placed.dcp"/>
+  <File Type="PLACE-IO" Name="task7_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="task7_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="task7_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="task7_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="task7_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="task7_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="task7_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="task7.bin"/>
+  <File Type="PLACE-TIMING" Name="task7_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="task7_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="task7.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="task7_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="task7_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="task7_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="task7.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="task7_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="task7_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="task7_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="task7_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="task7_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="task7_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="task7_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="task7_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="task7_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="task7_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="task7_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="task7_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="task7_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="task7_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="task7_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="task7_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="task7_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="task7_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="task7_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="task7_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="task7_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="task7_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="task7_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="task7_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="task7_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="task7_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="task7_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="task7.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="task7_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="task7_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="task7.nky"/>
+  <File Type="BITSTR-BMM" Name="task7_bd.bmm"/>
+  <File Type="PDI-FILE" Name="task7.pdi"/>
+  <File Type="RCFI_FILE" Name="task7.rcfi"/>
+  <File Type="CFI_FILE" Name="task7.cfi"/>
+  <File Type="RNPI_FILE" Name="task7.rnpi"/>
+  <File Type="NPI_FILE" Name="task7.npi"/>
+  <File Type="RBD_FILE" Name="task7.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="task7.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="task7.sysdef"/>
+  <File Type="BG-BGN" Name="task7.bgn"/>
+  <File Type="BG-DRC" Name="task7.drc"/>
+  <File Type="RDI-RDI" Name="task7.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/task7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task6.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task8.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task5.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task4.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task3.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task2.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/task1.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="task7"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/task1.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task2.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task3.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task4.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task7.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task8.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/task6.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

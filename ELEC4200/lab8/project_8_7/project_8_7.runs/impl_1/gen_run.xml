@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1634843012">
+  <File Type="PWROPT-DCP" Name="dff_counter_8bit_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="dff_counter_8bit_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dff_counter_8bit.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="dff_counter_8bit_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dff_counter_8bit_reports.tcl"/>
+  <File Type="BG-DRC" Name="dff_counter_8bit.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dff_counter_8bit_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="dff_counter_8bit_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="dff_counter_8bit.hwdef"/>
+  <File Type="OPT-DCP" Name="dff_counter_8bit_opt.dcp"/>
+  <File Type="OPT-DRC" Name="dff_counter_8bit_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="dff_counter_8bit_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="dff_counter_8bit_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="dff_counter_8bit_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="dff_counter_8bit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dff_counter_8bit_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dff_counter_8bit_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dff_counter_8bit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dff_counter_8bit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dff_counter_8bit_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dff_counter_8bit_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dff_counter_8bit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="dff_counter_8bit_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dff_counter_8bit_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dff_counter_8bit_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="dff_counter_8bit_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="dff_counter_8bit_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="dff_counter_8bit.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="dff_counter_8bit_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dff_counter_8bit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dff_counter_8bit_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dff_counter_8bit_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dff_counter_8bit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dff_counter_8bit_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="dff_counter_8bit.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="dff_counter_8bit_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="dff_counter_8bit.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dff_counter_8bit_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="dff_counter_8bit.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dff_counter_8bit_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="dff_counter_8bit.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dff_counter_8bit_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dff_counter_8bit_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dff_counter_8bit_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dff_counter_8bit_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dff_counter_8bit_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dff_counter_8bit_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dff_counter_8bit_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="dff_counter_8bit_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="dff_counter_8bit.vdi"/>
+  <File Type="ROUTE-CLK" Name="dff_counter_8bit_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dff_counter_8bit_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dff_counter_8bit_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dff_counter_8bit_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dff_counter_8bit_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dff_counter_8bit_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="dff_counter_8bit.nky"/>
+  <File Type="BITSTR-BMM" Name="dff_counter_8bit_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="dff_counter_8bit.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dff_counter_8bit.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="dff_counter_8bit.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Lab8_7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dff_counter_8bit"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Lab8_7_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct 31 15:13:31 2021
+# Process ID: 6740
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab9/project_9_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17048 C:\Users\bobog\Desktop\School\ELEC 4200\lab9\project_9_1\project_9_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab9/project_9_1/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab9/project_9_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab9/project_9_1/project_9_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab9_mod/project_9_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_9_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1455.535 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab9/project_9_2/project_9_2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/gte0002/lab9_mod/project_9_2' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_9_2.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 31 15:31:19 2021...

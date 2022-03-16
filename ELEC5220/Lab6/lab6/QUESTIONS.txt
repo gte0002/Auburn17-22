@@ -1,0 +1,12 @@
+2.1.7 
+	Q1: Host 1 can ping host 2 but not host 3 before we set up the VLANs
+	Q2: The VLAN basically makes the default gateway to the router either 100.100.100.1 OR 172...
+	    so both can send and receive date from the router.
+	Q3: The "public" security zone doesn't work because host 2 and 3 are on
+	    the other side of the firewall from host 1. 
+	Q4: The policy we used in the "nofirewall" security zone was Many:1 NAPT. It basically makes host 1's IP the internet access point, so we can avoid the firewall block
+	
+router_lab_2
+Exercise 1
+	Q1: 
+	Q2: 

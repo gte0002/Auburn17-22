@@ -1,0 +1,69 @@
+clear
+  close all
+cells = read_bf_file('duo/4bt1');
+m=180;
+K =800;
+N=30;
+mw=1;
+fmw = (1/mw)*ones(1,mw);
+amplitude1 = zeros(1, K);
+amplitude2 = zeros(1, K);
+amplitude3 = zeros(1, K);
+relative_phase12 = zeros(1, K);
+relative_phase23 = zeros(1, K);
+relative_phase31 = zeros(1, K);
+t=zeros(1,K);
+sum_amp=zeros(N,K);
+sum_phase=zeros(N,K);
+count = 1;
+%  figure
+for id=1:30 
+  for i = m+1 :  m+K
+	csi = cells{i}.csi;
+     
+	csi1 = reshape(csi(1,1, :), 1, N);
+	csi2 = reshape(csi(1,2, :), 1, N);
+	csi3 = reshape(csi(1,3, :), 1, N);
+    
+	
+	amplitude1(count) =abs(csi1(id));
+	amplitude2(count) =abs(csi2(id));
+	amplitude3(count) =abs(csi3(id));
+	
+   relative_phase12(count) =angle(csi2(id)*conj(csi1(id)));
+    relative_phase23(count) =angle(csi3(id)*conj(csi2(id)) );
+	relative_phase31(count) =angle(csi1(id)*conj(csi3(id)));
+	count = count + 1;
+ end
+count=1;
+
+rp1= relative_phase12;
+rp2=relative_phase23;
+rp3=relative_phase31;
+
+%%amplitude extraction
+y2=1*(hampel((amplitude1),6,0.01));%filtering the data
+sum_amp(id,:)=y2;
+
+%%% phase value extraction
+p1=unwrap(rp2);
+y2=1*(hampel((p1),6,0.01));%%filtering the data
+n=length(y2);
+sum_phase(id,:)=y2;
+end
+ figure
+subplot(2,1,1)
+plot(sum_amp(:,:)')
+subplot(2,1,2)
+plot(sum_phase(:,:)')
+
+%% plot channel state information in polar coordinates for one packet 
+
+
+%% image the channel state information for multiple packets
+select_data=sum_amp; %% use "sum_amp" or "sum_phase" to select amplitude value or phase difference value
+figure
+scale=max(select_data(:))-min(select_data(:));
+imagedata=128*(select_data-min(select_data(:)))/scale; %%normalize the data for image
+image(imagedata)
+colormap jet

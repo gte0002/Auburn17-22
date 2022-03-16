@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Oct 21 12:58:57 2021
+# Process ID: 6472
+# Current directory: C:/Users/gte0002/lab8_mod/project_8_2/project_8_2.runs/impl_1
+# Command line: vivado.exe -log Register_with_synch_reset_set_load_ehavior.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Register_with_synch_reset_set_load_ehavior.tcl -notrace
+# Log file: C:/Users/gte0002/lab8_mod/project_8_2/project_8_2.runs/impl_1/Register_with_synch_reset_set_load_ehavior.vdi
+# Journal file: C:/Users/gte0002/lab8_mod/project_8_2/project_8_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Register_with_synch_reset_set_load_ehavior.tcl -notrace

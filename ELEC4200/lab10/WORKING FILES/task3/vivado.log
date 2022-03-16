@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 18:51:47 2021
+# Process ID: 16768
+# Current directory: D:/ELEC 4200/lab9/9_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15816 D:\ELEC 4200\lab9\9_3\9_3.xpr
+# Log file: D:/ELEC 4200/lab9/9_3/vivado.log
+# Journal file: D:/ELEC 4200/lab9/9_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ELEC 4200/lab9/9_3/9_3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.180 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 18:56:40 2021...

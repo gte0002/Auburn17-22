@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov  7 12:27:20 2021
+# Process ID: 17556
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7796 C:\Users\bobog\Desktop\School\ELEC 4200\lab10\WORKING FILES\task1and2\9_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task1and2/9_1.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab10/WORKING FILES/task3/9_3.xpr}
+update_compile_order -fileset sources_1
+current_project 9_1
+close_project

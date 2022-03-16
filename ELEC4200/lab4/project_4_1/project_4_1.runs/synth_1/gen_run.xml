@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1631800983">
+  <File Type="PA-TCL" Name="Lab4_SR_Latch.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Lab4_SR_Latch_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Lab4_SR_Latch_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Lab4_SR_Latch.vds"/>
+  <File Type="RDS-UTIL" Name="Lab4_SR_Latch_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Lab4_SR_Latch_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Lab4_SR_Latch.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Lab4_SR_Latch_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Lab4_SR_Latch_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Lab4_SR_Latch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab4/project_4_1/project_4_1.srcs/sources_1/new/Lab4_SR_Latch.v"/>
+        <Attr Name="ImportTime" Val="1631760860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab4_SR_Latch"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Lab4_1_const.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../lab4/project_4_1/project_4_1.srcs/constrs_1/new/Lab4_1_const.xdc"/>
+        <Attr Name="ImportTime" Val="1631762742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

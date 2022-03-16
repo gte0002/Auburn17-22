@@ -1,0 +1,10 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sim_1/new/alarm_clock_tb.v,1637041522,verilog,,,,test,,,../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1,,,,,
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,1637163575,verilog,,C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/new/alarm_clock.v,,clk_wiz_0,,,../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1,,,,,
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v,1637163575,verilog,,C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1,,,,,
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/new/alarm_clock.v,1637041326,verilog,,C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/new/clock_divider_example.v,,aclock,,,../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1,,,,,
+C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sources_1/new/clock_divider_example.v,1636642352,verilog,,C:/Users/gte0002/Final_project_mod/Final_project/Final_project.srcs/sim_1/new/alarm_clock_tb.v,,divider,,,../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1,,,,,

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Christobel/Classes/Digital System Design/Lab9/Lab9/Lab9.srcs/sources_1/new/five_ring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_ring
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Christobel/Classes/Digital System Design/Lab9/Lab9/Lab9.srcs/sim_1/new/five_ring_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module five_ring_sim

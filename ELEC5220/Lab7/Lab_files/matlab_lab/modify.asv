@@ -1,0 +1,22 @@
+clear
+close all
+load ally
+[m,n]=size(sumy);
+figure
+for i=1:m
+    avey=sumy(i,:);
+    modi=errorfil(avey,1.2);
+modi=meanfilter(modi,100);
+modi=smooth(modi);
+sumy2(i,:)=modi;
+end
+modif=sumy2(8,:);
+n2=length(modif);
+yfft2=(abs(fft(modif,n2)));
+fs=1/(30/n2);
+df=fs/n2;
+xf=[0:df:df*(n2-1)]-fs/2;
+figure
+im=10*(sumy2);
+image(im)
+colormap(jet(256))

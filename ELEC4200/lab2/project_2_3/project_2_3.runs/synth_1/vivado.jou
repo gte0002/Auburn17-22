@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Sep  2 10:31:30 2021
+# Process ID: 3340
+# Current directory: C:/Users/gte0002/lab2_mod/project_2_3/project_2_3.runs/synth_1
+# Command line: vivado.exe -log Lab2_2outof5_dataflow.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab2_2outof5_dataflow.tcl
+# Log file: C:/Users/gte0002/lab2_mod/project_2_3/project_2_3.runs/synth_1/Lab2_2outof5_dataflow.vds
+# Journal file: C:/Users/gte0002/lab2_mod/project_2_3/project_2_3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Lab2_2outof5_dataflow.tcl -notrace

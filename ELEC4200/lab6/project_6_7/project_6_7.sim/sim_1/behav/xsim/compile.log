@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gte0002/lab6_mod/project_6_7/project_6_7.srcs/sources_1/new/Lab6_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab6_7
+INFO: [VRFC 10-311] analyzing module cla_logic
+INFO: [VRFC 10-311] analyzing module Lab6_7_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gte0002/lab6_mod/project_6_7/project_6_7.srcs/sim_1/new/Lab6_7Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab6_7Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gte0002/lab6_mod/project_6_7/project_6_7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

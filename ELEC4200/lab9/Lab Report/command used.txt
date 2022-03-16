@@ -1,0 +1,8 @@
+5 Ring
+create_macro RO 
+update_macro RO {w1_inferred_i_1 X0Y0 w2_inferred_i_1 X0Y0 w3_inferred_i_1 X0Y0 w4_inferred_i_1 X0Y1 w5_inferred_i_1 X1Y0}
+
+9 Ring
+create_macro
+update_macro RO {w1_inferred_i_1 X0Y0 w2_inferred_i_1 X0Y0 w3_inferred_i_1 X0Y0 w4_inferred_i_1 X0Y0 w5_inferred_i_1 X1Y0 w6_inferred_i_1 X1Y0 w7_inferred_i_1 X1Y0
+w8_inferred_i_1 X1Y0 w9_inferred_i_1 X0Y1 w10_inferred_i_1 X0Y1}

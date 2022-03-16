@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Sep 30 09:58:43 2021
+# Process ID: 3736
+# Current directory: C:/Users/gte0002/lab6_mod/project_6_3/project_6_3.runs/impl_1
+# Command line: vivado.exe -log Lab6_3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab6_3.tcl -notrace
+# Log file: C:/Users/gte0002/lab6_mod/project_6_3/project_6_3.runs/impl_1/Lab6_3.vdi
+# Journal file: C:/Users/gte0002/lab6_mod/project_6_3/project_6_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab6_3.tcl -notrace

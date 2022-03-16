@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 18:20:20 2021
+# Process ID: 1064
+# Current directory: D:/ELEC 4200/lab9/9_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15776 D:\ELEC 4200\lab9\9_1\9_1.xpr
+# Log file: D:/ELEC 4200/lab9/9_1/vivado.log
+# Journal file: D:/ELEC 4200/lab9/9_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ELEC 4200/lab9/9_1/9_1.xpr}
+launch_simulation
+source tb_3_3.tcl
+update_compile_order -fileset sources_1
+restart
+run 500 ns
+close_sim
+launch_simulation
+launch_simulation
+source tb_3_3.tcl
+restart
+run 500 ns
+close_sim

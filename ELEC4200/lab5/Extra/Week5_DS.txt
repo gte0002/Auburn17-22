@@ -1,0 +1,374 @@
+Task 1:
+//design of Verilog HDL for given fsm using three always blocks
+// veriog design Code your state diagram of given fsm
+module fsm (
+
+//I/O declarations
+input clk,
+input reset, //considered as active low reset
+input ain, //considered input as ain
+
+output reg yout //considered output as yout
+);
+
+//parameter declarations or state encodings for 4 states of fsm
+parameter S0 = 2'b00,
+S1 = 2'b01,
+S2 = 2'b10,
+S3 = 2'b11;
+
+
+//internal signal declarations
+reg [1:0] state,next_state;
+
+//present state logic with one always block
+always @ (posedge clk or negedge reset) begin
+if (~reset)
+state <= S0; //considered initial state after reset as s0
+else
+state <= next_state;
+end
+
+//second always block for next state logic using case statements
+always @ (*) begin
+case (state)
+S0:begin
+if (ain==1)
+next_state = S1;
+else
+next_state = S0;
+end
+S1:begin
+if (ain==1)
+next_state = S2;
+else
+next_state = S0;
+end
+S2:begin
+if (ain==1)
+next_state = S3;
+else
+next_state = S0;
+end
+S3:begin
+if (ain==1)
+next_state = S1;
+else
+next_state = S0;
+end
+default: next_state = S0;
+endcase
+end
+
+
+//third always block for output logic using case statements
+
+always @ (*) begin
+case (state)
+S0,S1,S2: yout = 1'b0;
+S3:begin
+if (ain==1)
+yout = 1'b1;
+else
+yout = 1'b0;
+end
+
+default: yout = 1'b0;
+endcase
+end
+
+endmodule
+-------------------------------------------------------------------------
+Testbench:
+module test;
+
+reg clk;
+reg reset;
+reg ain;
+
+wire yout;
+
+//instantiation of design fsm module
+fsm DUT (.clk(clk),.reset(reset),.ain(ain),.yout(yout));
+
+//clock input generation
+initial begin
+clk = 1'b1;
+forever #5 clk =~clk;
+end
+
+//test inputs generation
+initial begin
+$dumpfile("dump.vcd");
+$dumpvars;
+reset = 1'b0;ain = 1'b0;
+#20 reset = 1'b1;ain = 1'b0;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b0;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b1;
+#15 reset = 1'b1;ain = 1'b0;
+#20 $finish;
+end
+
+endmodule
+-----------------------------------------------------------
+Task 2:
+module sequence_detector (
+input [1:0] ain, //Input sequncer
+input rst_n,clk, //Clock and reset inputs
+output reg aout //Output of sequence detector
+
+);
+parameter IDLE=0,DETECTED_01=1,DETECTED_11=2,DETECTED_10=3,DETECTED_01_AND_00=4,DETECTED_11_AND_00=5,DETECTED_10_AND_00=6,WAIT=7; //States in the sequence detector state machine
+reg [2:0] cur_state,next_state; //current and next states
+  
+
+//Next state logic
+always@(*) begin
+case(cur_state)
+IDLE:
+if(ain==2'b01)
+next_state = DETECTED_01;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = IDLE;
+  
+DETECTED_01:
+if(ain==2'b00)
+next_state = DETECTED_01_AND_00;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = DETECTED_01;
+  
+DETECTED_11:
+if(ain==2'b00)
+next_state = DETECTED_11_AND_00;
+else if(ain==2'b01)
+next_state = DETECTED_01;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = DETECTED_11;
+  
+DETECTED_10:
+if(ain==2'b00)
+next_state = DETECTED_10_AND_00;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b01)
+next_state = DETECTED_01;
+else
+next_state = DETECTED_10;
+  
+DETECTED_01_AND_00:
+if(ain==2'b01)
+next_state = DETECTED_01;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = WAIT;
+  
+DETECTED_11_AND_00:
+if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b01)
+next_state = DETECTED_01;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = WAIT;
+  
+DETECTED_10_AND_00:
+if(ain==2'b10)
+next_state = DETECTED_10;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b01)
+next_state = DETECTED_01;
+else
+next_state = WAIT;
+  
+WAIT:
+if(ain==2'b01)
+next_state = DETECTED_01;
+else if(ain==2'b11)
+next_state = DETECTED_11;
+else if(ain==2'b10)
+next_state = DETECTED_10;
+else
+next_state = WAIT;
+  
+default: next_state = IDLE;
+endcase
+end
+  
+
+//Current state logic
+always@(posedge clk or negedge rst_n)
+begin
+if(!rst_n)
+cur_state <= IDLE;
+else
+cur_state <= next_state;
+end
+  
+
+//Output generation logic
+always@(posedge clk)
+begin
+case(next_state)
+IDLE: aout <= 1'b0;
+DETECTED_01_AND_00: aout <= 1'b0;
+DETECTED_11_AND_00: aout <= 1'b1;
+DETECTED_10_AND_00: aout <= ~aout;
+endcase
+end
+endmodule //end of sequence_detector module
+--------------------------------------------------------
+Testbench:
+module testbench;
+reg [1:0] ain;
+reg rst_n,clk;
+wire aout;
+  
+
+//Instantiating sequence_detector module in testbench
+sequence_detector U_sequence_detector(ain,rst_n,clk,aout);
+  
+initial begin
+clk = 1'b0;
+forever
+#5 clk = ~clk; //Clock generated with 10ns time period
+end
+  
+initial begin
+rst_n = 1'b1;
+#8 rst_n = 1'b0; //Reset assertion
+#10 rst_n = 1'b1; //Reset de-assertion
+  
+ain = 2'b00;
+@(negedge clk);
+ain = 2'b01;
+@(negedge clk);
+ain = 2'b00;
+  
+@(negedge clk);
+ain = 2'b11;
+@(negedge clk);
+ain = 2'b00;
+  
+@(negedge clk);
+ain = 2'b10;
+@(negedge clk);
+ain = 2'b00;
+  
+@(negedge clk);
+ain = 2'b00;
+  
+repeat(5)
+begin
+@(negedge clk);
+end
+  
+@(negedge clk);
+ain = 2'b11;
+@(negedge clk);
+ain = 2'b00;
+  
+@(negedge clk);
+ain = 2'b01;
+@(negedge clk);
+ain = 2'b10;
+@(negedge clk);
+ain = 2'b00;
+  
+#150 $finish; //end of simulation
+end
+endmodule
+-------------------------------------------------------
+Task 3:
+module counter(SW15, BTNU, LED);
+
+input SW15;   //clock
+
+input BTNU;   //reset
+
+output reg [2:0] LED;
+
+reg [2:0] mem [0:5];
+
+integer i=0;
+
+initial begin //initialize ROM
+   mem[0] = 3'b000;
+   mem[1] = 3'b001;
+   mem[2] = 3'b011;
+   mem[3] = 3'b101;
+   mem[4] = 3'b111;
+   mem[5] = 3'b010;
+end
+
+always@(posedge SW15 or BTNU)
+
+begin
+
+   if(BTNU)   //asynchrounous active high reset
+
+       LED <= mem[0];
+   else
+
+       begin
+           LED <= mem[i];
+           if (i == 5)
+               i <= 0;
+           else
+               i <= i + 1;
+       end
+end
+      
+endmodule
+------------------------------------------------------------------
+Testbench:
+module tb_counter();
+
+reg SW15;   //clock
+
+reg BTNU;   //reset
+
+wire [2:0] LED;
+
+counter uut(SW15, BTNU, LED);
+
+initial begin
+  
+   SW15 = 0;
+   BTNU = 1;
+   #20;
+
+   BTNU = 0;
+   #100;
+
+   BTNU = 1;
+   #20;
+
+end
+
+always #5 SW15 = ~SW15;
+
+endmodule

@@ -1,0 +1,76 @@
+Task 1:
+module decoder_3to8(
+input [2:0] x,
+output [7:0] y );
+assign y[0]=(~x[0])&(~x[1])&(~x[2]);
+assign y[1]=(~x[0])&(~x[1])&(x[2]);
+assign y[2]=(~x[0])&(x[1])&(~x[2]);
+assign y[3]=(~x[0])&(x[1])&(x[2]);
+assign y[4]=(x[0])&(~x[1])&(~x[2]);
+assign y[5]=(x[0])&(~x[1])&(x[2]);
+assign y[6]=(x[0])&(x[1])&(~x[2]);
+assign y[7]=(x[0])&(x[1])&(x[2]);
+endmodule
+
+
+
+Task 2:
+//Verilog code for decoder.
+module decoder_74138_dataflow(
+input [2:0] x_in,
+   input g1,g2a_n,g2b_n,
+output reg [7:0] y_out
+
+);
+// 1 Cold encoding   
+always @(g1,g2a_n,g2b_n,x_in)
+case ({g1,g2a_n,g2b_n,x_in})   
+6'b100_000 : y_out = 8'b11111110;
+6'b100_001 : y_out = 8'b11111101;
+6'b100_010 : y_out = 8'b11111011;
+6'b100_011 : y_out = 8'b11110111;
+6'b100_100 : y_out = 8'b11101111;
+6'b100_101 : y_out = 8'b11011111;
+6'b100_110 : y_out = 8'b10111111;
+6'b100_111 : y_out = 8'b01111111;
+
+default : y_out = 8'b11111111;
+endcase
+
+Task 3:
+module encoder(
+    input [7:0]x,
+    input en,
+    output reg [2:0]y
+    );
+  always @ (x,en)
+  begin if(en==1'b0)
+  casex(x)
+  8'b00000001 : y = 3'b000;
+  8'b0000001x : y = 3'b001;
+  8'b000001xx : y = 3'b010;
+  8'b00001xxx : y = 3'b011;
+  8'b0001xxxx : y = 3'b100;
+  8'b001xxxxx : y = 3'b101;
+  8'b01xxxxxx : y = 3'b110;
+  8'b1xxxxxxx : y = 3'b111;
+ endcase
+ end
+endmodule
+
+
+Task 4:
+
+module compare_2bit(a,b,equal,greater,lower);
+output equal, greater, lower;
+input [1:0] a;
+input [1:0] b;
+
+assign equal = (a==b) ? 1 : 0;
+assign greater = (a>b) ? 1: 0;
+assign lower = (a<b) ? 1 : 0;
+endmodule
+
+
+Task 5:
+

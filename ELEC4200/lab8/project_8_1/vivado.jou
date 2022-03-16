@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct 24 13:09:20 2021
+# Process ID: 9928
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4596 C:\Users\bobog\Desktop\School\ELEC 4200\lab8\project_8_1\project_8_1.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_1/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_1/project_8_1.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_2/project_8_2.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_3/project_8_3.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_4/project_8_4.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_5/project_8_5.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_6/project_8_6.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_7/project_8_7.xpr}
+update_compile_order -fileset sources_1
+open_project -read_only {C:/Users/bobog/Desktop/School/ELEC 4200/lab8/project_8_8/project_8_8.xpr}
+update_compile_order -fileset sources_1
+current_project project_8_1
+close_project
+current_project project_8_2
+close_project
+current_project project_8_3
+close_project
+current_project project_8_4
+close_project
+current_project project_8_5
+close_project
+current_project project_8_6
+close_project
+current_project project_8_7
+close_project

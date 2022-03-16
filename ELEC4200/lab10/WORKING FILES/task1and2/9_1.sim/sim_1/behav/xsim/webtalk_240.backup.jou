@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 18:25:15 2021
+# Process ID: 240
+# Current directory: D:/ELEC 4200/lab9/9_1/9_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/ELEC 4200/lab9/9_1/9_1.sim/sim_1/behav/xsim/xsim.dir/tb_3_3_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/ELEC 4200/lab9/9_1/9_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/ELEC 4200/lab9/9_1/9_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/ELEC -notrace

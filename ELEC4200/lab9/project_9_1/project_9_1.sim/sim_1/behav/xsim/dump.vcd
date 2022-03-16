@@ -1,0 +1,21 @@
+$date
+   Thu Oct 28 08:35:23 2021
+$end
+$version
+  2018.1
+$end
+$timescale
+  1ps
+$end
+$scope module Lab9_1_tb $end
+$var reg 1 ! enable $end
+$var wire 1 " out $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+z!
+x"
+$end
+#1000000
+0!

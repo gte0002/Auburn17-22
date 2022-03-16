@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1" \
+"../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+"../../../../Final_project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" \
+"../../../../Final_project.srcs/sources_1/new/alarm_clock.v" \
+"../../../../Final_project.srcs/sources_1/new/clock_divider_example.v" \
+"../../../../Final_project.srcs/sim_1/new/alarm_clock_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

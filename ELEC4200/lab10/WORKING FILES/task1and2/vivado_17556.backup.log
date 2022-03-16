@@ -1,0 +1,281 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Mar 25 11:18:05 2021
+# Process ID: 17556
+# Current directory: E:/ELEC 4200/lab9/9_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14604 E:\ELEC 4200\lab9\9_1\9_1.xpr
+# Log file: E:/ELEC 4200/lab9/9_1/vivado.log
+# Journal file: E:/ELEC 4200/lab9/9_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+start_gui
+open_project {E:/ELEC 4200/lab9/9_1/9_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/ELEC 4200/lab9/9_1' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorGccInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPDefaultOutputPath
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name MEMEnableMemoryMapGeneration
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+WARNING: [Project 1-231] Project '9_1.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 827.695 ; gain = 75.809
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+save_project_as 9_1_2018 {E:/ELEC 4200/lab9/9_1_2018} -force
+save_project_as: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 873.465 ; gain = 0.000
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 25 11:23:13 2021] Launched synth_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/synth_1/runme.log
+[Thu Mar 25 11:23:13 2021] Launched impl_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 25 11:30:23 2021] Launched synth_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/synth_1/runme.log
+[Thu Mar 25 11:30:23 2021] Launched impl_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 25 11:33:59 2021] Launched synth_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/synth_1/runme.log
+[Thu Mar 25 11:33:59 2021] Launched impl_1...
+Run output will be captured here: E:/ELEC 4200/lab9/9_1_2018/9_1_2018.runs/impl_1/runme.log
+reset_run synth_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_3_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_3_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sources_1/new/Multiplier_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sim_1/new/tb_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b20145f336fd4b388eb7fd2f90d2a52c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_3_3_behav xil_defaultlib.tb_3_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Multiplier_3_3
+Compiling module xil_defaultlib.tb_3_3
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_3_3_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/ELEC -notrace
+couldn't read file "E:/ELEC": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 25 11:35:46 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_3_3_behav -key {Behavioral:sim_1:Functional:tb_3_3} -tclbatch {tb_3_3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_3_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_3_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 929.203 ; gain = 18.367
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_3_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_3_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sources_1/new/Multiplier_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sim_1/new/tb_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_3_3
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b20145f336fd4b388eb7fd2f90d2a52c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_3_3_behav xil_defaultlib.tb_3_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_3_3_behav -key {Behavioral:sim_1:Functional:tb_3_3} -tclbatch {tb_3_3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_3_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_3_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 929.203 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_3_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_3_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sources_1/new/Multiplier_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sim_1/new/tb_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_3_3
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b20145f336fd4b388eb7fd2f90d2a52c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_3_3_behav xil_defaultlib.tb_3_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_3_3_behav -key {Behavioral:sim_1:Functional:tb_3_3} -tclbatch {tb_3_3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_3_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_3_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 929.754 ; gain = 0.551
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 933.152 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_3_3' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_3_3_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sources_1/new/Multiplier_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_3_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ELEC 4200/lab9/9_1_2018/9_1_2018.srcs/sim_1/new/tb_3_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_3_3
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b20145f336fd4b388eb7fd2f90d2a52c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_3_3_behav xil_defaultlib.tb_3_3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/ELEC 4200/lab9/9_1_2018/9_1_2018.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_3_3_behav -key {Behavioral:sim_1:Functional:tb_3_3} -tclbatch {tb_3_3.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_3_3.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_3_3_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 933.152 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 25 11:41:47 2021...

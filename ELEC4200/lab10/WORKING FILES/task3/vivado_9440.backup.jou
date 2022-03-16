@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 25 03:53:21 2021
+# Process ID: 9440
+# Current directory: D:/ELEC 4200/lab9/9_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18056 D:\ELEC 4200\lab9\9_3\9_3.xpr
+# Log file: D:/ELEC 4200/lab9/9_3/vivado.log
+# Journal file: D:/ELEC 4200/lab9/9_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/ELEC 4200/lab9/9_3/9_3.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_4x4.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files {{D:/ELEC 4200/lab9/9_3/mcandsandpliers.txt}}] -no_script -reset -force -quiet
+remove_files  {{D:/ELEC 4200/lab9/9_3/mcandsandpliers.txt}}
+add_files -norecurse {{D:/ELEC 4200/lab9/9_3/mcandsandpliers.mem}}
+launch_simulation
+source tb_4x4.tcl
+close_sim
+launch_simulation
+source tb_4x4.tcl
+close_sim
+launch_simulation
+source tb_4x4.tcl
+set_property is_enabled false [get_files  {{D:/ELEC 4200/lab9/9_3/mcandsandpliers.mem}}]
+add_files -norecurse {{D:/ELEC 4200/lab9/9_3/memory.mem}}
+close_sim
+launch_simulation
+source tb_4x4.tcl
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb_4x4/DUT/ones}} 
+current_wave_config {Untitled 6}
+add_wave {{/tb_4x4/DUT/tens}} 
+current_wave_config {Untitled 6}
+add_wave {{/tb_4x4/DUT/hundreds}} 
+restart
+run 300 ns
+current_wave_config {Untitled 6}
+add_wave {{/tb_4x4/DUT/Product}} 
+restart
+run 300 ns
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 7}
+add_wave {{/tb_4x4/DUT/Product}} 
+restart
+run 300 ns
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 8}
+add_wave {{/tb_4x4/DUT/Product}} 
+restart
+run 300 ns
+run 300 ns
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 9}
+log_wave {/tb_4x4/DUT/Product} 
+current_wave_config {Untitled 9}
+add_wave {{/tb_4x4/DUT/Product}} 
+current_wave_config {Untitled 9}
+add_wave {{/tb_4x4/DUT/ones}} 
+current_wave_config {Untitled 9}
+add_wave {{/tb_4x4/DUT/tens}} 
+current_wave_config {Untitled 9}
+add_wave {{/tb_4x4/DUT/hundreds}} 
+run 300 ns
+restart
+run 300 ns
+current_wave_config {Untitled 9}
+add_wave {{/tb_4x4/DUT/counter}} 
+run 300 ns
+close [ open {D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/clock_divider.v} w ]
+add_files {{D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/clock_divider.v}}
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_4x4.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 11}
+add_wave {{/tb_4x4/DUT/clk_src_5MHz}} 
+run 300 ns
+set_property is_enabled false [get_files  {{D:/ELEC 4200/lab9/9_3/9_3.srcs/sources_1/new/bcd_converter_7_seg.v}}]
+close_sim
+launch_simulation
+source tb_4x4.tcl
+close_sim
+launch_simulation
+source tb_4x4.tcl
+current_wave_config {Untitled 13}
+add_wave {{/tb_4x4/DUT/clk_src_5MHz}} 
+run 300 ns
+close_sim

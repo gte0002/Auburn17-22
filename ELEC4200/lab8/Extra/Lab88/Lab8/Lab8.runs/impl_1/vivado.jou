@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 20 10:07:08 2021
+# Process ID: 14796
+# Current directory: D:/Christobel/Classes/Digital System Design/Lab8/Lab8/Lab8.runs/impl_1
+# Command line: vivado.exe -log task7.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source task7.tcl -notrace
+# Log file: D:/Christobel/Classes/Digital System Design/Lab8/Lab8/Lab8.runs/impl_1/task7.vdi
+# Journal file: D:/Christobel/Classes/Digital System Design/Lab8/Lab8/Lab8.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source task7.tcl -notrace

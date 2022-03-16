@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Sep 21 23:01:53 2021
+# Process ID: 28892
+# Current directory: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24492 C:\Users\bobog\Desktop\School\ELEC 4200\lab5\Extra\Lab5\Lab5.xpr
+# Log file: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/vivado.log
+# Journal file: C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/Lab5.xpr}
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  {{C:/Users/bobog/Desktop/School/ELEC 4200/lab5/Extra/Lab5/Lab5.srcs/sim_1/new/task1sim.v}}]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source task1sim.tcl
+close_sim
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
